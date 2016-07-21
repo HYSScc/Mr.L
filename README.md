@@ -1,2 +1,2 @@
-<h1 style="text-align:center">居中对齐 <h1>
+<center>诶嘿</center>
 
