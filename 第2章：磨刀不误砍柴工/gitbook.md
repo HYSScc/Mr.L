@@ -4,3 +4,6 @@
 
 GitBook-下载介绍与使用说明: [http:\/\/www.mybanshu.com\/tools\/gitbook-%E4%B8%8B%E8%BD%BD%E4%BB%8B%E7%BB%8D%E4%B8%8E%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.html](http://www.mybanshu.com/tools/gitbook-%E4%B8%8B%E8%BD%BD%E4%BB%8B%E7%BB%8D%E4%B8%8E%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.html)
 
+
+
+Gitbook 的使用和常用插件：http://zhaoda.net/2015/11/09/gitbook-plugins/
