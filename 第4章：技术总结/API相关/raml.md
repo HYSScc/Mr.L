@@ -1,0 +1,107 @@
+# RAML
+
+> RESTful API Modeling Language \(RAML\) makes it easy to manage the whole API lifecycle from design to sharing. It's concise - you only write what you need to define - and reusable. It is machine readable API design that is actually human friendly.
+
+**整个 RAML 文档可简单划分为“版本声明”、“API 元数据定义”、“公用属性定义”和“资 源方法定义”四部分构成（参阅：**RAML规范解读**）**
+
+官网：[http:\/\/raml.org\/](http://raml.org/)
+
+apiworkbench: [http:\/\/apiworkbench.com\/docs\/](http://apiworkbench.com/docs/)
+
+LocalAPI：[https:\/\/github.com\/isaacloud\/local-api](https://github.com/isaacloud/local-api)
+
+faker：[https:\/\/github.com\/marak\/Faker.js\/](https://github.com/marak/Faker.js/)
+
+RAML规范解读: [http:\/\/wenku.baidu.com\/link?url=CRBz9YUcStvGId76LyNQLFKEeDH9xrBiOjPKlo0J0TCAqZoycUa4C4uRjbJUFa3XkLoXFaS2H4GFvPYArstVkauAIAWuAG8ZYvIcS33pav7](http://wenku.baidu.com/link?url=CRBz9YUcStvGId76LyNQLFKEeDH9xrBiOjPKlo0J0TCAqZoycUa4C4uRjbJUFa3XkLoXFaS2H4GFvPYArstVkauAIAWuAG8ZYvIcS33pav7)
+
+```
+RAML相关的工具和资源在哪里?
+官方网站：http://raml.org 
+规范文档：http://raml.org/spec.html
+设计器：https://github.com/mulesoft/api-designer
+解析器：https://github.com/raml-org/raml-js-parser 
+
+raml2html: https://github.com/raml2html/raml2html
+raml2wiki: https://github.com/jhitchcock/raml2wiki
+```
+
+用RAML构建API文档: [http:\/\/mobilev5.github.io\/2016\/03\/06\/using-raml-build-api-doc\/](http://mobilev5.github.io/2016/03/06/using-raml-build-api-doc/)
+
+介绍下 RAML: [https:\/\/testerhome.com\/topics\/4601](https://testerhome.com/topics/4601)
+
+## 步骤：
+
+1. 安装[Atom](https://atom.io/)
+2. OSX系统中，打开Atom编辑器，在preferences-install里搜索安装 api-workbench
+3. 新建一个 RAML 项目
+4. 安装 [nodeJS](https://nodejs.org/) ， `npm install -g localapi （可能需要翻墙）`
+5. 启动 LocalAPI
+
+> **$ **ls api.raml examples resourceTypes scripts traits documentation notebooks schemas securitySchemes
+> 
+> **$ **localapi run --no-examples api.raml
+> 
+> info: LocalAPI 1.5.0 by IsaaCloud.com
+> 
+> info: \[localapi\] Run app
+> 
+> info: \[localapi\] App running at http:\/\/localhost:3333
+
+现在 GET [http:\/\/localhost:3333\/api\/v3\/nodes\/1](http://localhost:3333/api/v3/nodes/1) 就会返回 raml 文档定义的 responses 了
+
+### 生成HTML文档
+
+`安装raml2html： npm i -g raml2html 
+ raml2html api.raml > api.html`
+
+> IntoRobot raml 格式的开放API文档仓库： git clone [http:\/\/ram-lab.com\/molmc\_api.git](http://ram-lab.com/molmc_api.git)
+
+### 名词释义
+
+> 整个 RAML 文档可简单划分为“版本声明”、“API 元数据定义”、“公用属性定义”和“资 源方法定义”四部分构成
+
+uriParameters:
+
+formParameters:
+
+queryParameters:
+
+##### API元数据定义：
+
+protocols：
+
+mediaType:
+
+documentation:
+
+##### 元属性：
+
+1.       
+
+2.          
+
+##### 重用属性定义：
+
+一. 资源类型\(resourceType\)
+
+> 定义资源时通过“type”属性定义所继承的资源类型,一个资源属于一个或零个资源类 型
+
+二. 方法特征\(traits\)
+
+> 定义资源时通过“is” 属性定义所使用的 trait
+
+三. 结构模型\(schemas\)
+
+> API 方法的入参或者返回结果如果为 json 或者 xsm 格式,通常需要“schema”属性来定 义该格式类型对应的结构。“schema”属性值既可以是结构模型的真实定义,也可以是之前 所定义结构模型的名称
+
+四. 安全认证模型\(securitySchemes\)
+
+> 假如一个 API 需要 OAuth 安全认证,这个 API 的所有资源和方法的定义必须包含“access\_token”查询参数。针对这种场景可以定义重用属性,让其他资源或方法通过继承的方式来获取属性的设置。
+
+### 问题
+
+1. 公用属性有哪些？ 如何使用？
+
+  答： 公用属性有“Schemas”，“securitySchemas”, "ressourceTypes", "traits"等；通过重用属性的方法使用公用属性。
+
+
