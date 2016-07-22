@@ -12,6 +12,7 @@ graph TB
     c1-->a2
 ```
 
+```
 {% mermaid %} 
 graph TD; 
     A-->B; 
@@ -19,3 +20,4 @@ graph TD;
     B-->D; 
     C-->D; 
 {% endmermaid %}
+```
