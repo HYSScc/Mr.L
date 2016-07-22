@@ -1,5 +1,6 @@
 ```
-  %% Subgraph example 
+  %% Subgraph example
+ 
 graph TB 
     subgraph 
     one a1-->a2 
