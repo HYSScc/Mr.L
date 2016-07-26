@@ -41,7 +41,7 @@ Gitbook 的使用和常用插件：[http:\/\/zhaoda.net\/2015\/11\/09\/gitbook-p
 
 **mermaid：**http:\/\/knsv.github.io\/mermaid\/\#mermaid
 
-# Q&A:
+#### Q&A:
 
 gitbook editor 插件如何启用: [https:\/\/segmentfault.com\/q\/1010000004937806](https://segmentfault.com/q/1010000004937806)
 
