@@ -19,7 +19,7 @@
 
 1. 使用插件
 ```
-graph TD; 
+    graph TD; 
       A-->B; 
       A-->C; 
       B-->D; 
