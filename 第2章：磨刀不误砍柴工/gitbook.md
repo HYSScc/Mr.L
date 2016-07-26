@@ -17,9 +17,18 @@
 }
 ```
 
-1. 使用插件
+1. 
 
-1. **How to use gitbook: **[https:\/\/breezetemple.gitbooks.io\/how-to-use-gitbook\/content\/installation\/index.html](https://breezetemple.gitbooks.io/how-to-use-gitbook/content/installation/index.html)
+2. 
+
+3. 
+
+4. 
+
+5. 使用插件
+
+6. **How to use gitbook: **[https:\/\/breezetemple.gitbooks.io\/how-to-use-gitbook\/content\/installation\/index.html](https://breezetemple.gitbooks.io/how-to-use-gitbook/content/installation/index.html)
+
 
 **利用 gitbook 与 webhook 做一个展示前端项目的平台: **[http:\/\/www.jianshu.com\/p\/2a1cf8891d5f](http://www.jianshu.com/p/2a1cf8891d5f)
 
