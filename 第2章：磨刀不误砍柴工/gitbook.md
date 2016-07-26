@@ -1,3 +1,13 @@
+# 如何安装Gitbook插件（以`gitbook-plugin-mermaid-2为例`）
+
+1. 在终端执行命令`npm install gitbook-plugin-mermaid-2`安装Mermaid
+
+2. 
+
+
+
+
+
 **How to use gitbook: **[https:\/\/breezetemple.gitbooks.io\/how-to-use-gitbook\/content\/installation\/index.html](https://breezetemple.gitbooks.io/how-to-use-gitbook/content/installation/index.html)
 
 **利用 gitbook 与 webhook 做一个展示前端项目的平台: **[http:\/\/www.jianshu.com\/p\/2a1cf8891d5f](http://www.jianshu.com/p/2a1cf8891d5f)
@@ -12,9 +22,7 @@ Gitbook 的使用和常用插件：[http:\/\/zhaoda.net\/2015\/11\/09\/gitbook-p
 
 **mermaid：**http:\/\/knsv.github.io\/mermaid\/\#mermaid
 
+# Q&A:
 
-
-#Q&A:
-
-gitbook editor 插件如何启用: https://segmentfault.com/q/1010000004937806
+gitbook editor 插件如何启用: [https:\/\/segmentfault.com\/q\/1010000004937806](https://segmentfault.com/q/1010000004937806)
 
