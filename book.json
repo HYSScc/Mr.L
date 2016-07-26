@@ -1,6 +1,5 @@
 {
     "plugins": [
-        "include-codeblock",
-        "mermaid"
+        "include-codeblock"
     ]
 }
