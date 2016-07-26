@@ -18,8 +18,9 @@
 ```
 
 1. 使用插件
-
-
+```
+graph TD; A-->B; A-->C; B-->D; C-->D;
+```
 
 1. 
 2. **How to use gitbook: **[https:\/\/breezetemple.gitbooks.io\/how-to-use-gitbook\/content\/installation\/index.html](https://breezetemple.gitbooks.io/how-to-use-gitbook/content/installation/index.html)
