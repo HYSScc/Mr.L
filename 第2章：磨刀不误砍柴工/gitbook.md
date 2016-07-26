@@ -17,8 +17,7 @@
 }
 ```
 
-
-
+1. 使用插件
 
 
 1. **How to use gitbook: **[https:\/\/breezetemple.gitbooks.io\/how-to-use-gitbook\/content\/installation\/index.html](https://breezetemple.gitbooks.io/how-to-use-gitbook/content/installation/index.html)
