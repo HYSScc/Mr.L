@@ -1,8 +1,6 @@
 # Emacs－编辑器之神
 
-
-
-参考：
+## 参考：
 
 https:\/\/www.gnu.org\/software\/emacs\/tour\/
 
