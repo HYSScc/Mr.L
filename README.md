@@ -12,3 +12,8 @@ graph TD;
   C-->D;
 ```
 
+```
+graph TD;
+A-->B;
+```
+
