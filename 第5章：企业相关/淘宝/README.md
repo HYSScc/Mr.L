@@ -1,2 +1,2 @@
-![](/assets/12D3EE78-F676-4BF0-8EF5-D1F0B92B56EB.png)
+![](assets/pic/intorobot 淘宝店铺支付方式.png)
 
