@@ -8,6 +8,8 @@ Amazon:https://aws.amazon.com/cn/
 
 影速Yingsoo：http://www.yingsoo.com/
 
+linode：https://www.linode.com/
+
 digitalocean：https://www.digitalocean.com/?refcode=b69ae7a69b66
 
 七牛：https://portal.qiniu.com/create
