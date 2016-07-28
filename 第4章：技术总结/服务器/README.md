@@ -1,5 +1,7 @@
 # 服务器
 
+Amazon:
+
 七牛：https://portal.qiniu.com/create
 
 融云：http://www.rongcloud.cn/
