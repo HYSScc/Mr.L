@@ -6,6 +6,8 @@ Amazon:https://aws.amazon.com/cn/
 
 青云：https://www.qingcloud.com/
 
+digitalocean：https://www.digitalocean.com/?refcode=b69ae7a69b66
+
 七牛：https://portal.qiniu.com/create
 
 融云：http://www.rongcloud.cn/
