@@ -63,6 +63,8 @@ raml2wiki: https://github.com/jhitchcock/raml2wiki
 | 元素 | 说明 | 示例 |
 |:---|:---:| ---:|
 | hello | hello  | hello  |
+| hello | hello | hello |
+| hello | hello | hello |
 
 uriParameters:
 
