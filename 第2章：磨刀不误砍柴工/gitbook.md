@@ -19,10 +19,9 @@
 
 4.编译
 
+![](/assets/897DFAAF-A53F-4513-B916-B989514CE551.png)
 
-
-5. 使用插件
-
+5.使用插件
 ```mermaid
   graph TD; 
     A-->B; 
