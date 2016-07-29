@@ -5,8 +5,7 @@
 2.编译对应的“书”（以i1987为例）
   ![](/assets/1BB70990-DED6-4E9D-8BF8-665ACDA90D2E.png)
 3.此时，插件`gitbook-plugin-mermaid-2`安装完成，配置book.json
-
-
+```
 {
     "plugins": \["mermaid-2"\],
     "pluginsConfig": {
@@ -15,6 +14,7 @@
       }
     }
 }
+```
 
 4.编译
 
