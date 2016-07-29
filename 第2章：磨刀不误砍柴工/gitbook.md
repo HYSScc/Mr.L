@@ -19,7 +19,7 @@
 
 4. 使用插件
 
-  ```
+  ```Mermaid
   graph TD; 
     A-->B; 
     A-->C; 
