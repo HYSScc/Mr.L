@@ -17,17 +17,20 @@
 }
 ```
 
-4. 使用插件
-```
-    graph TD; 
-      A-->B; 
-      A-->C; 
-      B-->D; 
-      C-->D;
-```
+1. 使用插件
+
+1. ```
+   graph TD; 
+     A-->B; 
+     A-->C; 
+     B-->D; 
+     C-->D;
+  ```
+
 
 # 参考
-2. **How to use gitbook: **[https:\/\/breezetemple.gitbooks.io\/how-to-use-gitbook\/content\/installation\/index.html](https://breezetemple.gitbooks.io/how-to-use-gitbook/content/installation/index.html)
+
+1. **How to use gitbook: **[https:\/\/breezetemple.gitbooks.io\/how-to-use-gitbook\/content\/installation\/index.html](https://breezetemple.gitbooks.io/how-to-use-gitbook/content/installation/index.html)
 
 **利用 gitbook 与 webhook 做一个展示前端项目的平台: **[http:\/\/www.jianshu.com\/p\/2a1cf8891d5f](http://www.jianshu.com/p/2a1cf8891d5f)
 
