@@ -61,7 +61,7 @@ raml2wiki: https://github.com/jhitchcock/raml2wiki
 > 整个 RAML 文档可简单划分为“版本声明”、“API 元数据定义”、“公用属性定义”和“资 源方法定义”四部分构成
 
 | 元素 | 说明 | 示例 |
-|:------|:------:| ------:|
+|:---|:------:| ------:|
 | hello | hello  | hello  |
 | hello | hello | hello |
 | hello | hello | hello |
