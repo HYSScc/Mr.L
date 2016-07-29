@@ -62,7 +62,7 @@ raml2wiki: https://github.com/jhitchcock/raml2wiki
 
 |  |  |
 | :--- | :--- |
-|  |  |
+|  |  |  |  |
 |  |  |
 
 uriParameters:
