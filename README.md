@@ -12,7 +12,7 @@ graph TD;
   C-->D;
 ```
 
-```
+```mermaid-2
 graph TD;
   A-->B;
 ```
