@@ -29,7 +29,7 @@ raml2wiki: https://github.com/jhitchcock/raml2wiki
 
 介绍下 RAML: [https:\/\/testerhome.com\/topics\/4601](https://testerhome.com/topics/4601)
 
-**[使用RAML描述API文档信息的一些用法整理：](http://www.cnblogs.com/darrenji/p/5198524.html)**http:\/\/www.cnblogs.com\/darrenji\/p\/5198524.html
+[**使用RAML描述API文档信息的一些用法整理：**](http://www.cnblogs.com/darrenji/p/5198524.html)http:\/\/www.cnblogs.com\/darrenji\/p\/5198524.html
 
 ## 步骤：
 
@@ -179,7 +179,7 @@ documentation:
   > 
   > },
   > 
-  > "coordinate": {
+  > "coordinate": {--------------------------------------&gt;数组内部不是object类型，不能使用 \[ \]\(中括号\)
   > 
   > "type": "array",
   > 
