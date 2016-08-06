@@ -29,7 +29,7 @@ raml2wiki: https://github.com/jhitchcock/raml2wiki
 
 介绍下 RAML: [https:\/\/testerhome.com\/topics\/4601](https://testerhome.com/topics/4601)
 
-**[使用RAML描述API文档信息的一些用法整理：](http://www.cnblogs.com/darrenji/p/5198524.html)**http:\/\/www.cnblogs.com\/darrenji\/p\/5198524.html
+[**使用RAML描述API文档信息的一些用法整理：**](http://www.cnblogs.com/darrenji/p/5198524.html)http:\/\/www.cnblogs.com\/darrenji\/p\/5198524.html
 
 ## 步骤：
 
@@ -119,19 +119,19 @@ documentation:
   2. 答：
     "coordinate": {
 
-       "type": "array", 
+    "type": "array",
 
-       "required": false, 
+    "required": false,
 
-       "items": { 
+    "items": {
 
-          "type": "number"
+       "type": "number"
 
-        } 
+    }
 
     },
 
 
 
-2. 
+1. 
 
