@@ -114,25 +114,16 @@ documentation:
   答： 公用属性有“Schemas”，“securitySchemas”, "ressourceTypes", "traits"等；通过重用属性的方法使用公用属性。
 
 2. 如何写以下Json的schemas：
-  
-    ```
-        { "data": [ { "score": "397", "city": "深圳市", "coordinate": [ 114.066112, 22.548515 ], "_id": "5582614a2239c27051000002", "dev_img": "assets/img/intodunio.png", "name": "智能风扇", "description": "控制风扇的开关" }, { "score": "534", "city": "北京市", "coordinate": [ 116.331398, 39.897445 ], "_id": "56475c672239c23d5d0000c4", "dev_img": "/v1/avatars/56475c672239c23d5d0000c4", "name": "智能垃圾桶", "description": "通过红外检测到有人体靠近需要丢垃圾，则通过舵机控制垃圾桶盖自动打开，丢完垃圾后垃圾桶盖自动关闭。" }, { "score": "324", "city": "衡阳市", "coordinate": [ 112.652199, 27.235328 ], "_id": "55db39942239c2395800002a", "dev_img": "/v1/avatars/55db47b62239c23a58000049", "name": "衡山空气监测", "description": "衡山PM2.5监控" } ], "msg": "Request processed successfully.", "code": 200}
-    ```
+
+  ```
+      { "data": [ { "score": "397", "city": "深圳市", "coordinate": [ 114.066112, 22.548515 ], "_id": "5582614a2239c27051000002", "dev_img": "assets/img/intodunio.png", "name": "智能风扇", "description": "控制风扇的开关" }, { "score": "534", "city": "北京市", "coordinate": [ 116.331398, 39.897445 ], "_id": "56475c672239c23d5d0000c4", "dev_img": "/v1/avatars/56475c672239c23d5d0000c4", "name": "智能垃圾桶", "description": "通过红外检测到有人体靠近需要丢垃圾，则通过舵机控制垃圾桶盖自动打开，丢完垃圾后垃圾桶盖自动关闭。" }, { "score": "324", "city": "衡阳市", "coordinate": [ 112.652199, 27.235328 ], "_id": "55db39942239c2395800002a", "dev_img": "/v1/avatars/55db47b62239c23a58000049", "name": "衡山空气监测", "description": "衡山PM2.5监控" } ], "msg": "Request processed successfully.", "code": 200}
+  ```
 
   答：
-  "coordinate": {
-
-  "type": "array",
-
-  "required": false,
-
-  "items": {
-
-  "type": "number"
-
-  }
-
-  },
+  
+    ```
+    { "required": true, "$schema": "http://json-schema.org/draft-03/schema", "type": "object", "properties": { "code": { "type": "number", "required": true }, "msg": { "required": true, "type": "string" }, "data": { "required": false, "type": "array", "items": [ { "type": "object", "properties": { "score": { "required": false, "type": "string" }, "city": { "required": false, "type": "string" }, "coordinate": { "type": "array", "required": false, "items": { "type": "number" } }, "_id": { "required": false, "type": "string" }, "dev_img": { "required": false, "type": "string" }, "name": { "required": false, "type": "string" }, "description": { "required": false, "type": "string" } } } ] } }}
+    ```
 
 
 1. 
