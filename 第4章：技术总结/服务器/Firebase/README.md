@@ -1,5 +1,7 @@
 官网: https://firebase.google.com/
 
+国内类似： https://www.wilddog.com/
+
 实时Javascript开发框架Clouda、Meteor、Firebase对比: http://blog.csdn.net/justfrozen/article/details/12716669
 
 Github: https://github.com/firebase
