@@ -18,5 +18,6 @@ digitalocean：[https:\/\/www.digitalocean.com\/?refcode=b69ae7a69b66](https://w
 
 learncloud: [https:\/\/leancloud.cn\/](https://leancloud.cn/)
 
-野狗：https://www.wilddog.com/
+野狗：[https:\/\/www.wilddog.com\/](https://www.wilddog.com/)
 
+Firebase：https://firebase.google.com/
