@@ -10,9 +10,10 @@
 > 
 > * React Native App
 > 
+> * IOS&Android
 > * Swift & Go
 > 
-> * IOS&Android
+> *
 
 周一
 
