@@ -2,8 +2,9 @@
 
 > * RAML & Swagger
 > 
->   1. RAML: IntoRobot API 文档
->   2. 
+>   1. RAML: IntoRobot API 文档 2016-08-21完成
+>   2. Swagger：搭建起来
+>   3. API自动化测试
 > 
 > * ansible自动化运维
 > 
