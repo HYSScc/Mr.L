@@ -2,6 +2,9 @@
 
 > * RAML & Swagger
 > 
+>   1. RAML: IntoRobot API 文档
+>   2. 
+> 
 > * ansible自动化运维
 > 
 > * 自动化测试
@@ -16,8 +19,6 @@
 > \*
 
 ---
-
-
 
 周一
 
