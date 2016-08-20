@@ -4,16 +4,15 @@
 人生就像一本书，在空白的白纸上书写岁月篇章；
 ```
 
-  > * ansible自动化运维
-  > 
-  > * 自动化测试
-  > 
-  > * React Native App
-  > 
-  > * Swift
-  > 
-  > * IOS&Android
-
+> * ansible自动化运维
+> 
+> * 自动化测试
+> 
+> * React Native App
+> 
+> * Swift & Go
+> 
+> * IOS&Android
 
 周一
 
