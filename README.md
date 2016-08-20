@@ -1,8 +1,6 @@
 # 
 
-```asciidoc
 
-```
 
 > * RAML & Swagger
 > 
