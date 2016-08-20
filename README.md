@@ -10,7 +10,7 @@
 > 
 > * 自动化测试
 > 
-> * React Native App & JS & CSS HTML5
+> * React Native App & JS & CSS &DOM & HTML5
 > 
 > * IOS&Android
 > 
