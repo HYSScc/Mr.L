@@ -4,6 +4,13 @@
 人生就像一本书，在空白的白纸上书写岁月篇章；
 ```
 
+1. ansible自动化运维
+
+2. 自动化测试
+3. React Native App
+4. Swift
+5. IOS&Android
+
 周一
 
 > 
