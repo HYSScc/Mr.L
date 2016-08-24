@@ -12,7 +12,7 @@ LocalAPI：[https:\/\/github.com\/isaacloud\/local-api](https://github.com/isaac
 
 faker：[https:\/\/github.com\/marak\/Faker.js\/](https://github.com/marak/Faker.js/)
 
-RAML规范解读: [http:\/\/wenku.baidu.com\/link?url=CRBz9YUcStvGId76LyNQLFKEeDH9xrBiOjPKlo0J0TCAqZoycUa4C4uRjbJUFa3XkLoXFaS2H4GFvPYArstVkauAIAWuAG8ZYvIcS33pav7](http://wenku.baidu.com/link?url=CRBz9YUcStvGId76LyNQLFKEeDH9xrBiOjPKlo0J0TCAqZoycUa4C4uRjbJUFa3XkLoXFaS2H4GFvPYArstVkauAIAWuAG8ZYvIcS33pav7)
+[RAML规范解读](/assets/doc/RAML规范解读.pdf)
 
 ```
 RAML相关的工具和资源在哪里?
@@ -29,7 +29,7 @@ raml2wiki: https://github.com/jhitchcock/raml2wiki
 
 介绍下 RAML: [https:\/\/testerhome.com\/topics\/4601](https://testerhome.com/topics/4601)
 
-[**使用RAML描述API文档信息的一些用法整理：**](http://www.cnblogs.com/darrenji/p/5198524.html)http:\/\/www.cnblogs.com\/darrenji\/p\/5198524.html
+**[使用RAML描述API文档信息的一些用法整理：](http://www.cnblogs.com/darrenji/p/5198524.html)**http:\/\/www.cnblogs.com\/darrenji\/p\/5198524.html
 
 ## 步骤：
 
@@ -63,7 +63,7 @@ raml2wiki: https://github.com/jhitchcock/raml2wiki
 > 整个 RAML 文档可简单划分为“版本声明”、“API 元数据定义”、“公用属性定义”和“资 源方法定义”四部分构成
 
 | 元素 | 说明 | 示例 |
-| :--- | :--- | :--- |
+| --- | --- | --- |
 | hello | hello | hello |
 | hello | hello | hello |
 | hello | hello | hello |
