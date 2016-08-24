@@ -1,0 +1,3182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Ansible</title>
+<!-- 2016-03-30 Wed 14:44 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="robertzhouxh" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Ansible</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. ansible tutorial</a>
+<ul>
+<li><a href="#sec-1-1">1.1. Preface</a></li>
+<li><a href="#sec-1-2">1.2. Install</a></li>
+<li><a href="#sec-1-3">1.3. Prepare</a>
+<ul>
+<li><a href="#sec-1-3-1">1.3.1. SSH无密码登录的配置</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-4">1.4. Inventory</a></li>
+<li><a href="#sec-1-5">1.5. Pattern</a></li>
+<li><a href="#sec-1-6">1.6. Ad-hoc</a>
+<ul>
+<li><a href="#sec-1-6-1">1.6.1. 简介</a></li>
+<li><a href="#sec-1-6-2">1.6.2. Parallelism and Shell Commands</a></li>
+<li><a href="#sec-1-6-3">1.6.3. File Transfer</a></li>
+<li><a href="#sec-1-6-4">1.6.4. Managing Packages</a></li>
+<li><a href="#sec-1-6-5">1.6.5. Users and Groups</a></li>
+<li><a href="#sec-1-6-6">1.6.6. Deploying From Source Control</a></li>
+<li><a href="#sec-1-6-7">1.6.7. Managing Services</a></li>
+<li><a href="#sec-1-6-8">1.6.8. Time Limited Background Operations</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-7">1.7. Playbook</a>
+<ul>
+<li><a href="#sec-1-7-1">1.7.1. 你一定会问，啥是Playbook？</a></li>
+<li><a href="#sec-1-7-2">1.7.2. Playbook结构</a></li>
+<li><a href="#sec-1-7-3">1.7.3. 例子：只带有一个play的playbook文件test.yml：</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-8">1.8. Roles and include statements</a></li>
+<li><a href="#sec-1-9">1.9. Variables</a></li>
+<li><a href="#sec-1-10">1.10. Conditionals</a>
+<ul>
+<li><a href="#sec-1-10-1">1.10.1. setup这个模块，作用类似salt的grains，用于获取远程服务器的信息（以一个字典返回），该模块获取的结果又叫facts.</a></li>
+<li><a href="#sec-1-10-2">1.10.2. when语句</a></li>
+<li><a href="#sec-1-10-3">1.10.3. register</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-11">1.11. Loops</a></li>
+<li><a href="#sec-1-12">1.12. Tags</a></li>
+<li><a href="#sec-1-13">1.13. Error Handling In Playbooks</a></li>
+<li><a href="#sec-1-14">1.14. Prompts</a></li>
+<li><a href="#sec-1-15">1.15. Using Lookups</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2. 使用 ansible 部署主机</a>
+<ul>
+<li><a href="#sec-2-1">2.1. 先简单介绍一个 ansible 的一些重要概念。</a></li>
+<li><a href="#sec-2-2">2.2. Inventory</a></li>
+<li><a href="#sec-2-3">2.3. ad-hoc</a></li>
+<li><a href="#sec-2-4">2.4. modules</a></li>
+<li><a href="#sec-2-5">2.5. playbooks</a></li>
+<li><a href="#sec-2-6">2.6. Galaxy</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> ansible tutorial</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Preface</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+随着线上服务器数量的增加，靠ssh登录到远程服务器的方式管理已经力不从心， 还容易引入错误， 因此诞生了一下集中工具来实现自动化运帷
+</p>
+
+<ul class="org-ul">
+<li>puppet
+</li>
+<li>saltstack
+</li>
+<li>chef
+</li>
+<li>ansible
+</li>
+</ul>
+
+<p>
+Ansible 是一个比Puppet, Chef 更轻量的provision 工具，不需要启动daemon进程。
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Install</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>Ansible 服务器需求
+当前 Ansible 可以运行在安装了 Python2.6 的任何机器上（暂不支持 windows 机器做中心控制服务器），这包括 RedHat，Debian，CentOS,OS X,BSDS 等等。
+</li>
+<li>被管理服务器需求
+在被管理节点服务器上，需要安装 Python2.4 或更高的 Python 版本，如果在远程机器上运行的 Python 小于 Python2.5 的话，您将需要安装 python-simplejson。如果在远程机器的启用了 SELinux，你还需要安装 libselinux-python。
+</li>
+</ul>
+
+<p>
+Ansible 是 python(2.6+) 实现的并且通过 SSH 协议管理机器.
+</p>
+
+<p class="verse">
+sudo CFLAGS=-Qunused-arguments CPPFLAGS=-Qunused-arguments pip install ansible<br  />
+or<br  />
+brew install ansible<br  />
+or<br  />
+apt-get install ansible<br  />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Prepare</h3>
+<div class="outline-text-3" id="text-1-3">
+</div><div id="outline-container-sec-1-3-1" class="outline-4">
+<h4 id="sec-1-3-1"><span class="section-number-4">1.3.1</span> SSH无密码登录的配置</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<ul class="org-ul">
+<li>机器A想无密码登录其他N台机器，只需要在自己机器上生成一对公钥和密钥，然后把公钥给这N台机器. 这样，这N台机器，有了A的公钥，就可以解密A的数据包，跟A正常通信了, <b><b>A要保护好自己的私钥啊!!!</b></b>
+</li>
+<li>通常在一个集群中，我们会选择一台机器作为跳板机，需要在跳板机上生成一对公钥和密钥。一般的，我们也会把跳板板机作为整个集群的master，因此最好选一台内存比较大的机器作为跳板机。
+</li>
+</ul>
+
+<p>
+下面详细讲解如何配置从跳板机SSH无密码登录到所有机器（包括自己）。
+</p>
+
+<p>
+前提： 修改hosts文件
+假设有三台机器，192.168.1.131, 192.168.1.132, 192.168.1.133，hostname分别是master, slave01, slave02
+</p>
+
+<ol class="org-ol">
+<li>在master上生成一对公钥和密钥
+<p class="verse">
+dev@master:~$ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa<br  />
+</p>
+
+<p>
+这个命令会产生一个公钥(~/.ssh/id_rsa.pub)和密钥(~/.ssh/id_rsa)，
+-t dsa：表示使用密钥的加密类型，可以为'rsa'和'dsa'
+-P ''：表示不需要密码登录
+-f ~/.ssh/id_dsa：表示密钥存放的路径为${USER}/.ssh/id_dsa
+</p>
+</li>
+<li>将公钥拷贝到自己
+<p class="verse">
+dev@master:~$ cat ~/.ssh/id_dsa.pub &gt;&gt; ~/.ssh/authorized_keys<br  />
+# or<br  />
+ssh-copy-id -i ~/.ssh/id_rsa.pub localhost<br  />
+</p>
+</li>
+<li>将公钥拷贝到其他机器
+<p class="verse">
+dev@master:~$ scp <code>/.ssh/id_dsa.pub dev@slave01:</code><br  />
+dev@master:~$ ssh slave01<br  />
+dev@slave01:~$ mkdir .ssh<br  />
+dev@slave01:~$ cat id_dsa.pub &gt;&gt; .ssh/authorized_keys<br  />
+dev@slave01:~$ exit<br  />
+# or<br  />
+ssh-copy-id -i ~/.ssh/id_rsa.pub tim@slave01<br  />
+</p>
+</li>
+<li>设置.ssh目录和authorized_keys文件的权限
+  在被登录的每台机器上，执行如下命令：
+<p class="verse">
+chmod 755 .ssh<br  />
+chmod 600 ~/.ssh/authorized_keys<br  />
+</p>
+</li>
+<li>测试,在 master执行
+<p class="verse">
+dev@master:~$ ssh slave01<br  />
+第一次还是需要密码的，exit退出再试一次，就不需要密码了。<br  />
+如果登陆不上，试试先关闭所有机器的防火墙，例如Ubuntu的命令是：<br  />
+dev@slave01:~$ sudo ufw disable<br  />
+</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> Inventory</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+在安装好 Ansible 后，先通过使用 Ansible 在其它服务器上执行一条命令来确认 Ansible 服务器与其它服务器的连通性。在执行 Ansible 管理服务器前，需要要配置服务器信息。Ansible 使用文件来存储您要管理的服务器信息，这个文件在 Ansible 中叫清单文件，默认的清单文件存放在 /etc/ansible/hosts , 如果这个文件不存在，您可以新建该文件。当然您也可以在执行 Ansible 命令时执行清单文件的路径。清单文件的格式类似于 INI 文件: <code>/etc/ansible/hosts</code>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1-5" class="outline-3">
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> Pattern</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+意思就是与哪台主机进行交互
+</p>
+
+<p>
+<code>=ansible &lt;pattern_goes_here&gt; -m &lt;module_name&gt; -a &lt;arguments&gt;=</code>
+</p>
+
+<p>
+示例如下:
+ansible webservers -m service -a "name=httpd state=restarted"
+</p>
+
+<p>
+一个pattern通常关联到一系列组(主机的集合)
+–如上示例中,所有的主机均在 “webservers” 组中.
+</p>
+
+<p>
+不管怎么样,在使用Ansible前,我们需事先告诉Ansible哪台机器将被执行.
+能这样做的前提是需要预先定义唯一的 host names 或者 主机组.
+</p>
+
+<p>
+#+begin_verse
+</p>
+<ul class="org-ul">
+<li>如下的patterns等同于目标为仓库(inventory)中的所有机器: all
+</li>
+<li>如下patterns分别表示一个或多个groups.多组之间以冒号分隔表示**或**的关系.这意味着一个主机可以同时存在多个组:
+webservers
+webservers:dbservers
+</li>
+<li>你也可以排队一个特定组,如下实例中,所有执行命令的机器必须隶属 webservers 组但同时不在 phoenix组: webservers:!phoenix
+</li>
+<li>你也可以指定两个组的交集,如下实例表示,执行命令有机器需要同时隶属于 webservers 和 staging 组. webservers:&amp;staging
+</li>
+<li>你也可以组合更复杂的条件: webservers:dbservers:&amp;staging:!phoenix
+</li>
+</ul>
+
+<p>
+上面这个例子表示“‘webservers’ 和 ‘dbservers’ 两个组中隶属于 ‘staging’ 组并且不属于 ‘phoenix’ 组的机器才执行命令”
+</p>
+<ul class="org-ul">
+<li>你也可以使用变量如果你希望通过传参指定group,ansible-playbook通过 “-e” 参数可以实现,但这种用法不常用: webservers:!{{excluded}}:&amp;{{required}}
+</li>
+<li>你也可以不必严格定义groups,单个的host names, IPs , groups都支持通配符:
+*.example.com
+*.com
+</li>
+</ul>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-sec-1-6" class="outline-3">
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> Ad-hoc</h3>
+<div class="outline-text-3" id="text-1-6">
+</div><div id="outline-container-sec-1-6-1" class="outline-4">
+<h4 id="sec-1-6-1"><span class="section-number-4">1.6.1</span> 简介</h4>
+<div class="outline-text-4" id="text-1-6-1">
+<p>
+所谓 ad-hoc 命令是什么呢?
+这其实是一个概念性的名字,是相对于写 Ansible playbook 来说的.类似于在命令行敲入shell命令和 写shell scripts两者之间的关系)
+如果我们敲入一些命令去比较快的完成一些事情,而不需要将这些执行的命令特别保存下来, 这样的命令就叫做 ad-hoc 命令.
+</p>
+
+<p>
+Ansible提供两种方式去完成任务,一是 <code>ad-hoc</code> 命令,一是写 Ansible playbook.
+前者可以解决一些简单的任务, 后者解决较复杂的任务.
+一般而言,在学习了 playbooks 之后,你才能体会到 Ansible 真正的强大之处在哪里.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-6-2" class="outline-4">
+<h4 id="sec-1-6-2"><span class="section-number-4">1.6.2</span> Parallelism and Shell Commands</h4>
+<div class="outline-text-4" id="text-1-6-2">
+<p>
+这里我们要使用 Ansible 的命令行工具来重启 Atlanta 组中所有的 web 服务器,每次重启10个.
+</p>
+
+<p class="verse">
+<br  />
+&#xa0;- 我们先设置 SSH-agent,将私钥纳入其管理:<br  />
+&#xa0;&#xa0;&#xa0;$ ssh-agent bash<br  />
+&#xa0;&#xa0;&#xa0;$ ssh-add ~/.ssh/id_rsa<br  />
+<br  />
+&#xa0;&#xa0;&#xa0;如果不想使用 ssh-agent, 想通过密码验证的方式使用 SSH,可以在执行ansible命令时使用 &#x2013;ask-pass (-k)选项, 但这里建议使用 ssh-agent.<br  />
+<br  />
+&#xa0;- 现在执行如下命令,这个命令中,atlanta是一个组,这个组里面有很多服务器,<br  />
+&#xa0;&#xa0;&#xa0;”/sbin/reboot”命令会在atlanta组下的所有机器上执行.<br  />
+&#xa0;&#xa0;&#xa0;这里ssh-agent会fork出10个子进程(bash),以并行的方式执行reboot命令.<br  />
+<br  />
+&#xa0;&#xa0;&#xa0;如前所说“每次重启10个” 即是以这种方式实现:<br  />
+&#xa0;&#xa0;&#xa0;$ ansible atlanta -a "/sbin/reboot" -f 10<br  />
+<br  />
+&#xa0;&#xa0;&#xa0;在执行 /usr/bin/ansible 时,默认是以当前用户的身份去执行这个命令.<br  />
+&#xa0;&#xa0;&#xa0;如果想以指定的用户执行 /usr/bin/ansible, 请添加 “-u username”选项,如下:<br  />
+&#xa0;&#xa0;&#xa0;$ ansible atlanta -a "/usr/bin/foo" -u username<br  />
+&#xa0;- 如果想通过 sudo 去执行命令,如下:<br  />
+<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;$ ansible atlanta -a "/usr/bin/foo" -u username &#x2013;sudo [&#x2013;ask-sudo-pass]<br  />
+<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;如果你不是以 passwordless 的模式执行 sudo, 应加上 &#x2013;ask-sudo-pass (-K)选项,加上之后会提示你输入密码.<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;使用 passwordless 模式的 sudo, 更容易实现自动化, 但不要求一定要使用 passwordless sudo.<br  />
+<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;也可以通过``–sudo-user`` (-U)选项,使用 sudo 切换到其它用户身份,而不是 root(译者注:下面命令中好像写掉了–sudo):<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;$ ansible atlanta -a "/usr/bin/foo" -u username -U otheruser [&#x2013;ask-sudo-pass]<br  />
+&#xa0;- 使用 shell 模块的示例如下:<br  />
+&#xa0;&#xa0;&#xa0;$ ansible raleigh -m shell -a 'echo $TERM'<br  />
+&#xa0;&#xa0;&#xa0;使用 Ansible ad hoc 命令行接口时(与使用 Playbooks 的情况相反),尤其注意 shell 引号的规则. 比如在上面的例子中,如果使用双引号”echo $TERM”,会求出TERM变量在当前系统的值,而我们实际希望的是把这个命令传递 到其它机器执行.<br  />
+<br  />
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-6-3" class="outline-4">
+<h4 id="sec-1-6-3"><span class="section-number-4">1.6.3</span> File Transfer</h4>
+<div class="outline-text-4" id="text-1-6-3">
+<p class="verse">
+- 这是 /usr/bin/ansible 的另一种用法.Ansible 能够以并行的方式同时 SCP 大量的文件到多台机器. 命令如下:<br  />
+&#xa0;&#xa0;$ ansible atlanta -m copy -a "src=/etc/hosts dest=/tmp/hosts"<br  />
+&#xa0;&#xa0;若你使用 playbooks, 则可以利用 template 模块来做到更进一步的事情.(请参见 module 和 playbook 的文档)<br  />
+- 使用 file 模块可以做到修改文件的属主和权限,(在这里可替换为 copy 模块,是等效的):<br  />
+&#xa0;&#xa0;$ ansible webservers -m file -a "dest=/srv/foo/a.txt mode=600"<br  />
+&#xa0;&#xa0;$ ansible webservers -m file -a "dest=/srv/foo/b.txt mode=600 owner=mdehaan group=mdehaan"<br  />
+- 使用 file 模块也可以创建目录,与执行 mkdir -p 效果类似:<br  />
+&#xa0;&#xa0;$ ansible webservers -m file -a "dest=/path/to/c mode=755 owner=mdehaan group=mdehaan state=directory"<br  />
+- 删除目录(递归的删除)和删除文件:<br  />
+&#xa0;&#xa0;$ ansible webservers -m file -a "dest=/path/to/c state=absent"<b>*</b><br  />
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-6-4" class="outline-4">
+<h4 id="sec-1-6-4"><span class="section-number-4">1.6.4</span> Managing Packages</h4>
+<div class="outline-text-4" id="text-1-6-4">
+<p>
+Ansible 提供对 yum 和 apt 的支持.这里是关于 yum 的示例.
+</p>
+<ul class="org-ul">
+<li>确认一个软件包已经安装,但不去升级它: $ ansible webservers -m yum -a "name=acme state=present"
+</li>
+<li>确认一个软件包的安装版本: $ ansible webservers -m yum -a "name=acme-1.5 state=present"
+</li>
+<li>确认一个软件包还没有安装: $ ansible webservers -m yum -a "name=acme state=absent"
+</li>
+</ul>
+
+<p>
+对于不同平台的软件包管理工具,Ansible都有对应的模块.如果没有,你也可以使用 command 模块去安装软件.
+或者最好是来为那个软件包管理工具贡献一个相应的模块.请在 mailing list 中查看相关的信息和详情.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-6-5" class="outline-4">
+<h4 id="sec-1-6-5"><span class="section-number-4">1.6.5</span> Users and Groups</h4>
+<div class="outline-text-4" id="text-1-6-5">
+<p class="verse">
+使用 ‘user’ 模块可以方便的创建账户,删除账户,或是管理现有的账户:<br  />
+$ ansible all -m user -a "name=foo password=&lt;crypted password here&gt;"<br  />
+$ ansible all -m user -a "name=foo state=absent"<br  />
+更多可用的选项请参考 模块相关 ,包括对组和组成员关系的操作.<br  />
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-6-6" class="outline-4">
+<h4 id="sec-1-6-6"><span class="section-number-4">1.6.6</span> Deploying From Source Control</h4>
+<div class="outline-text-4" id="text-1-6-6">
+<p>
+直接使用 git 部署 webapp:
+</p>
+<p class="verse">
+$ ansible webservers -m git -a "repo=git://foo.example.org/repo.git dest=/srv/myapp version=HEAD"<br  />
+因为Ansible 模块可通知到 change handlers ,所以当源码被更新时,我们可以告知 Ansible 这个信息,并执行指定的任务,<br  />
+比如直接通过 git 部署 Perl/Python/PHP/Ruby, 部署完成后重启 apache.<br  />
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-6-7" class="outline-4">
+<h4 id="sec-1-6-7"><span class="section-number-4">1.6.7</span> Managing Services</h4>
+<div class="outline-text-4" id="text-1-6-7">
+<p class="verse">
+- 确认某个服务在所有的webservers上都已经启动: $ ansible webservers -m service -a "name=httpd state=started"<br  />
+- 或是在所有的webservers上重启某个服务(译者注:可能是确认已重启的状态?): $ ansible webservers -m service -a "name=httpd state=restarted"<br  />
+- 确认某个服务已经停止: $ ansible webservers -m service -a "name=httpd state=stopped"<br  />
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-6-8" class="outline-4">
+<h4 id="sec-1-6-8"><span class="section-number-4">1.6.8</span> Time Limited Background Operations</h4>
+<div class="outline-text-4" id="text-1-6-8">
+<p>
+需要长时间运行的命令可以放到后台去,在命令开始运行后我们也可以检查运行的状态.
+</p>
+
+<p class="verse">
+- 如果运行命令后,不想获取返回的信息, 可执行如下命令: $ ansible all -B 3600 -P 0 -a "/usr/bin/long_running_operation &#x2013;do-stuff"<br  />
+- 如果你确定要在命令运行后检查运行的状态,可以使用 async_status 模块.前面执行后台命令后会返回一个 job id, 将这个 id 传给 async_status 模块:<br  />
+&#xa0;&#xa0;$ ansible web1.example.com -m async_status -a "jid=488359678239.2844"<br  />
+- 获取状态的命令如下: $ ansible all -B 1800 -P 60 -a "/usr/bin/long_running_operation &#x2013;do-stuff"<br  />
+</p>
+
+
+<p>
+其中 -B 1800 表示最多运行30分钟, -P 60 表示每隔60秒获取一次状态信息.
+</p>
+
+<p>
+Polling 获取状态信息的操作会在后台工作任务启动之后开始.
+若你希望所有的工作任务快速启动, &#x2013;forks 这个选项的值 要设置得足够大,这是前面讲过的并发进程的个数.
+在运行指定的时间(由``-B``选项所指定)后,远程节点上的任务进程便会被终止.
+一般你只能在把需要长时间运行的命令或是软件升级这样的任务放到后台去执行.
+对于 copy 模块来说,即使按照前面的示例想放到后台执行文件传输,实际上并不会如你所愿.
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1-7" class="outline-3">
+<h3 id="sec-1-7"><span class="section-number-3">1.7</span> Playbook</h3>
+<div class="outline-text-3" id="text-1-7">
+</div><div id="outline-container-sec-1-7-1" class="outline-4">
+<h4 id="sec-1-7-1"><span class="section-number-4">1.7.1</span> 你一定会问，啥是Playbook？</h4>
+<div class="outline-text-4" id="text-1-7-1">
+<p>
+你想啊，部署一个东西的时候， 第一步干啥，第二步执行啥命令，第三步&#x2026;， 每次都这样手动搞是不是挺烦？ 烦就对了， 为了不烦，就得用Playbook这东东： 提前将每次都重复的事情写成式样书， 然后交给ansible-playbook命令去照着执行就可以了！
+Playbooks涵盖了配置(Configuration)以及流程(Orchestration)相关规格说明。
+<img src="file:///Users/robertzhouxh/Documents/playbook.png" alt="playbook.png" />
+</p>
+
+<p>
+ansible的playbook就如同salt的state，一个playbook就是一个YAML文件， 所以playbook文件一般都以.yml结尾，
+此外playbook和模板文件（template模块）还使用jinja2语法语法实现高级功能（后面逐一讲到），
+不光这里，jinja2 语法很多地方都会用到，比如python大部分web框架的模板系统，所以可以去单独学一下。
+一个playbook文件由一个或多个play组成， 每个play定义了在一个或多个远程主机上执行的一系列的task， 其中每个task一般就是调用一个ansible的模块，如调用copy模块复制文件到远程主机或调用shell模块执行命令。
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-7-2" class="outline-4">
+<h4 id="sec-1-7-2"><span class="section-number-4">1.7.2</span> Playbook结构</h4>
+<div class="outline-text-4" id="text-1-7-2">
+<ul class="org-ul">
+<li>Playbooks contain plays3;
+</li>
+<li>Plays contain tasks4;
+</li>
+<li>Tasks call modules;5
+</li>
+<li>at last, we have handlers6 which can be triggered to be executed after some actions.
+</li>
+</ul>
+
+
+<div class="figure">
+<p><img src="file:///Users/robertzhouxh/Documents/playbook-1.png" alt="playbook-1.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-1-7-3" class="outline-4">
+<h4 id="sec-1-7-3"><span class="section-number-4">1.7.3</span> 例子：只带有一个play的playbook文件test.yml：</h4>
+<div class="outline-text-4" id="text-1-7-3">
+<p>
+内容涵盖了要针对哪些hosts做操作， 定义了哪些变量， 以什么用户执行， tasks有哪些以及handlers有哪些
+</p>
+
+<p class="verse">
+&#x2014;                         #任何playbook文件(其实就是yaml文件)都要以这个开头<br  />
+- hosts: webservers         #对webservers主机组下的所有主机进行操作<br  />
+&#xa0;&#xa0;vars:                     #为该play定义两个变量<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;http_port: 80<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;max_clients: 200<br  />
+&#xa0;&#xa0;remote_user: sapser       #连接到远程主机的用户<br  />
+&#xa0;&#xa0;sudo: yes                 #以sudo模式运行该play<br  />
+&#xa0;&#xa0;sudo_user: root           #sudo到哪个用户，默认为root，如果sudo到该用户需要密码，则在执行ansible-playbook的时候指定-K选项来输入sudo密码<br  />
+&#xa0;&#xa0;tasks:                    #开始定义task<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;- name: ensure apache is at the latest version        #这既是每个task的说明也是每个task的名字<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;yum: pkg=httpd state=latest<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;tags:                                               #给该task打一个标签<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;- last_http<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;- name: write the apache config file<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;template: src=/srv/httpd.j2 dest=/etc/httpd.conf<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;notify:                                             #提供watch功能，这里当apache配置文件改变时，就调用handlers中名为"restart apache"的task来重启apache<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;- restart apache<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;- name: ensure apache is running<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;service: name=httpd state=started<br  />
+&#xa0;&#xa0;handlers:                                               #notify通知这里的task执行，谨记：定义在handlers下的task只有在notify触发的时候才会执行<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;- name: restart apache<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;service: name=httpd state=restarted<br  />
+</p>
+
+<p>
+执行该playbook文件：
+</p>
+
+<p class="verse">
+$ ansible-playbook test.yml<br  />
+</p>
+
+<p>
+就是这么简单，然后就是等待ansible去webservers组下的所有远程主机执行上面定义的tasks，
+输出也非常容易看懂，通过红黄绿三种颜色标明了不同的执行结果，红色表示有task执行失败，黄色表示改变了远程主机状态。
+</p>
+
+<ol class="org-ol">
+<li>playbook中的每个play首先要定义的就是该play要在哪些主机上执行，如上面示例的
+可以指定单个主机、单个组或以:分割的多个主机或组，具体见ansible学习之三：Host Patterns
+
+<p class="verse">
+&#x2014;<br  />
+- hosts: webservers<br  />
+</p>
+</li>
+
+<li>sudo: yes表示远程主机要以sudo权限执行tasks，不光可以对整个play生效，还可以针对单个task生效（remote_user指令也一样）:
+
+<p class="verse">
+&#x2014;<br  />
+- hosts: webservers<br  />
+&#xa0;&#xa0;remote_user: root<br  />
+&#xa0;&#xa0;tasks:<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;- shell: cmd<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;remote_user: user1<br  />
+<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;- service: name=nginx state=started<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;sudo: yes       #只sudo运行该task<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;sudo_user: user2     #sudo到user2用户，如果sudo需要密码记得为ansible-playbook命令提供"-K"选项<br  />
+</p>
+</li>
+
+<li>tasks
+
+<p>
+3.1 tasks 由一系列task组成，多个task按照顺序执行，默认所有匹配主机都执行完一个task后才会移动到下一个task执行.
+默认如果所有主机都执行某个task失败，则ansible会中断执行流程并打印错误消息，这里都是说的默认，也就是说这些行为都是可自定义的，以后会讲到这些主题。
+</p>
+
+<p>
+3.2 上面提到过一个task其实就是执行一个模块， ansible中的模块是幂等的(idempotent)，
+也就是说多次执行同一个task，只有在状态发生改变后才会真的去执行，通过下面的例子讲解：
+</p>
+
+<p class="verse">
+tasks:<br  />
+&#xa0;&#xa0;- name: make sure apache is running<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;service: name=httpd state=started<br  />
+</p>
+
+<p>
+该task用于保证apache服务器处于运行状态，如果我多次执行该task且apache一直处于运行状态的话，则该task其实什么都不会做。
+这样做的好处就是你可以随意执行你的playbook文件，不用担心改变远程主机上的内容(除非状态有变化必须要修改)。
+这里要特别提一下command和shell模块，这两个模块都是用于在远程主机上执行命令，每次调用这两个模块都会重新执行一遍命令，一般来说不会有什么影响，
+不过ansible也提供了creates参数来将这两个模块实现idempotent。
+</p>
+</li>
+
+<li>handlers
+
+<p>
+handlers是和notify指令搭配使用的, 作用是当一个task执行修改了远程主机状态时就通知(notify)一个handlers中的task执行，
+一般用在修改了远程服务的配置文件然后调用handlers中的对应task去重启该服务，例子如下:
+</p>
+
+<p class="verse">
+tasks:<br  />
+&#xa0;&#xa0;- name: template configuration file<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;template: src=template.j2 dest=/etc/foo.conf<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;notify:<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;- restart memcached<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;- restart apache<br  />
+handlers:<br  />
+&#xa0;&#xa0;- name: restart memcached<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;service:  name=memcached state=restarted<br  />
+&#xa0;&#xa0;- name: restart apache<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;service: name=apache state=restarted<br  />
+</p>
+
+<p>
+这里只有模板文件template.j2发生了变化，也就是真正修改了远程主机的/etc/foo.conf文件后，才会触发handlers中的两个task执行，其他情况handlers中的task都是不会运行的。
+</p>
+
+<p>
+如果一行太长可以分开多行写：
+</p>
+
+<p class="verse">
+tasks:<br  />
+&#xa0;&#xa0;- name: Copy ansible inventory file to client<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;copy: src=/etc/ansible/hosts dest=/etc/ansible/hosts<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;owner=root group=root mode=0644<br  />
+</p>
+</li>
+
+<li>ansible-playbook playbook.yml -f 10
+-f 10表示并行度， 即同样一份playbook，在目标机器集群中一次同时在多少台目标机上执行。
+如果想事先了解执行某个playbook会影响到哪些目标机，可以执行: ansible-playbook playbook.yml &#x2013;list-hosts
+ansible-playbook playbook.yml &#x2013;list-hosts
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1-8" class="outline-3">
+<h3 id="sec-1-8"><span class="section-number-3">1.8</span> Roles and include statements</h3>
+<div class="outline-text-3" id="text-1-8">
+<p>
+你可以将所有东西都放到一个playbook文件中，但是随着文件越来越大，你修改起来也越来越麻烦。
+这时候可以把一些play、task或handler放到其他文件中，然后通过include指令包含进来，这样做完全没问题，
+但是ansible还提供了一个更好的解决方法，也就是roles，下面分别讲解。
+</p>
+
+<p>
+playbook可以包含其他playbook文件、task文件和handler文件。
+</p>
+
+<ol class="org-ol">
+<li>包含task文件
+
+<p>
+如果有多个play都需要几个相同的task，在每个play中都写一遍这些task就太傻了，聪明做法是将这些task单独放到一个文件中，格式如下：
+</p>
+
+<p class="verse">
+&#x2014;<br  />
+# possibly saved as tasks/foo.yml<br  />
+- name: placeholder foo<br  />
+&#xa0;&#xa0;command: /bin/foo<br  />
+<br  />
+- name: placeholder bar<br  />
+&#xa0;&#xa0;command: /bin/bar<br  />
+</p>
+
+<p>
+然后在需要这些task的play中通过include包含上面的tasks/foo.yml：
+</p>
+
+<p class="verse">
+tasks:<br  />
+&#xa0;&#xa0;- include: tasks/foo.yml<br  />
+</p>
+
+<p>
+还可以向include传递变量，如你部署了多个wordpress实例，通过向相同的wordprss.yml文件传递不同的值来区分实例：
+</p>
+
+<p class="verse">
+tasks:<br  />
+&#xa0;&#xa0;- include: wordpress.yml user=timmy     #在foo.yml可以通过{{ user }}来使用这些变量<br  />
+&#xa0;&#xa0;- include: wordpress.yml user=alice<br  />
+&#xa0;&#xa0;- include: wordpress.yml user=bob<br  />
+</p>
+
+<p>
+如果使用ansible1.4及以上版本，include还可以写成字典格式：
+</p>
+<p class="verse">
+tasks:<br  />
+&#xa0;- { include: wordpress.yml, user: timmy, ssh_keys: [ 'keys/one.txt', 'keys/two.txt' ] }   #ssh_keys是一个列表<br  />
+</p>
+
+<p>
+从ansible1.0开始，还可以用如下格式向include传递变量：
+</p>
+<p class="verse">
+tasks:<br  />
+&#xa0;&#xa0;- include: wordpress.yml<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;vars:<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;remote_user: timmy<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;some_list_variable:<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;- alpha<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;- beta<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;- gamma<br  />
+</p>
+</li>
+
+<li>包含handler文件
+<p class="verse">
+&#x2014;<br  />
+# this might be in a file like handlers/handlers.yml<br  />
+- name: restart apache<br  />
+&#xa0;&#xa0;service: name=apache state=restarted<br  />
+</p>
+
+<p>
+在play末尾包含上面的handler文件：
+</p>
+<p class="verse">
+handlers:<br  />
+&#xa0;&#xa0;- include: handlers/handlers.yml<br  />
+</p>
+</li>
+
+<li>直接包含playbook文件
+
+<p class="verse">
+- name: this is a play at the top level of a file<br  />
+&#xa0;&#xa0;hosts: all<br  />
+&#xa0;&#xa0;remote_user: root<br  />
+&#xa0;&#xa0;tasks:<br  />
+&#xa0;&#xa0;- name: say hi<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;tags: foo<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;shell: echo "hi&#x2026;"<br  />
+<br  />
+- include: load_balancers.yml   #这些playbook文件中也至少定义了一个play<br  />
+- include: webservers.yml<br  />
+- include: dbservers.yml<br  />
+</p>
+</li>
+
+<li>Roles
+roles用来组织playbook结构，以多层目录和文件将playbook更好的组织在一起，一个经过roles组织的playbook结构如下：
+
+<p class="verse">
+site.yml<br  />
+webservers.yml<br  />
+fooservers.yml<br  />
+roles/<br  />
+&#xa0;&#xa0;&#xa0;common/    #下面的子目录都不是必须提供的，没有的目录会自动忽略，不会出现问题，所以你可以只有tasks/子目录也没问题<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;files/<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;templates/<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;tasks/<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;handlers/<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;vars/<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;meta/<br  />
+&#xa0;&#xa0;&#xa0;webservers/<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;files/<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;templates/<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;tasks/<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;handlers/<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;vars/<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;meta/<br  />
+</p>
+
+<p>
+然后在playbook文件中包含common和webservers这两个role：
+</p>
+<p class="verse">
+&#x2014;<br  />
+- hosts: user_group1<br  />
+&#xa0;&#xa0;roles:<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;- common<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;- webservers<br  />
+</p>
+
+<p>
+假如有一个play包含了一个叫"x"的role，则：
+</p>
+
+<p>
+/path/roles/x/tasks/main.yml中的tasks都将自动添加到该play中
+/path/roles/x/handlers/main.yml中的handlers都将添加到该play中
+/path/roles/x/vars/main.yml中的所有变量都将自动添加到该play中
+/path/roles/x/meta/main.yml中的所有role依赖关系都将自动添加到roles列表中
+/path/roles/x/defaults/main.yml中为一些默认变量值，具有最低优先权，在没有其他任何地方指定该变量的值时，才会用到默认变量值
+task中的copy模块和script模块会自动从/path/roles/x/files寻找文件，也就是根本不需要指定文件绝对路径或相对路径，如src=foo.txt则自动转换为/path/roles/x/files/foo.txt
+task中的template模块会自动从/path/roles/x/templates/中加载模板文件，无需指定绝对路径或相对路径
+</p>
+
+<p>
+通过include包含文件会自动从/path/roles/x/tasks/中加载文件，无需指定绝对路径或相对路径
+从ansible1.4开始可以在ansible.cfg配置文件中通过roles_path指令自定义roles的路径。
+如同include一样，也可以为role传递变量，格式如下：
+</p>
+
+<p class="verse">
+&#x2014;<br  />
+- hosts: webservers<br  />
+&#xa0;&#xa0;roles:<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;- common<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;- { role: foo_app_instance, dir: '/opt/a',  port: 5000 }     #在foo_app_instance这个role的task文件和模板文件中通过{{ dir }}和{{ port }}来使用变量<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;- { role: foo_app_instance, dir: '/opt/b',  port: 5001 }<br  />
+</p>
+
+<p>
+如果一个play中，既有tasks也有roles，那么roles会先于tasks执行，可以通过pre_tasks和post_tasks指令指定某些task先于或晚于roles执行：
+</p>
+<p class="verse">
+&#x2014;<br  />
+- hosts: webservers<br  />
+<br  />
+&#xa0;&#xa0;pre_tasks:<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;- shell: echo 'hello'      #最先执行<br  />
+<br  />
+&#xa0;&#xa0;roles:<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;- { role: some_role }      #第二个执行<br  />
+<br  />
+&#xa0;&#xa0;tasks:<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;- shell: echo 'still busy'<br  />
+<br  />
+&#xa0;&#xa0;post_tasks:<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;- shell: echo 'goodbye'     #最后执行<br  />
+</p>
+
+<ol class="org-ol">
+<li>role依赖
+</li>
+</ol>
+<p>
+可以在一个role的meta/main.yml中定义该role依赖其他的role，然后调用该role的时候，会自动去拉取其他依赖的role.
+如一个名为myapp的role的meta/main.yml文件如下：
+</p>
+
+<p class="verse">
+&#x2014;<br  />
+dependencies:<br  />
+&#xa0;&#xa0;- { role: common, some_parameter: 3 }    #向依赖的role传递变量<br  />
+&#xa0;&#xa0;- { role: apache, port: 80 }<br  />
+&#xa0;&#xa0;- { role: postgres, dbname: blarg, other_parameter: 12 }<br  />
+</p>
+
+<p>
+那么这些role的执行顺序为：
+</p>
+
+<p>
+common
+apache
+postgres
+</p>
+
+<p>
+myapp #会先把myapp依赖的其他所有role执行完再执行自己
+默认一个role只能被其他role依赖一次，多次依赖不会执行，但是可以通过allow_duplicates指令来改变这种行为：
+</p>
+
+<p>
+名为car的role的meta/main.yml：
+</p>
+
+<p class="verse">
+&#x2014;<br  />
+dependencies:<br  />
+&#xa0;&#xa0;- { role: wheel, n: 1 }<br  />
+&#xa0;&#xa0;- { role: wheel, n: 2 }<br  />
+&#xa0;&#xa0;- { role: wheel, n: 3 }<br  />
+&#xa0;&#xa0;- { role: wheel, n: 4 }<br  />
+</p>
+
+<p>
+名为wheel的role的meta/main.yml：
+</p>
+<p class="verse">
+&#x2014;<br  />
+allow_duplicates: yes<br  />
+dependencies:<br  />
+&#xa0;&#xa0;- { role: tire }<br  />
+&#xa0;&#xa0;- { role: brake }<br  />
+</p>
+
+<p>
+执行顺序如下：
+</p>
+
+<p>
+tire(n=1)
+brake(n=1)
+wheel(n=1)
+tire(n=2)
+brake(n=2)
+wheel(n=2)
+&#x2026;
+</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1-9" class="outline-3">
+<h3 id="sec-1-9"><span class="section-number-3">1.9</span> Variables</h3>
+<div class="outline-text-3" id="text-1-9">
+<p>
+其实ansible中变量的用法在其他几篇文章中已经全部讲过了，总结一下：
+</p>
+
+<p>
+hosts文件中定义变量，请看Inventory这篇文章
+group_vars和host_vars目录下变量文件使用，也在Inventory
+</p>
+
+<p>
+vars_files指令导入外部变量文件，在Conditionals中讲过
+setup模块收集的目标主机信息，在Conditionals中讲解
+</p>
+
+<p>
+register指令注册的变量，该指令两种不同用法在Conditionals和Loops中分别讲解
+</p>
+
+<p>
+还有jinja2过滤器和ansible独有的过滤器可以对变量进行某些处理
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1-10" class="outline-3">
+<h3 id="sec-1-10"><span class="section-number-3">1.10</span> Conditionals</h3>
+<div class="outline-text-3" id="text-1-10">
+<p>
+这节讲如何控制playbook的执行流，记得前面说过playbook和模板文件中可以使用jinja2语法么，这节就会大量用到了。
+</p>
+</div>
+
+<div id="outline-container-sec-1-10-1" class="outline-4">
+<h4 id="sec-1-10-1"><span class="section-number-4">1.10.1</span> setup这个模块，作用类似salt的grains，用于获取远程服务器的信息（以一个字典返回），该模块获取的结果又叫facts.</h4>
+<div class="outline-text-4" id="text-1-10-1">
+<p>
+===&gt; 这些获取到的信息在template模块定义的模板文件和playbook文件中可以直接使用.
+</p>
+
+<p class="verse">
+$ ansible 127.0.0.1 -m setup<br  />
+127.0.0.1 | success &gt;&gt; {<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;"ansible_facts": {<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"ansible_all_ipv4_addresses": [<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"192.168.1.5"<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;],<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"ansible_all_ipv6_addresses": [<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"fe80::a00:27ff:fead:a141"<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;],<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"ansible_architecture": "i386",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"ansible_bios_date": "12/01/2006",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"ansible_bios_version": "VirtualBox",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"ansible_cmdline": {<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"KEYBOARDTYPE": "pc",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"KEYTABLE": "us",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"LANG": "en_US.UTF-8",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"SYSFONT": "latarcyrheb-sun16",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"quiet": true,<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"rd_NO_DM": true,<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"rd_NO_LUKS": true,<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"rd_NO_LVM": true,<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"rd_NO_MD": true,<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"rhgb": true,<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"ro": true,<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"root": "UUID=ebfa916e-fc91-4f0e-bb2d-7f7c4e48aeca"<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;},<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#x2026;<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"ansible_userspace_architecture": "i386",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"ansible_userspace_bits": "32",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"ansible_virtualization_role": "guest",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"ansible_virtualization_type": "virtualbox",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"module_setup": true<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;},<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;"changed": false<br  />
+}<br  />
+</p>
+
+<p>
+在模板文件中通过{{ var }}来使用这些获取到的信息，假如我有一个模板文件os.j2：
+</p>
+
+<p class="verse">
+<br  />
+{% if ansible_distribution == "FreeBSD" %}<br  />
+FreeBSD<br  />
+{% elif ansible_distribution == "CentOS" %}<br  />
+CentOS<br  />
+{% endif %}<br  />
+<br  />
+hostname: {{ ansible_hostname }}<br  />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1-10-2" class="outline-4">
+<h4 id="sec-1-10-2"><span class="section-number-4">1.10.2</span> when语句</h4>
+<div class="outline-text-4" id="text-1-10-2">
+<p>
+when语句的作用是只有匹配指定条件，才执行task，when后面使用jinja2的表达方式
+</p>
+
+<p>
+例子：只关闭操作系统为Debian的服务器
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-yaml">- hosts: all
+  tasks:
+    - name: "shutdown Debian flavored systems"
+      command: /sbin/shutdown -t now          #只有Debian系统才会执行该command
+      when: ansible_os_family == "Debian"     #这里ansible_os_family变量就是通过setup模块获取的
+</pre>
+</div>
+
+
+<p>
+jiaja2模板的过滤器也可以使用，ansible也提供了一些自己的过滤器：
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">tasks:
+  - name: test
+    shell: ps aux|grep nginx|grep -v grep|wc -l
+    register: cmd_result
+    failed_when: cmd_result.stdout|int == 0       #使用jinja2的"int"过滤器
+
+  - command: /bin/false
+    register: result
+    ignore_errors: True          #忽略该task的错误
+  - command: /bin/something
+    when: result|failed          #通过结果判断上一个task如果执行失败，则执行该task
+  - command: /bin/something_else
+    when: result|success         #通过结果判断上一个task如果执行成功，则执行该task
+  - command: /bin/still/something_else
+    when: result|skipped
+</pre>
+</div>
+
+
+<p>
+自定义变量：
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">vars:
+  epic: true
+tasks:
+  - shell: echo "I've got '{{ epic }}' and am not afraid to use it!"
+    when: epic is defined          #变量已定义
+
+  - fail: msg="Bailing out: this play requires 'epic'"
+    when: epic is not defined          #变量未定义
+
+  - shell: echo "This certainly is epic!"
+    when: epic          #变量值为真
+
+  - shell: echo "This certainly isn't epic!"
+    when: not epic          #变量值为假
+</pre>
+</div>
+
+
+<p>
+当when用于循环中时，是对列表中的每一项都进行检查：
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">tasks:
+    - command: echo {{ item }}
+      with_items: [ 0, 2, 4, 6, 8, 10 ]
+      when: item &gt; 5
+</pre>
+</div>
+
+
+<p>
+在roles和include中使用when指令，when不能用在包含一个playbook文件上，且当包含一个task文件时，会对task文件中的每个task都会使用一次when判断：
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">- hosts: all
+  tasks:
+    - include: tasks/sometasks.yml
+      when: "'reticulating splines' in output"
+  roles:
+     - { role: debian_stock_config, when: ansible_os_family == 'Debian' }          #首先判断远程主机是否是Debian，是的话才会导入这个role
+</pre>
+</div>
+<p>
+当执行这个play的时候，输出中可能会出现很多的skipped，这些就是经过when的条件判断不符合，跳过执行的输出。
+</p>
+
+
+<p>
+条件导入：
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+- hosts: all
+  remote_user: root
+  vars_files:     #用于导入变量文件
+    - [ "vars/{{ ansible_os_family }}.yml", "vars/os_defaults.yml" ]
+  tasks:
+  - name: make sure apache is running
+    service: name={{ apache }} state=running
+</pre>
+</div>
+<p>
+根据不同的系统导入不同变量文件，
+如果是CentOS系统则首先导入vars/CentOS.yml文件（Debian系统则会首先导入vars/Debian.yml），
+如果该文件不存在则导入vars/os_defaults.yml文件，
+如果两个文件都不存在则生成一个错误，
+</p>
+
+
+<p>
+vars/CentOS.yml文件内容如下：
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+# for vars/CentOS.yml
+apache: httpd
+somethingelse: 42
+</pre>
+</div>
+
+
+<p>
+基于变量选择文件或模板：
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">- name: template a file
+  template: src={{ item }} dest=/etc/myapp/foo.conf
+  with_first_found:
+    - files:
+       - {{ ansible_distribution }}.conf   #CentOS系统会使用CentOS.conf文件，Debian系统会使用Debian.conf文件
+       - default.conf
+      paths:
+       - search_location_one/somedir/
+       - /opt/other_location/somedir/
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1-10-3" class="outline-4">
+<h4 id="sec-1-10-3"><span class="section-number-4">1.10.3</span> register</h4>
+<div class="outline-text-4" id="text-1-10-3">
+<p>
+register用于注册一个变量，保存命令的结果(shell或command模块)，
+这个变量可以在后面的task、when语句或模板文件中使用，
+该指令用在循环中会有不同，请看ansible学习之八：Loops中关于register的讲解
+</p>
+
+<ul class="org-ul">
+<li>shell: /bin/pwd
+register: pwd_result
+</li>
+</ul>
+
+
+<p>
+此时变量pwd_result的结果为：
+{
+    u'changed': True,
+    u'end': u'2014-02-23 12:02:51.982893',
+    u'cmd': [u'/bin/pwd'],
+    u'start': u'2014-02-23 12:02:51.980191',
+    u'delta': u'0:00:00.002702',
+    u'stderr': u'',
+    u'rc': 0,           #这个就是命令返回状态，非0表示执行失败
+    'invocation': {'module_name': 'command', 'module_args': '/bin/pwd'},
+    u'stdout': u'/home/sapser',    #以一个字符串保存命令结果
+    'stdout_lines': [u'/home/sapser']     #以列表保存命令结果
+}
+</p>
+
+
+<p>
+在随后的task中使用该变量：
+</p>
+<ul class="org-ul">
+<li>debug: msg="{{pwd_result}}"
+when: pwd_result.rc == 0
+</li>
+</ul>
+
+
+<p>
+循环处理命令结果：
+</p>
+<ul class="org-ul">
+<li>name: registered variable usage as a with_items list
+hosts: all
+tasks:
+<ul class="org-ul">
+<li>name: retrieve the list of home directories
+command: ls /home
+register: home_dirs
+</li>
+
+<li>name: add home dirs to the backup spooler
+file: path=/mnt/bkspool/{{ item }} src=/home/{{ item }} state=link
+with_items: home_dirs.stdout_lines       #等同于with_items: home_dirs.stdout.split()
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1-11" class="outline-3">
+<h3 id="sec-1-11"><span class="section-number-3">1.11</span> Loops</h3>
+<div class="outline-text-3" id="text-1-11">
+<p>
+当遇到一些重复的任务，比如通过yum模块安装多个包，为每个包写一个**task**就太无聊了，可以在playbook中使用循环来解决这类问题。
+</p>
+
+<ol class="org-ol">
+<li>with_items
+ 标准循环，最常用到的就是它，with_items可以用于迭代一个列表或字典，通过{{ item }}获取每次迭代的值，如通过一条task创建多个用户：
+
+<div class="org-src-container">
+
+<pre class="src src-yaml">- name: add several users
+  user: name={{ item }} state=present groups=wheel               #创建user1、user2、user3三个用户
+  with_items:                                                    #这里还可以直接写成with_items: ['user1', 'user2', 'user3']
+     - user1
+     - user2
+     - user3
+</pre>
+</div>
+
+<p>
+迭代一个简单字典：
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">- name: add several users
+  user: name={{ item.name }} state=present groups={{ item.groups }}
+  with_items:
+    - { name: 'user1', groups: 'wheel' }
+    - { name: 'user2', groups: 'root' }
+</pre>
+</div>
+</li>
+
+<li>with_nested 嵌套循环
+
+<div class="org-src-container">
+
+<pre class="src src-yaml">- name: give users access to multiple databases
+  mysql_user: name={{ item[0] }} priv={{ item[1] }}.*:ALL append_privs=yes password=foo
+  with_nested:
+    - [ 'alice', 'bob', 'eve' ]
+    - ['clientdb', 'employeedb', 'providerdb']
+</pre>
+</div>
+
+<p>
+上面例子不容易看懂，我们通过debug模块写另一个例子测试：
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+- hosts: 127.0.0.1
+  gather_facts: no
+  tasks:
+    - debug: msg="{{ item[0] }} - {{ item[1] }}"
+      with_nested:
+        - ['alice', 'bob']
+        - ['clientdb', 'employeedb', 'providerdb']
+</pre>
+</div>
+<p>
+执行：
+</p>
+
+<p class="verse">
+$ ansible-playbook test.yml<br  />
+<br  />
+PLAY [127.0.0.1] <b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b>**</b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b><br  />
+<br  />
+TASK: [debug msg="{{item<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup>}} - {{item<sup><a id="fnr.2" name="fnr.2" class="footref" href="#fn.2">2</a></sup>}}"] <b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b>*</b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b><br  />
+ok: [127.0.0.1] =&gt; (item=['alice', 'clientdb']) =&gt; {<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;"item": [         #每次循环item变量是一个双元素列表<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"alice",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"clientdb"<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;],<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;"msg": "alice - clientdb"<br  />
+}<br  />
+ok: [127.0.0.1] =&gt; (item=['alice', 'employeedb']) =&gt; {<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;"item": [<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"alice",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"employeedb"<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;],<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;"msg": "alice - employeedb"<br  />
+}<br  />
+ok: [127.0.0.1] =&gt; (item=['alice', 'providerdb']) =&gt; {<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;"item": [<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"alice",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"providerdb"<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;],<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;"msg": "alice - providerdb"<br  />
+}<br  />
+ok: [127.0.0.1] =&gt; (item=['bob', 'clientdb']) =&gt; {<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;"item": [<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"bob",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"clientdb"<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;],<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;"msg": "bob - clientdb"<br  />
+}<br  />
+ok: [127.0.0.1] =&gt; (item=['bob', 'employeedb']) =&gt; {<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;"item": [<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"bob",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"employeedb"<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;],<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;"msg": "bob - employeedb"<br  />
+}<br  />
+ok: [127.0.0.1] =&gt; (item=['bob', 'providerdb']) =&gt; {<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;"item": [<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"bob",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"providerdb"<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;],<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;"msg": "bob - providerdb"<br  />
+}<br  />
+<br  />
+PLAY RECAP <b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b>**</b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b><br  />
+127.0.0.1                  : ok=1    changed=0    unreachable=0    failed=0<br  />
+</p>
+
+<p>
+所以最开始例子其实相当于两个for循环：
+</p>
+
+<p>
+for user in [ 'alice', 'bob', 'eve' ]:
+    for db in ['clientdb', 'employeedb', 'providerdb']:
+        mysql_user: name=user priv=db.*:ALL append_privs=yes password=foo
+</p>
+</li>
+
+<li>with_dict 迭代字典，接受一个字典类型的值，{{ item.key }}是字典的键，{{ item.value }}是字典的值，字典值还可以是一个子字典
+
+<p>
+在变量文件定义一个复杂的字典变量：
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+users:
+  alice:
+    name: Alice Appleworth
+    telephone: 123-456-7890
+  bob:
+    name: Bob Bananarama
+    telephone: 987-654-3210
+</pre>
+</div>
+
+<p>
+playbook文件test.yml内容：
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+- hosts: 127.0.0.1
+  gather_facts: no
+  tasks:
+    - name: Print phone records
+      debug: msg="User {{ item.key }} is {{ item.value.name }} ({{ item.value.telephone }})"
+      with_dict: users
+</pre>
+</div>
+
+<p>
+执行：
+</p>
+<p class="verse">
+$ ansible-playbook test.yml<br  />
+TASK: [Print phone records] <b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b>*</b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b><br  />
+ok: [127.0.0.1] =&gt; (item={'value': {'name': 'Bob Bananarama', 'telephone': '987-654-3210'}, 'key': 'bob'}) =&gt; {<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;"item": {<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"key": "bob",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"value": {<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"name": "Bob Bananarama",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"telephone": "987-654-3210"<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;}<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;},<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;"msg": "User bob is Bob Bananarama (987-654-3210)"<br  />
+}<br  />
+ok: [127.0.0.1] =&gt; (item={'value': {'name': 'Alice Appleworth', 'telephone': '123-456-7890'}, 'key': 'alice'}) =&gt; {<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;"item": {<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"key": "alice",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"value": {<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"name": "Alice Appleworth",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"telephone": "123-456-7890"<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;}<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;},<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;"msg": "User alice is Alice Appleworth (123-456-7890)"<br  />
+}<br  />
+</p>
+</li>
+
+<li>with_fileglob
+
+<p>
+匹配指定目录下的所有文件(非递归)，或指定目录下和pattern匹配的文件
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+- hosts: all
+  tasks:
+    - name: first ensure our target directory exists
+      file: dest=/etc/fooapp state=directory
+
+    - name: copy each file over that matches the given pattern
+      copy: src={{ item }} dest=/etc/fooapp/ owner=root mode=600
+      with_fileglob:
+        - /playbooks/files/fooapp/*          #这里如果是"*.py"，就只会复制该目录下所有py文件
+</pre>
+</div>
+</li>
+
+<li>with_subelements
+
+<p>
+迭代子元素
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+- hosts: 127.0.0.1
+  gather_facts: no
+  vars:
+    users:      #定义一个字典变量
+      - name: alice
+        authorized:    #列表
+          - /tmp/alice/onekey.pub
+          - /tmp/alice/twokey.pub
+      - name: bob
+        authorized:
+          - /tmp/bob/id_rsa.pub
+  tasks:
+    - debug: msg="{{ item.0.name }} - {{ item.1 }}"
+      with_nested:
+        - users
+        - authorized
+</pre>
+</div>
+<p>
+执行：
+</p>
+
+<p>
+$ ansible-playbook test.yml
+</p>
+
+<p>
+PLAY [127.0.0.1] <b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b>**</b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b>
+</p>
+
+<p>
+TASK: [debug msg="{{item.0.name}} - {{item.1}}"] <b><b><b><b><b><b><b><b><b><b><b><b><b><b>**</b></b></b></b></b></b></b></b></b></b></b></b></b></b>
+ok: [127.0.0.1] =&gt; (item=[{'name': 'alice', 'authorized': ['/tmp/alice/onekey.pub', '/tmp/alice/twokey.pub']}, 'authorized']) =&gt; {
+    "item": [                                                  #每次迭代item变量的结构
+        {
+            "authorized": [
+                "/tmp/alice/onekey.pub",
+                "/tmp/alice/twokey.pub"
+            ],
+            "name": "alice"
+        },
+        "authorized"
+    ],
+    "msg": "alice - authorized"
+}
+ok: [127.0.0.1] =&gt; (item=[{'name': 'bob', 'authorized': ['/tmp/bob/id_rsa.pub']}, 'authorized']) =&gt; {
+    "item": [
+        {
+            "authorized": [
+                "/tmp/bob/id_rsa.pub"
+            ],
+            "name": "bob"
+        },
+        "authorized"
+    ],
+    "msg": "bob - authorized"
+}
+</p>
+
+<p>
+PLAY RECAP <b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b>**</b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b>
+127.0.0.1                  : ok=1    changed=0    unreachable=0    failed=0
+</p>
+</li>
+
+<li>with_sequence
+
+<p>
+按照升序生成一个数字序列，可以指定开始(start)、结束(stop)和步长(stride)
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+- hosts: all
+  tasks:
+    - user: name={{ item }} state=present groups=evens
+      with_sequence: start=1 end=32 format=testuser%02d          #创建用户testuser01、testuser02、...、testuser32
+
+    - file: dest=/var/stuff/{{ item }} state=directory
+      with_sequence: start=0 end=20 stride=5               #stride表示步长step，也就是间隔
+
+    # a simpler way to use the sequence plugin create 4 groups
+    - group: name=group{{ item }} state=present
+      with_sequence: count=4
+</pre>
+</div>
+</li>
+
+<li>with_random_choice
+
+<p>
+从列表中随机选择一项
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">- debug: msg={{ item }}
+  with_random_choice:               #每次都随机选择一项
+     - "go through the door"
+     - "drink from the goblet"
+     - "press the red button"
+     - "do nothing"
+</pre>
+</div>
+</li>
+
+<li>until
+
+<p>
+不停重试，直到某些条件完成
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">- shell: /usr/bin/foo
+  register: result          #保存命令结果，和until搭配使用时，result还有个attempts属性，表示当前重试次数
+  until: result.stdout.find("all systems go") != -1
+  retries: 5
+  delay: 10
+</pre>
+</div>
+<p>
+不停重新执行命令，直到命令输出中出现"all systems go"，或者重试次数达到5次间隔10秒，默认重试3次间隔5秒
+</p>
+</li>
+
+<li>with_first_found
+
+<p>
+查找并返回列表中第一个存在的文件
+</p>
+
+<p>
+简略版：
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">- name: INTERFACES | Create Ansible header for /etc/network/interfaces
+  template: src={{ item }} dest=/etc/foo.conf
+  with_first_found:          #第一个文件不存在，就去找第二个文件
+    - "{{ansible_virtualization_type}_foo.conf"
+    - "default_foo.conf"
+</pre>
+</div>
+
+<p>
+高级版：
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">- name: some configuration template
+  template: src={{ item }} dest=/etc/file.cfg mode=0444 owner=root group=root
+  with_first_found:
+    - files:
+       - "{{inventory_hostname}}/etc/file.cfg"
+      paths:
+       - ../../../templates.overwrites
+       - ../../../templates
+    - files:
+        - etc/file.cfg
+      paths:
+        - templates
+</pre>
+</div>
+</li>
+
+<li>with_lines
+
+<p>
+通过之前学过的with_items也能达到同样的效果
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+- hosts: "192.168.12.238"
+  tasks:
+  - shell: /bin/echo -e "111\n222\n333"
+    register: results
+  - debug:  msg="stdout - {{ item }}"
+    with_items: results.stdout_lines
+</pre>
+</div>
+</li>
+
+<li>with_indexed_items
+
+<p>
+迭代一个列表，获取每一项的索引和值，{{ item.0 }}是索引，{{ item.1 }}是值
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">- name: indexed loop demo
+  debug: msg="at array position {{ item.0 }} there is a value {{ item.1 }}"
+  with_indexed_items: ['a', 'b', 'c']
+</pre>
+</div>
+</li>
+
+<li>with_flattened
+
+<p>
+展开嵌套列表并循环，如[1, [2, <sup><a id="fnr.3" name="fnr.3" class="footref" href="#fn.3">3</a></sup>]]展开为[1, 2, 3]并循环这个列表
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+- hosts: "192.168.12.238"
+  vars:
+    packages_base:
+      - ['foo-package', 'bar-package']
+    packages_apps:
+      - [['one-package', 'two-package']]
+      - [['red-package'], ['blue-package']]
+  tasks:
+    - name: indexed loop demo
+      debug: msg="value - {{ item }}"
+      with_flattened:
+        - packages_base
+        - packages_apps
+</pre>
+</div>
+</li>
+
+<li>register
+
+<p>
+注册一个标量，用来保存命令task的输出。在循环中使用register，数据结构会变得不同，
+注册变量会包含一个results属性，该属性的值是一个列表，包含该模块本次循环的所有响应数据：
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-yaml">- shell: echo "{{ item }}"
+  with_items:
+    - one
+    - two
+  register: echo
+</pre>
+</div>
+
+<p class="verse">
+此时echo变量的内容为：<br  />
+{<br  />
+&#xa0;&#xa0;"results": [<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;{<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"stdout": "one",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"stderr": "",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"start": "2013-12-19 12:00:05.184043",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"rc": 0,<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"item": "one",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"invocation": {<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"module_name": "shell",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"module_args": "echo \"one\""<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;},<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"end": "2013-12-19 12:00:05.187153",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"delta": "0:00:00.003110",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"cmd": "echo \"one\" ",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"changed": true<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;},<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;{<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"stdout": "two",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"stderr": "",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"start": "2013-12-19 12:00:05.242582",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"rc": 0,<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"item": "two",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"invocation": {<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"module_name": "shell",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"module_args": "echo \"two\""<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;},<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"end": "2013-12-19 12:00:05.245502",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"delta": "0:00:00.002920",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"cmd": "echo \"two\" ",<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;"changed": true<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;}<br  />
+&#xa0;&#xa0;],<br  />
+&#xa0;&#xa0;"msg": "All items completed",<br  />
+&#xa0;&#xa0;"changed": true<br  />
+}<br  />
+</p>
+
+<p>
+在随后一个task中迭代echo.results这个列表：
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">- name: Fail if return code is not 0
+  debug: msg="The command ({{ item.cmd }}) did not have a 0 return code"
+  when: item.rc != 0
+  with_items: echo.results
+</pre>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1-12" class="outline-3">
+<h3 id="sec-1-12"><span class="section-number-3">1.12</span> Tags</h3>
+<div class="outline-text-3" id="text-1-12">
+<p>
+ansible中可以对play、role、include、task打一个tag(标签)，然后：
+</p>
+
+<p>
+当命令ansible-playbook有-t参数时，只会执行-t指定的tag
+当命令ansible-playbook有&#x2013;skip-tags参数时，则除了&#x2013;skip-tags指定的tag外，执行其他所有
+基本应用
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+- hosts: 192.168.0.105
+  tags:
+    - one              #为一个play打tag
+  tasks:
+    - name: exec ifconfig
+      command: /sbin/ifconfig
+      tags:
+        - exec_ifconfig             #为一个task打tag
+</pre>
+</div>
+
+<p>
+对include语句打tag
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+- hosts: 192.168.0.105
+  gather_facts: no
+  tasks:
+    - include: foo.yml
+      tags:      #方式一
+        - one
+    - include: bar.yml tags=two    #方式二
+</pre>
+</div>
+
+
+<p>
+上面两种打tag的方式都可以，此时：
+</p>
+
+<p>
+ansible-playbook test.yml          #执行foo.yml和bar.yml
+ansible-playbook test.yml -t one   #只执行foo.yml
+ansible-playbook test.yml -t two   #只执行bar.yml
+</p>
+
+<p>
+同一对象可以打多个tag
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+- hosts: 192.168.0.105
+  gather_facts: no
+  tasks:
+    - include: foo.yml tags=one,two
+    - include: bar.yml tags=two
+</pre>
+</div>
+
+<p>
+可以对同一对象打多个tag，只要-t指定了其中一个tag，就会执行该对象：
+ansible-playbook test.yml          #执行foo.yml和bar.yml
+ansible-playbook test.yml -t one          #只执行foo.yml
+ansible-playbook test.yml -t two          #因为两个include都有two这个标签，所以foo.yml和bar.yml都会执行
+</p>
+
+<p>
+对roles打tag
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+- hosts: 192.168.0.105
+  gather_facts: no
+  roles:
+    - {role: foo, tags: one}
+    - {role: bar, tags: [one,two]}          #同时对bar打两个tag
+</pre>
+</div>
+<p>
+则：
+</p>
+
+<p>
+ansible-playbook test.yml          #执行foo和bar两个role
+ansible-playbook test.yml -t two   #只执行bar
+ansible-playbook test.yml -t one   #两个role都有one标签，所以foo和bar都会执行
+</p>
+
+<p>
+可以对多个对象打同一个tag
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+- hosts: 192.168.0.105
+  gather_facts: no
+  tasks:
+    - name: exec ifconfig
+      command: /sbin/ifconfig
+      tags:
+        - exec_cmd
+
+    - name: exec ls
+      command: /bin/ls
+      tags:
+        - exec_cmd
+
+    - name: debug_test one
+      debug: msg="test1"
+      tags:
+        - debug_test
+
+    - name: debug_test two
+      debug: msg="test2"
+      tags:
+        - debug_test
+</pre>
+</div>
+
+<p>
+如上面，可以把执行command模块的task都打上exec_cmd标签，则：
+ansible-playbook test1.yml          #执行所有tasks
+ansible-playbook test1.yml -t exec_cmd          #只执行tag为exec_cmd的tasks
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1-13" class="outline-3">
+<h3 id="sec-1-13"><span class="section-number-3">1.13</span> Error Handling In Playbooks</h3>
+<div class="outline-text-3" id="text-1-13">
+<p>
+ansible默认会检查命令和模块的返回状态，并进行相应的错误处理，通常遇到错误就中断playbook的执行，这些默认行为都是可以改变的。
+</p>
+
+<p>
+忽略错误：
+command和shell模块执行的命令如果返回非零状态码则ansible判定这两个模块执行失败，
+可以通过ignore_errors: yes忽略返回状态码。
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">- name: this will not be counted as a failure
+  command: /bin/false
+  ignore_errors: yes
+</pre>
+</div>
+
+<p>
+不依靠返回状态码，而是自定义错误判定条件
+这个例子中，命令不依赖返回状态码来判定是否执行失败，而是要查看命令返回内容是否有FAILED字符串，如果包含此字符串则判定命令执行失败。
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">- name: this command prints FAILED when it fails
+  command: /usr/bin/example-command -x -y -z
+  register: command_result
+  failed_when: "'FAILED' in command_result.stderr"
+</pre>
+</div>
+
+<p>
+实际中的应用：
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+- hosts: 192.168.0.105
+  gather_facts: no
+  sudo: yes
+  sudo_user: coc
+  tasks:
+    - shell: ps -U coc|grep _coc_game|wc -l        #计算指定进程数，如果有三个进程则为启动成功
+      register: cmd_result
+      failed_when: "'3' not in cmd_result.stdout"      #如果进程数量不为3，则表示启动失败
+      #failed_when: cmd_result.stdout != 3             #经过测试，用jinja2语法写也是可以的
+</pre>
+</div>
+
+
+<p>
+ansible会自动判断模块执行状态，command、shell及其他模块如果修改了远程主机状态则被判定为changed状态，不过可以自己决定达到changed状态的条件
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">tasks:
+  - shell: /usr/bin/billybass --mode="take me to the river"
+    register: bass_result
+    changed_when: "bass_result.rc != 2"    #命令返回状态码不为2，则为changed状态
+
+  # this will never report 'changed' status
+  - shell: wall 'beep'
+    changed_when: False      #永远也不会达到changed状态
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1-14" class="outline-3">
+<h3 id="sec-1-14"><span class="section-number-3">1.14</span> Prompts</h3>
+<div class="outline-text-3" id="text-1-14">
+<p>
+用在执行playbook的过程中，提示用户输入，并接收用户的输入
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+- hosts: 127.0.0.1
+  vars_prompt:
+    name: "what is your name?"
+    quest: "what is your quest?"
+    favcolor: "what is your favorite color?"
+  tasks:
+    - debug: msg="name - {{name}}   quest - {{quest}}    favcolor - {{favcolor}}"
+</pre>
+</div>
+
+<p>
+执行：
+</p>
+
+<p>
+$ ansible-playbook prompt.yml
+what is your favorite color?: : red                #注意问题提示的顺序是反过来的
+what is your quest?: : ansible
+what is your name?: : sapser
+</p>
+
+<p>
+PLAY [127.0.0.1] <b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b>**</b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b>
+</p>
+
+<p>
+TASK: [debug msg="name - sapser   quest - ansible    favcolor - red"] <b><b><b><b>*</b></b></b></b>
+ok: [127.0.0.1] =&gt; {
+    "msg": "name - sapser   quest - ansible    favcolor - red"
+}
+</p>
+
+<p>
+PLAY RECAP <b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b>**</b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b>
+127.0.0.1                  : ok=2    changed=0    unreachable=0    failed=0
+</p>
+
+
+<p>
+设置默认值
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+- hosts: 127.0.0.1
+  gather_facts: no
+  vars_prompt:
+    - name: "release_version"          #变量名
+      prompt: "product release version"          #提示
+      default: "1.0"          #默认值
+  tasks:
+    - debug: msg="release_version - {{release_version}}"
+</pre>
+</div>
+<p>
+执行：
+</p>
+
+<p>
+$ ansible-playbook prompt.yml
+product release version [1.0]: 1.2
+</p>
+
+<p>
+PLAY [127.0.0.1] <b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b>**</b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b>
+</p>
+
+<p>
+TASK: [debug msg="release_version - 1.2"] <b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b>*</b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b>
+ok: [127.0.0.1] =&gt; {
+    "msg": "release_version - 1.2"
+}
+</p>
+
+<p>
+PLAY RECAP <b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b>**</b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b>
+127.0.0.1                  : ok=1    changed=0    unreachable=0    failed=0
+</p>
+
+
+<p>
+用户输入不可见
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+- hosts: 127.0.0.1
+  gather_facts: no
+  vars_prompt:
+    - name: "release_version"
+      prompt: "product release version"
+      default: "1.0"
+      private: no
+    - name: "passwd"
+      prompt: "Enter password"
+      private: yes
+  tasks:
+    - debug: msg="release_version - {{release_version}}      passwd - {{passwd}}"
+</pre>
+</div>
+<p>
+执行：
+</p>
+
+<p>
+$ ansible-playbook prompt.yml
+product release version [1.0]: 2.5
+Enter password:
+</p>
+
+<p>
+PLAY [127.0.0.1] <b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b>**</b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b>
+</p>
+
+<p>
+TASK: [debug msg="release_version - 2.5      passwd - sdjflskdfjsd"] <b><b><b><b>**</b></b></b></b>
+ok: [127.0.0.1] =&gt; {
+    "msg": "release_version - 2.5      passwd - sdjflskdfjsd"
+}
+</p>
+
+<p>
+PLAY RECAP <b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b>**</b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b>
+127.0.0.1                  : ok=1    changed=0    unreachable=0    failed=0
+</p>
+
+
+<p>
+加密用户的输入，需要python第三方模块Passlib
+</p>
+
+<p>
+vars_prompt:
+</p>
+<ul class="org-ul">
+<li>name: "my_password2"
+prompt: "Enter password2"
+private: yes
+encrypt: "md5_crypt"
+confirm: yes
+salt_size: 7
+</li>
+</ul>
+
+<p>
+Passlib支持多种加密方式：
+des_crypt - DES Crypt
+bsdi_crypt - BSDi Crypt
+bigcrypt - BigCrypt
+crypt16 - Crypt16
+md5_crypt - MD5 Crypt
+bcrypt - BCrypt
+sha1_crypt - SHA-1 Crypt
+sun_md5_crypt - Sun MD5 Crypt
+sha256_crypt - SHA-256 Crypt
+sha512_crypt - SHA-512 Crypt
+apr_md5_crypt - Apache’s MD5-Crypt variant
+phpass - PHPass’ Portable Hash
+pbkdf2_digest - Generic PBKDF2 Hashes
+cta_pbkdf2_versea1 - Cryptacular’s PBKDF2 hash
+dlitz_pbkdf2_versea1 - Dwayne Litzenberger’s PBKDF2 hash
+scram - SCRAM Hash
+bsd_nthash - FreeBSD’s MCF-compatible nthash encoding
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1-15" class="outline-3">
+<h3 id="sec-1-15"><span class="section-number-3">1.15</span> Using Lookups</h3>
+<div class="outline-text-3" id="text-1-15">
+<p>
+在playbooks中可以使用一个名为lookup()的函数，该函数用于ansible从外部资源访问数据，
+根据第一个参数的不同，该函数具有不同的功能，典型的就是读取外部文件内容。
+注意lookup()只在本地执行，而不是在远程主机上执行。
+</p>
+
+<p>
+第一个参数为file，表示获取外部文件内容
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">- hosts: all
+  vars:
+     contents: "{{ lookup('file', '/etc/foo.txt') }}"      #将值保存到变量中，参数都要引号引起来，不然出错
+  tasks:
+     - debug: msg="the value of foo.txt is {{ contents }}"
+
+     - debug: msg="the value of foo.txt is {{ lookup('file', '/etc/foo.txt') }}"      #直接使用
+</pre>
+</div>
+
+<p>
+第一个参数为password，表示生成一个随机明文密码，并存储到指定文件中，生成的密码包括大小写字母、数字和.,:-_，默认密码长度为20个字符，该长度可以通过传递一个额外参数length=&lt;length&gt;修改
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+- hosts: 127.0.0.1
+  gather_facts: no
+  tasks:
+    - debug: msg="password - {{ lookup('password', '/tmp/random_pass.txt length=10') }}"
+</pre>
+</div>
+<p>
+测试：
+</p>
+
+<p>
+$ ansible-playbook test.yml
+</p>
+
+<p>
+PLAY [127.0.0.1] <b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b>**</b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b>
+</p>
+
+<p>
+TASK: [debug msg="password - ejL.Ho_.mb"] <b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b>*</b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b>
+ok: [127.0.0.1] =&gt; {
+    "msg": "password - ejL.Ho_.mb"
+}
+</p>
+
+<p>
+PLAY RECAP <b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b>**</b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b>
+127.0.0.1                  : ok=1    changed=0    unreachable=0    failed=0
+</p>
+
+<p>
+$ cat /tmp/random_pass.txt
+ejL.Ho_.mb
+如果用来保存密码的文件已经存在，则不会往里写入任何数据，且会读取文件已有内容作为密码，如果文件存在且为空，则返回一个空字符串作为密码。
+</p>
+
+<p>
+除了length=&lt;length&gt;外，从ansible1.4开始还加入了chars=&lt;chars&gt;参数，用于自定义生成密码的字符集，而不是默认的大小写字母、数字和.,:-_
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+- hosts: 127.0.0.1
+  gather_facts: no
+  tasks:
+    #create a random password using only ascii letters:
+    - debug: msg="password - {{ lookup('password', '/tmp/passfile1 chars=ascii_letters') }}"
+
+    #create a random password using only digits:
+    - debug: msg="password - {{ lookup('password', '/tmp/passfile2 chars=digits') }}"
+
+    #create a random password using many different char sets:
+    - debug: msg="password - {{ lookup('password', '/tmp/passfile3 chars=ascii_letters,digits,hexdigits,punctuation,,') }}"   #逗号本身用",,"表示
+</pre>
+</div>
+
+<p>
+测试：
+</p>
+<p class="verse">
+$ ansible-playbook test.yml<br  />
+<br  />
+PLAY [127.0.0.1] <b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b>**</b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b><br  />
+<br  />
+TASK: [debug msg="password - funEtMBYbqWTUdPlfIGC"] <b><b><b><b><b><b><b><b><b><b><b><b><b>*</b></b></b></b></b></b></b></b></b></b></b></b></b><br  />
+ok: [127.0.0.1] =&gt; {<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;"msg": "password - funEtMBYbqWTUdPlfIGC"<br  />
+}<br  />
+<br  />
+TASK: [debug msg="password - 79223199493177921267"] <b><b><b><b><b><b><b><b><b><b><b><b><b>*</b></b></b></b></b></b></b></b></b></b></b></b></b><br  />
+ok: [127.0.0.1] =&gt; {<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;"msg": "password - 79223199493177921267"<br  />
+}<br  />
+<br  />
+TASK: [debug msg="password - 0,92YO4R0m6iqg2=4RA8"] <b><b><b><b><b><b><b><b><b><b><b><b><b>*</b></b></b></b></b></b></b></b></b></b></b></b></b><br  />
+ok: [127.0.0.1] =&gt; {<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;"msg": "password - 0,92YO4R0m6iqg2=4RA8"<br  />
+}<br  />
+<br  />
+PLAY RECAP <b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b><b>**</b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b><br  />
+127.0.0.1                  : ok=3    changed=0    unreachable=0    failed=0<br  />
+</p>
+
+<p>
+其他类型
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+- hosts: all
+  tasks:
+
+     - debug: msg="{{ lookup('env','HOME') }} is an environment variable"
+
+     - debug: msg="{{ lookup('pipe','date') }} is the raw result of running this command"
+
+     - debug: msg="{{ lookup('redis_kv', 'redis://localhost:6379,somekey') }} is value in Redis for somekey"
+
+     - debug: msg="{{ lookup('dnstxt', 'example.com') }} is a DNS TXT record for example.com"
+
+     - debug: msg="{{ lookup('template', './some_template.j2') }} is a value from evaluation of this template"
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> 使用 ansible 部署主机</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> 先简单介绍一个 ansible 的一些重要概念。</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+要在远程主机中做部署，首先需要的就是主机地址和需要执行的任务.
+在 ansible 中，主机相关的信息称为 inventory ，任务称为 task。
+</p>
+
+<p>
+ansible 提供了两种任务方法：
+</p>
+<ol class="org-ol">
+<li>一种是简单的在命令行里单行执行，可以用来做一些临时的、简单的任务，称为 ad-hoc。
+</li>
+<li>另一种方法是可以将任务拆分，定义为许多的子任务，然后我们可以组合任意的子任务来构建复杂的大任务，这里的子任务就称为 role，构建大任务的方法就称为 playbooks。
+</li>
+</ol>
+
+
+
+<div class="figure">
+<p><img src="file:///Users/robertzhouxh/Documents/ansible-1.jpg" alt="ansible-1.jpg" />
+</p>
+</div>
+
+
+<p>
+以及官方给出的最佳实践文件结构
+</p>
+<p class="verse">
+production                # inventory file for production servers<br  />
+staging                   # inventory file for staging environment<br  />
+<br  />
+group_vars/<br  />
+&#xa0;&#xa0;&#xa0;group1                 # here we assign variables to particular groups<br  />
+&#xa0;&#xa0;&#xa0;group2                 # ""<br  />
+host_vars/<br  />
+&#xa0;&#xa0;&#xa0;hostname1              # if systems need specific variables, put them here<br  />
+&#xa0;&#xa0;&#xa0;hostname2              # ""<br  />
+<br  />
+library/                  # if any custom modules, put them here (optional)<br  />
+filter_plugins/           # if any custom filter plugins, put them here (optional)<br  />
+<br  />
+site.yml                  # master playbook<br  />
+webservers.yml            # playbook for webserver tier<br  />
+dbservers.yml             # playbook for dbserver tier<br  />
+<br  />
+roles/<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;common/               # this hierarchy represents a "role"<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;tasks/            #<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;main.yml      #  &lt;&#x2013; tasks file can include smaller files if warranted<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;handlers/         #<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;main.yml      #  &lt;&#x2013; handlers file<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;templates/        #  &lt;&#x2013; files for use with the template resource<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;ntp.conf.j2   #  &lt;-&#x2014;&#x2014; templates end in .j2<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;files/            #<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;bar.txt       #  &lt;&#x2013; files for use with the copy resource<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;foo.sh        #  &lt;&#x2013; script files for use with the script resource<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;vars/             #<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;main.yml      #  &lt;&#x2013; variables associated with this role<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;defaults/         #<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;main.yml      #  &lt;&#x2013; default lower priority variables for this role<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;meta/             #<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;main.yml      #  &lt;&#x2013; role dependencies<br  />
+<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;webtier/              # same kind of structure as "common" was above, done for the webtier role<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;monitoring/           # ""<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;fooapp/               # ""<br  />
+</p>
+
+<p>
+下面不会面面俱到的介绍每一个细节，而只会介绍一些常用部分，应该足以满足大部分工作的需求
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Inventory</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+inventory 一般就是目录下的 hosts 文件。
+</p>
+
+<p>
+在 inventory 中，我们可以定义如下信息：
+</p>
+
+<p>
+主机地址
+主机分组
+连接属性（登录名、密码、秘钥、端口等）
+</p>
+
+<ol class="org-ol">
+<li>主机地址和分组
+定义主机地址和名称比较简单：
+
+<p>
+[&lt;主机名&gt;]
+&lt;主机 IP&gt;
+定义分组的语法类似，就是在名字后加上 :children，成员可以是主机名，也可以是分组名：
+</p>
+
+<p>
+[&lt;分组名&gt;:children]
+&lt;主机名&gt;
+&lt;分组名&gt;
+</p>
+</li>
+
+<li>连接属性
+可以针对 SSH 连接指定一些参数：
+
+<p>
+ansible_ssh_host：主机名。
+ansible_ssh_port：SSH 端口，默认 22 。
+ansible_ssh_user：登录用户。
+ansible_ssh_pass：登陆密码。
+ansible_ssh_private_key_file：私钥。
+通过私钥登陆的话，就不要指定登录密码了，主机名也可以忽略。当然，既然是使用私钥登陆，你需要确保已经在各个主机的 authorized_keys 里添加了对应的公钥。
+</p>
+</li>
+
+<li>Demo
+
+<p>
+完整的 inventory 例子如下：
+</p>
+
+<p class="verse">
+# &#x2013;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;<br  />
+# 首先定义各个主机<br  />
+# &#x2013;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;<br  />
+[sidious]<br  />
+10.1.1.1<br  />
+<br  />
+[vader]<br  />
+10.1.1.2<br  />
+<br  />
+[yoda]<br  />
+10.1.1.3<br  />
+<br  />
+[windu]<br  />
+10.1.1.4<br  />
+<br  />
+# &#x2013;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;<br  />
+# 定义分组<br  />
+#<br  />
+# 在这里我们定义了三个分组，分别名为：<br  />
+#   - dark<br  />
+#   - light<br  />
+#   - starwar<br  />
+# &#x2013;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;<br  />
+[dark:children]<br  />
+sidious<br  />
+vader<br  />
+<br  />
+[light:children]<br  />
+yoda<br  />
+windu<br  />
+<br  />
+[starwar:children]<br  />
+dark<br  />
+light<br  />
+<br  />
+# &#x2013;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;<br  />
+# 给分组定义变量<br  />
+#<br  />
+# 这里我们给 starwar 组定义了变量<br  />
+# &#x2013;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;<br  />
+[starwar:vars]<br  />
+ansible_ssh_port=7525<br  />
+ansible_ssh_user=lucas<br  />
+ansible_ssh_private_key_file=./files/id_rsa<br  />
+</p>
+</li>
+
+<li>group_vars
+上面讲到我们可以在 inventory 里将主机划分为不同的组，还可以给各个主机或分组定义变量。
+不过 inventory 文件主要用来定义主机，为了方便组织文件，设置变量最好放到专门的文件中进行设置。
+为此 ansible 提供了 group_vars 文件夹，你可以在该文件夹里建立相应的文件，名字和服务器或服务器组名相同，然后在文件内为指定的服务器（组）设定变量。
+
+<p class="verse">
+group_vars<br  />
+&#xa0;&#xa0;├── vader    # 给 vader 设置变量<br  />
+&#xa0;&#xa0;├── light    # 给 light 组设置变量<br  />
+&#xa0;&#xa0;├── dark     # 给 dark 组设置变量<br  />
+&#xa0;&#xa0;└── starwar  # 给 starwar 组设置变量<br  />
+</p>
+</li>
+</ol>
+
+
+<p>
+文件内按照 yaml 语法设定任意你需要的变量即可，如：
+</p>
+<p class="verse">
+# group_vars/starwar<br  />
+<br  />
+&#x2014;<br  />
+system_os: ubuntu<br  />
+os_version: 12.04<br  />
+<br  />
+</p>
+
+<ol class="org-ol">
+<li>ssh.config
+
+<p>
+就像 openssh 可以配置 ~/.ssh/config 一样，ansible 同样提供了类似的设置。
+你可以创建 ssh.config 文件，语法和 openssh 的 config 文件完全一致：
+</p>
+<p class="verse">
+# ssh.config<br  />
+Host sidious<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;HostName 10.1.1.1<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;User lucas<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;Port 1977<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;Compression yes<br  />
+<br  />
+Host vader<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;HostName 10.1.1.2<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;User lucas<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;Port 1977<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;Compression yes<br  />
+<br  />
+然后你就可以直接在 inventory 里配置别名了：<br  />
+[sidious]<br  />
+sidious<br  />
+<br  />
+[vader]<br  />
+vader<br  />
+<br  />
+在生产环境中，我们往往不能直接连接到线上服务器，而是需要经过跳板机来中转。你可以通过在 ssh.config 中配置跳板机来让 ansible 也能通过跳板机在目标服务器上部署：<br  />
+# ssh.config<br  />
+Host vader<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;Hostname 10.1.1.2<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;User lucas<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;Port 1977<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;ProxyCommand ssh -qaY -p jump_port jump_user@jump_addr 'nc -w 14400 %h %p'<br  />
+<br  />
+填上你自己的跳板机的端口、用户和地址，然后就可以直接的连上目标服务器了。<br  />
+</p>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> ad-hoc</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+用来简单的在命令行运行 ansible，我们来检验一下 inventory 配置的是否正确：
+</p>
+
+<p class="verse">
+➜  ansible git:(master) ansible starwar -i hosts -m shell -a 'echo hello'<br  />
+<br  />
+10.1.1.1 | success | rc=0 &gt;&gt;<br  />
+hello<br  />
+<br  />
+10.1.1.2 | success | rc=0 &gt;&gt;<br  />
+hello<br  />
+<br  />
+10.1.1.3 | success | rc=0 &gt;&gt;<br  />
+hello<br  />
+<br  />
+10.1.1.4 | success | rc=0 &gt;&gt;<br  />
+hello<br  />
+</p>
+
+<p>
+上面的 ad-hoc 语句由四个部分组成：
+</p>
+
+<p>
+执行的 主机/分组 名：starwar。
+指定 inventory: -i hosts。
+指定模块：-m shell。
+指定模块运行的命令：-a 'echo hello'。
+除了上述参数外，ad-hoc 还有一些常用参数：
+</p>
+
+<p>
+-k：询问用户密码。
+-K：询问 sudo 密码。
+&#x2013;become-method=BECOME_METHOD：以某方法执行，可选 sudo | su | pbrun | pfexec | runas。
+&#x2013;become-user=BECOME_USER：以某用户执行。
+-s：以 sudo 执行命令。
+完整的参数可以查看 ansible &#x2013;help。
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-4" class="outline-3">
+<h3 id="sec-2-4"><span class="section-number-3">2.4</span> modules</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+上面讲 ad-hoc 的例子时提到了模块，模块是 ansible 提供的一系列方便的功能组件，让你可以通过简单地几个参数实现复杂的功能，上面用到的就是 shell 模块提供的命令行功能。
+常用的一些模块有：
+</p>
+
+<ul class="org-ul">
+<li>lineinfile：在文件中检索、插入行。
+</li>
+<li>git：git 相关的操作。
+</li>
+<li>yum：yum 相关的操作。
+</li>
+<li>apt：apt 相关的操作。
+</li>
+<li>copy：拷贝文件。
+</li>
+<li>shell：命令行相关的操作。
+</li>
+</ul>
+
+<p>
+完整的模块介绍和具体的参数可以查看模块文档，文档中有非常详细的参数介绍和代码示例
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2-5" class="outline-3">
+<h3 id="sec-2-5"><span class="section-number-3">2.5</span> playbooks</h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+playbooks 堪称是 ansible 最强大的地方所在，可以一举让你从重复繁琐的部署工作中解脱出来。
+而 playbook 的精髓就在于 role，通过对任务的仔细拆分，建议以功能单元为单位拆分出数个 role，
+每个 role 由一系列的具体 task 语句组成，这样就可以在之后的工作中方便的组合出复杂的任务集合。
+结构大概如下图
+</p>
+
+
+<div class="figure">
+<p><img src="file:///Users/robertzhouxh/Documents/ansible-2.jpg" alt="ansible-2.jpg" />
+</p>
+</div>
+
+<p>
+在 playbook 中我们只需要简单的引入所需要的 role 就行了：
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+# startup.yml
+
+- name: setup centos
+  hosts: starwar
+  user: lucas
+
+  roles:
+    - centos
+    - python
+</pre>
+</div>
+
+<p>
+ansible 的 playbooks 和 roles 都是用 yaml 格式写成，不熟悉的话你可以在这个在线编辑网站上熟悉一下。
+</p>
+
+<ol class="org-ol">
+<li>hosts
+
+<p>
+hosts 项填写该 playbooks 要应用到的主机，也就是之前 inventory 里定义的个个主机（或分组）。
+</p>
+
+<p>
+值得介绍的是这里的 hosts 是支持各种匹配模式的：
+</p>
+
+<p>
+指定名：hosts: dark;
+合集：hosts: dark:light;
+在 dark 中但是不在 light 里：hosts: dark:!light;
+交集：hosts: dark:&amp;light；
+可以随意拼接：hosts: windu:yoda:!dark。
+</p>
+</li>
+
+<li>roles
+
+<p>
+roles 存放在 ./roles 里，每一个 role 都是一个单独的文件夹，文件夹的名字就是 role 的名字，形如：
+</p>
+</li>
+</ol>
+
+<p class="verse">
+# 这里定义了两个 roles<br  />
+#  - centos<br  />
+#  - python<br  />
+<br  />
+├── roles<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;├── centos<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;└── python<br  />
+role 由 tasks 组成，从文件结构上来说，一般的 role 由 tasks 和 files 组成，形如：<br  />
+<br  />
+# tasks 里存放该 role 的 tasks 语句<br  />
+# files 中存放一些 task 会用到的文件<br  />
+<br  />
+centos<br  />
+├── files<br  />
+│   ├── bashrc<br  />
+│   ├── git-complete.sh<br  />
+│   └── vimrc<br  />
+└── tasks<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;├── packages.yml<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;├── main.yml<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;└── tools.yml<br  />
+<br  />
+</p>
+
+<ol class="org-ol">
+<li>tasks
+tasks 里必须包含一个 main.yml 文件，里面可以直接写 task 语句，也可以拆的更细，然后在 mail 里引入。
+
+<p>
+我是习惯就在 main.yml 里写 include：
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+# roles/centos/tasks/main.yml
+
+- include: packages.yml
+- include: tools.yml
+</pre>
+</div>
+
+<p>
+然后在引入的文件里写详细的 task，task 都是以 module 为单位组织起来的，一般的结构是：
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+- name: &lt;task name&gt;
+  &lt;module&gt;: &lt;module arguments&gt;
+
+- name: &lt;task name&gt;
+  &lt;module&gt;: &lt;module arguments&gt;
+</pre>
+</div>
+
+<p>
+给个实例：
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+# roles/centos/tasks/packages.yml
+- name: Install environ
+  become: yes  # become 指定用什么用户执行，yes 意味着 root
+  tags: packages
+  yum: name={{item}} state=latest update_cache=yes
+  with_items:
+    - make
+    - gcc
+    - gcc-c++
+    - automake
+    - autoconf
+</pre>
+</div>
+</li>
+
+<li>blocks
+
+<p>
+为了更好的对任务进行分块，v2.0 引入了 blocks，可以将一组任务写在一个 block 里，共享一样的任务设置（比如 when, become 等），如：
+</p>
+
+<p class="verse">
+tasks:<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;- block:<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;- yum: name={{ item }} state=installed<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;with_items:<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;- httpd<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;- memcached<br  />
+<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;- template: src=templates/src.j2 dest=/etc/foo.conf<br  />
+<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;- service: name=bar state=started enabled=True<br  />
+<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;when: ansible_distribution == 'CentOS'<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;become: true<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;become_user: root<br  />
+block 还可以用来做异常处理，形如 python 的 try-except-finally：<br  />
+<br  />
+tasks:<br  />
+&#xa0;- block:<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;- debug: msg='i execute normally'<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;- command: /bin/false<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;- debug: msg='i never execute, cause ERROR!'<br  />
+&#xa0;&#xa0;&#xa0;rescue:  # 相当于 except<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;- debug: msg='I caught an error'<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;- command: /bin/false<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;- debug: msg='I also never execute :-('<br  />
+&#xa0;&#xa0;&#xa0;always:  #相当于 finally<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;- debug: msg="this always executes"<br  />
+</p>
+</li>
+
+<li>handlers
+除了 tasks 外，我们还可以在 role 里定义 handlers。和 tasks 不一样，handlers 只有在条件触发时才会执行，而我们可以在 tasks 里定义 handlers 的触发。
+可以在 tasks 中定义 notify 来指定要触发的 handler，只有当 task 被顺利执行，且执行状态为 changes 时才会触发。
+
+<ul class="org-ul">
+<li>tasks
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+# file: roles/common/tasks/main.yml
+
+- name: be sure ntp is installed
+  yum: pkg=ntp state=installed
+  tags: ntp
+
+- name: be sure ntp is configured
+  template: src=ntp.conf.j2 dest=/etc/ntp.conf
+  notify:
+    - restart ntpd  # 指定要触发的 handler
+  tags: ntp
+
+- name: be sure ntpd is running and enabled
+  service: name=ntpd state=running enabled=yes
+  tags: ntp
+</pre>
+</div>
+</li>
+
+<li>handlers
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+# file: roles/common/handlers/main.yml
+- name: restart ntpd
+  service: name=ntpd state=restarted
+</pre>
+</div>
+</li>
+</ul>
+</li>
+<li>Conditionals 条件判断
+
+<p>
+在执行 task 的时候，可以设定条件判断，只有条件判断结果为真，才会执行相应的命令。
+</p>
+
+<p>
+方法就是 when 语句，你可以使用 and 和 or 组织语句，也可以使用 jinja2 提供的各种 filter，形如：
+</p>
+
+<p>
+when: 1 <code>= 1  # 简单的判断
+  when: ansible_os_family =</code> "RedHat"  # 使用预制变量
+when: user_defined_var <code>= "value"  # 用户定义的变量
+  when : variable|float =</code> 1.2  # 使用 jinja2 filter
+</p>
+</li>
+<li>捕获输出
+
+<p>
+有时候我们需要根据上一个 task 的输出来决定下一个 task 是否要运行，在 ansible 中可以使用 register 来获取该次 task 的输出。然后用 when 来判断是否要执行该次 task。
+</p>
+
+<p>
+需要注意的是 register 捕获到的是一个字典，可以用 stdout 属性获取到原始的输出。
+</p>
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+# 使用 register 获取输出
+- name: Get Environ
+  shell: env | grep WHOSYOURFATHER || echo ''
+  register: is_your_father
+
+- debug: var=register
+</pre>
+</div>
+<div class="org-src-container">
+
+<pre class="src src-yaml">- name: Conditional task
+  shell: echo 'I am your father, Arthas!'
+  when: is_your_father.stdout != ''
+</pre>
+</div>
+</li>
+<li>debug
+有时候我们需要查看某次 task 的输出，可以先用 register 捕获输出后，用 debug 来输出。
+
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+- name: Print output
+  shell: echo 'I am your father'
+  register: the_output
+ - debug: var=the_output
+</pre>
+</div>
+</li>
+<li>tags
+
+<p>
+除了可以用 roles 来组建 playbooks 外，ansible 还可以为每一个 task 打上 tag，在运行 playbooks 时可以选定需要执行的 tags。
+</p>
+
+<p>
+使用方法非常简单，首先是给每个需要的 task 都加上 tags：
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-yaml">---
+- name: Task with tag hope
+ tags: hope
+ shell: echo hi
+
+- name: Task with tag dark
+ tags: dark
+ shell: echo ni
+ 在执行 playbooks 的时候可以通过 --tags 参数来指定要运行的 tags：
+</pre>
+</div>
+
+<p class="verse">
+# 指定一个 tag<br  />
+# 执行 hope<br  />
+$ ansible-playbook -i hosts &#x2013;tags "hope"<br  />
+<br  />
+# 执行多个 tag<br  />
+# 执行 hope 和 dark<br  />
+$ ansible-playbook -i hosts &#x2013;tags "hope,dark"<br  />
+</p>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-sec-2-6" class="outline-3">
+<h3 id="sec-2-6"><span class="section-number-3">2.6</span> Galaxy</h3>
+<div class="outline-text-3" id="text-2-6">
+<ol class="org-ol">
+<li>Introduction
+Galaxy 可以算是社区加强版的 playbook-roles，从此你不再用自己一点点的攒 roles，或者去 github 上寂寞的挖掘别人的 roles，ansible 官方直接提供了一揽子的解决方案👍。
+你可以在官方提供的页面上搜索别人提交的各种 roles。
+</li>
+
+<li>Download
+然后可以按照 username.rolename[,version] 的格式将远程的 roles 安装到本地：
+
+<p>
+$ ansible-galaxy install usr.role,v1.0
+或者你可以将多行写在一个文本文件里，然后执行 $ ansible-galaxy install -r roles.txt。
+</p>
+
+<p>
+文本文件可以简单的逐行填写：
+</p>
+<p class="verse">
+&#xa0;# roles.txt<br  />
+&#xa0;user1.role1,v1.0.0<br  />
+&#xa0;user2.role2,v0.5<br  />
+&#xa0;user2.role3<br  />
+<br  />
+&#xa0;也可以写成 yaml 文件：<br  />
+&#xa0;# roles.yml<br  />
+<br  />
+&#xa0;# from galaxy<br  />
+- src: yatesr.timezone<br  />
+<br  />
+&#xa0;# from github<br  />
+- src: <a href="https://github.com/bennojoy/nginx">https://github.com/bennojoy/nginx</a><br  />
+<br  />
+&#xa0;# from github installing to a relative path<br  />
+- src: <a href="https://github.com/bennojoy/nginx">https://github.com/bennojoy/nginx</a><br  />
+&#xa0;&#xa0;path: vagrant/roles/<br  />
+<br  />
+&#xa0;# from github, overriding the name and specifying a specific tag<br  />
+- src: <a href="https://github.com/bennojoy/nginx">https://github.com/bennojoy/nginx</a><br  />
+&#xa0;&#xa0;version: master<br  />
+&#xa0;&#xa0;name: nginx_role<br  />
+<br  />
+&#xa0;# from a webserver, where the role is packaged in a tar.gz<br  />
+- src: <a href="https://some.webserver.example.com/files/master.tar.gz">https://some.webserver.example.com/files/master.tar.gz</a><br  />
+&#xa0;&#xa0;name: http-role<br  />
+<br  />
+&#xa0;# from bitbucket, if bitbucket happens to be operational right now :)<br  />
+- src: git+<a href="http://bitbucket.org/willthames/git-ansible-galaxy">http://bitbucket.org/willthames/git-ansible-galaxy</a><br  />
+&#xa0;&#xa0;version: v1.4<br  />
+<br  />
+&#xa0;# from bitbucket, alternative syntax and caveats<br  />
+- src: <a href="http://bitbucket.org/willthames/hg-ansible-galaxy">http://bitbucket.org/willthames/hg-ansible-galaxy</a><br  />
+&#xa0;&#xa0;scm: hg<br  />
+<br  />
+</p>
+</li>
+</ol>
+
+
+<ol class="org-ol">
+<li>创建 galaxy-roles
+创建一个 git repo，然后进入后执行：
+$ ansible-galaxy init &lt;role_name&gt; &#x2013;force
+然后发布到 Github 上，再到 Galaxy 官网 点点鼠标添加一下即可。
+</li>
+
+<li>Good Practices
+不过官方也提了几点建议：
+撰写清晰的 README.md；
+在 meta/main.yml 里提供明确的信息；
+在 meta/main.yml 里描写依赖关系；
+变量名都以 role 名作为前缀；
+添加集成测试。
+比如官方提供的 'meta/main.yml' 范例：
+
+<p class="verse">
+&#x2014;<br  />
+galaxy_info:<br  />
+&#xa0;&#xa0;author: John Doe<br  />
+&#xa0;&#xa0;description: Quick and easy acme web installer.<br  />
+&#xa0;&#xa0;company: Acme<br  />
+&#xa0;&#xa0;license: MIT<br  />
+&#xa0;&#xa0;min_ansible_version: 1.9<br  />
+&#xa0;&#xa0;platforms:<br  />
+&#xa0;&#xa0;- name: EL<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;versions:<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;- all<br  />
+&#xa0;&#xa0;galaxy_tags:<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;- acme<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;- installer<br  />
+&#xa0;&#xa0;&#xa0;&#xa0;- web<br  />
+dependencies:<br  />
+&#xa0;&#xa0;- { role: username.common, some_parameter: 3 }<br  />
+&#xa0;&#xa0;- { role: username.iptables, open_port: 80 }<br  />
+</p>
+</li>
+
+<li>其他
+
+<p>
+默认情况下 ansible 会启动五个进程来执行部署，可以使用 -f=5 参数来指定更大的数值。
+</p>
+
+<p>
+另外一点就是 ansible 默认会一个一个的执行 task，等待所有主机执行完了一个 task 后才执行下一个，从总运行时长上来说没什么问题，但是如果你就是想让跑得快的先跑的话，ansible 2.0 引入了一个 strategy 参数，可以指定为 linear | serial | free，提供了不同的运行策略。
+</p>
+
+<p>
+当然，这个时代还在用进程处理并发显得有点蠢，ansible 也提供了 async 和 poll 参数来异步的执行任务。其中 async 用于指定轮询间隔，poll 用来指定超时时间，你也可以指定 poll=0 来取消超时。
+</p>
+
+<p>
+ansible 的 playbooks 还支持传入参数，通过在运行时使用 &#x2013;extra-vars "KEY=VALUE KEY=VALUE" 来传递参数。**
+</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p>DEFINITION NOT FOUND.</p></div>
+
+<div class="footdef"><sup><a id="fn.2" name="fn.2" class="footnum" href="#fnr.2">2</a></sup> <p>DEFINITION NOT FOUND.</p></div>
+
+<div class="footdef"><sup><a id="fn.3" name="fn.3" class="footnum" href="#fnr.3">3</a></sup> <p>DEFINITION NOT FOUND.</p></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="date">Date: 2016 Mar 30</p>
+<p class="author">Author: robertzhouxh</p>
+<p class="date">Created: 2016-03-30 Wed 14:44</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.0.50.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
