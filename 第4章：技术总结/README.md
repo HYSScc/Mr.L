@@ -4,3 +4,7 @@
 
 高质量前端资源汇聚: [http:\/\/div.io\/digg](http://div.io/digg)
 
+
+
+ICONFONT矢量图标: [http:\/\/www.iconfont.cn\/](http://www.iconfont.cn/)
+
