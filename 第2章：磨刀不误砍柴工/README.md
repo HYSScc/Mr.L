@@ -1,5 +1,11 @@
 # 第二章：磨刀不误砍柴工
 
+## 课程教学：
+
+慕课网: http:\/\/www.imooc.com\/
+
+
+
 ## App工具类：
 
 1.墨刀：[https:\/\/modao.cc\/](https://modao.cc/)
@@ -25,6 +31,4 @@
 9.云起： [http:\/\/www.cloud7.com.cn\/](http://www.cloud7.com.cn/)
 
 10.水滴微信平台： [http:\/\/weixin.drip.im\/member\/user\/login](http://weixin.drip.im/member/user/login)
-
-
 
