@@ -2,7 +2,7 @@
 
 ## 课程教学：
 
-慕课网: http:\/\/www.imooc.com\/
+慕课网: [http:\/\/www.imooc.com\/](http://www.imooc.com/)
 
 ## App工具类：
 
