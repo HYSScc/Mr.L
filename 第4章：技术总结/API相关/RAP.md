@@ -15,13 +15,15 @@ Github: [https:\/\/github.com\/thx\/RAP](https://github.com/thx/RAP)
 > * Tomcat 8.\*+ `不要用9alpha，alpha和beta出任何诡异问题我肯定不知道，亲愿意折腾倒也无妨，个人不建议`
 > * Redis 3.0+ `部署在本机，默认端口即可`
 > * RAP WAR安装包: http:\/\/rap.taobao.org\/release\/RAP-0.14.1-SNAPSHOT.war  （20160831）
-> *
+>   \*
 
 **二. 源码部署**
 
 ### 参考:
 
 接口自动化工具RAP的设计思路: http:\/\/div.io\/topic\/642?page=1
+
+**Tomcat 8 权威指南: **http:\/\/wiki.jikexueyuan.com\/project\/tomcat\/
 
 [Tomcat8.0 项目部署：](http://blog.csdn.net/u012835032/article/details/51314985)http:\/\/blog.csdn.net\/u012835032\/article\/details\/51314985
 
