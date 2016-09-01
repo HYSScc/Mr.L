@@ -5,7 +5,7 @@
 >   1. RAML: IntoRobot API 文档 2016-08-21完成
 >   2. Swagger：搭建起来
 >   3. API自动化测试
-    4. RAP API管理服务
+>   4. RAP API管理服务
 > 
 > * ansible自动化运维
 > 
