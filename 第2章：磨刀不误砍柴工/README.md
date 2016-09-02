@@ -4,6 +4,8 @@
 
 慕课网: [http:\/\/www.imooc.com\/](http://www.imooc.com/)
 
+51CTO学院: [http:\/\/edu.51cto.com\/](http://edu.51cto.com/)
+
 ## App工具类：
 
 1.墨刀：[https:\/\/modao.cc\/](https://modao.cc/)
