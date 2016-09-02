@@ -9,6 +9,8 @@
 > 
 > * **ansible自动化运维**
 > 
+>   http:\/\/edu.51cto.com\/index.php?do=lession&id=42065
+> 
 > * 自动化测试
 > 
 > * React Native App & JS & CSS &DOM & HTML5
