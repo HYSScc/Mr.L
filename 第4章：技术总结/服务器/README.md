@@ -20,4 +20,7 @@ learncloud: [https:\/\/leancloud.cn\/](https://leancloud.cn/)
 
 野狗：[https:\/\/www.wilddog.com\/](https://www.wilddog.com/)
 
-Firebase：https://firebase.google.com/
+Firebase：[https:\/\/firebase.google.com\/](https://firebase.google.com/)
+
+数人云: [https:\/\/www.shurenyun.com\/index.html](https://www.shurenyun.com/index.html)
+
