@@ -30,7 +30,7 @@
 
 周二
 
-> 部署
+> 部署Jenkins+Ansible+Gitlab自动化方案
 
 周三
 
