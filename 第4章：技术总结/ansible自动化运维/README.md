@@ -60,11 +60,17 @@
 > 
 > exit
 
+
+
+
+
 ---
 
 ## 参考：
 
 培训文档: [ansible文档](/assets/doc/ansible.html)
+
+视频教程: [http:\/\/edu.51cto.com\/index.php?do=lession&id=42065](http://edu.51cto.com/index.php?do=lession&id=42065)
 
 ansible\/ansible:** **[https:\/\/github.com\/ansible\/ansible](https://github.com/ansible/ansible)
 
