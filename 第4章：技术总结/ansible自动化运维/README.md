@@ -1,6 +1,6 @@
 公司项目: http:\/\/ram-lab.com\/molmc\_deployment.git
 
-## 安装：
+# **Step 1. Set up the environment on Mac**
 
 * ### **Install Ansible**
 
@@ -83,11 +83,11 @@
 
 > 192.168.33.100 \| UNREACHABLE! =&gt; {
 > 
->  "changed": false,
+> "changed": false,
 > 
->  "msg": "Failed to connect to the host via ssh.",
+> "msg": "Failed to connect to the host via ssh.",
 > 
->  "unreachable": true
+> "unreachable": true
 > 
 > }
 
@@ -134,6 +134,7 @@
 * ### **Environment Ready**
 
   环境搭建完成，准备工作结束，关闭虚拟机:
+
   > cd vagrant
   > 
   > vagrant halt
