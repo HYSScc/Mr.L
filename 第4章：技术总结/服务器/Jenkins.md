@@ -1,5 +1,3 @@
-**Ansible实践篇: **http:\/\/blog.waterstrong.me\/ansible-practice\/
-
 转一篇图文并茂的Jenkins安装与配置 很详细: [http:\/\/www.saunix.cn\/1657.html](http://www.saunix.cn/1657.html "转一篇图文并茂的Jenkins安装与配置 很详细")
 
 如何搭建基于Jenkins Apache Mesos和Marathon的弹性高可用的持续集成环境:
