@@ -39,7 +39,8 @@
 
 或在[Vagrant官网下载](https://www.vagrantup.com/downloads.html)进行安装。
 
-### **Vagrant up base on existing **`Vagrantfile`
+* ### **Vagrant up base on existing **`Vagrantfile`
+
 
 > 
 
