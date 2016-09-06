@@ -2,6 +2,66 @@
 
 ## 安装：
 
+### **Install Ansible**
+
+#### **    Brew Install**
+
+    可以采用[Homebrew](http://brew.sh/)进行安装：
+
+> brew install ansible \# 安装Ansible
+> 
+> brew install --upgrade ansible \# 以后可更新版本
+
+#### **    Pip Install**
+
+    还可采用Python的[pip](https://pip.pypa.io/en/stable/installing/)包管理工具安装：
+
+> sudo pip install ansible \# 安装Ansible
+> 
+> sudo pip install --upgrade ansible \# 以后可更新版本
+
+### **Install VirtualBox if not have one**
+
+| 1 | brew install Caskroom\/cask\/virtualbox |
+| --- | --- |
+
+或在[VirtualBox官网下载](https://www.virtualbox.org/wiki/Downloads)进行安装。
+
+### **Install Vagrant if not have one**
+
+| 1 | brew install vagrant |
+| --- | --- |
+
+或在[Vagrant官网下载](https://www.vagrantup.com/downloads.html)进行安装。
+
+### **Vagrant up base on existing **`Vagrantfile`
+
+\| 1
+
+2
+
+3
+
+4 \| git clone https:\/\/github.com\/Waterstrong\/ansible-workshop.git
+
+git checkout step1
+
+cd ansible-workshop\/vagrant
+
+vagrant up \|
+\| --- \| --- \|
+
+验证登录虚拟机成功后退出:
+
+\| 1
+
+2 \| vagrant ssh
+
+exit \|
+\| --- \| --- \|
+
+---
+
 ## 参考：
 
 培训文档: [ansible文档](/assets/doc/ansible.html)
