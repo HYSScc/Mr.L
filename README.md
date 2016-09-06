@@ -2,6 +2,16 @@
 
 自动化:
 
+Jenkins:
+
+Ansible:
+
+Docker:
+
+Mesos:
+
+openStack:
+
 平台: 商城+
 
 App:
