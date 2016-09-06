@@ -60,9 +60,22 @@
 > 
 > exit
 
+* ### **Test Ansible Connection**
 
 
+> cd ..
+> 
+> ansible -i inventory all -m ping
 
+若连接成功返回:
+
+> 192.168.33.100 \| SUCCESS =&gt; {
+> 
+>  "changed": false,
+> 
+>  "ping": "pong"
+> 
+> }
 
 ---
 
