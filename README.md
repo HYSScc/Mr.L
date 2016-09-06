@@ -38,7 +38,7 @@ App:
 
 周二
 
-> 部署Jenkins+Ansible+Gitlab自动化方案
+> 部署Jenkins+Ansible+Gitlab自动化方案: 安装Docker， 安装Ansible，
 
 周三
 
