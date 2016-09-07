@@ -12,6 +12,11 @@
 
 2.酷传: [http:\/\/www.kuchuan.com\/](http://www.kuchuan.com/)
 
+Web工具类:
+
+1.  sxl.cn
+
+
 ## 运营工具类：
 
 1.兔展： [http:\/\/www.rabbitpre.com\/](http://www.rabbitpre.com/)
