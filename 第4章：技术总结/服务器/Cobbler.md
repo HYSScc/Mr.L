@@ -2,8 +2,6 @@
 
 Github: [https:\/\/github.com\/cobbler\/cobbler](https://github.com/cobbler/cobbler)
 
-
-
 ## 配置步骤
 
 **第一步 下载安装**
@@ -16,15 +14,15 @@ Github: [https:\/\/github.com\/cobbler\/cobbler](https://github.com/cobbler/cobb
 
 2. 配置cobber3. 配置DHCP模版文件
 
-4. 修改rsync5. 执行检查
+3. 修改rsync5. 执行检查
 
-6. 修改密码7. 生成system-config-kickstart
+4. 修改密码7. 生成system-config-kickstart
 
-8. 当 cobbler check 检测基本没问题后
+5. 当 cobbler check 检测基本没问题后
 
-9.修改启动文件路径
+6. 修改启动文件路径
 
-10. 导入[CentOS](http://baike.baidu.com/subview/26404/26404.htm)安装DVD ISO中的文件
+7. 导入[CentOS](http://baike.baidu.com/subview/26404/26404.htm)安装DVD ISO中的文件
 
 **第三步 客户端启动**
 
