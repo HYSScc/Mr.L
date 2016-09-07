@@ -216,20 +216,11 @@
 
 > ansible -i hosts ubuntu2 -m ping
 
+## Q&A:
 
-
-
-
-
-
-
-
-## Q&A: 
-
-1. ansible-playbook 中如何使用root权限
+1. ansible-playbook 中如何使用root权限?
 
   eg: 需要在远程主机中"git clone https:\/\/github.com\/Waterstrong\/ansible-workshop.git", 但是远程主机需要sudo权限才能执行git操作，此时操作"ansible-playbook -i hosts setup\_server.yml -vvv" 不能克隆成功
-
 
 
 ## 参考：
