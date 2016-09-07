@@ -2,6 +2,8 @@
 
 Github: [https:\/\/github.com\/cobbler\/cobbler](https://github.com/cobbler/cobbler)
 
+速建立 Linux 网络安装环境，降低Linux 网络安装的技术门槛
+
 ## 配置步骤
 
 **第一步 下载安装**
@@ -23,6 +25,7 @@ Github: [https:\/\/github.com\/cobbler\/cobbler](https://github.com/cobbler/cobb
 6. 修改启动文件路径
 
 7. 导入[CentOS](http://baike.baidu.com/subview/26404/26404.htm)安装DVD ISO中的文件
+
 
 **第三步 客户端启动**
 
