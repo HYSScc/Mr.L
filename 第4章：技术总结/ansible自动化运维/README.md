@@ -160,7 +160,7 @@
 > 
 > config.vm.provider "virtualbox" do \|vb\|
 > 
->  vb.name = "ansible-workshop-host2"
+> vb.name = "ansible-workshop-host2"
 > 
 > end
 
@@ -198,17 +198,17 @@
 
 > 192.168.33.100 \| SUCCESS =&gt; {
 > 
->  "changed": false,
+> "changed": false,
 > 
->  "ping": "pong"
+> "ping": "pong"
 > 
 > }
 > 
 > 192.168.33.101 \| SUCCESS =&gt; {
 > 
->  "changed": false,
+> "changed": false,
 > 
->  "ping": "pong"
+> "ping": "pong"
 > 
 > }
 
@@ -218,7 +218,19 @@
 
 
 
----
+
+
+
+
+
+
+## Q&A: 
+
+1. ansible-playbook 中如何使用root权限
+
+  eg: 需要在远程主机中"git clone https:\/\/github.com\/Waterstrong\/ansible-workshop.git", 但是远程主机需要sudo权限才能执行git操作，此时操作"ansible-playbook -i hosts setup\_server.yml -vvv" 不能克隆成功
+
+
 
 ## 参考：
 
