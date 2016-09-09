@@ -52,15 +52,15 @@ App:
 
 周三
 
-> 部署RAP服务，通过WAR包搭建RAP服务器
+> IntoRobot Nut，IntoRobot Nut-S，IntoRobot ESP8266MOD，产品拍照，给设计师设计淘宝详情页
 
 周四
 
-> 熟悉目前的Ansible项目，拍产品图片
+> IntoRobot Nut，IntoRobot Nut-S，IntoRobot ESP8266MOD，计师设计淘宝详情页，淘宝上架
 
 周五
 
-> 了解RAP服务器，通过WAR包搭建RAP服务器，拍教程视频
+> 淘宝详情错误修改，IntoRobot官方商城商品上架
 
 周六
 
