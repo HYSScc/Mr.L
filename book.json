@@ -1,6 +1,8 @@
 {
     "plugins": [
-        "mermaid-2"
+        "mermaid-2",
+        "audio_image",
+        "block-align"
     ],
     "pluginsConfig": {
         "mermaid-2": {
