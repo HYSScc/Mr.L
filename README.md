@@ -1,46 +1,56 @@
 # 
 
-自动化:
+我要去看得最远的地方
 
-Jenkins:
 
-Ansible:
 
-Docker:
 
-Mesos:
 
-openStack:
+和你手舞足蹈聊梦想
 
-平台: 商城+
 
-App:
+
+
+
+像从来没有失过望受过伤
+
+
+
+
+
+还相信敢飞就有天空那样
+
+
+
+
+
+我要在看得最远的地方
+
+
+
+
+
+披第一道曙光在肩膀
+
+
+
+
+
+被泼过太冷的雨滴和雪花
+
+
+
+
+
+更坚持微笑要暖得像太阳
+
+
+
+
+
+
+
+
 
 ---
-
-> * RAML & Swagger
-> 
->   1. RAML: IntoRobot API 文档 2016-08-21完成
->   2. Swagger：搭建起来
->   3. API自动化测试
->   4. **RAP API管理服务**
-> 
-> * **ansible自动化运维**
-> 
->   [http:\/\/edu.51cto.com\/index.php?do=lession&id=42065](http://edu.51cto.com/index.php?do=lession&id=42065)
-> 
-> * 自动化测试
-> 
-> * React Native App & JS & CSS &DOM & HTML5
-> 
-> * IOS&Android
-> 
-> * Swift & Go
-> 
-> 
-> \*
-
----
-
-
 
