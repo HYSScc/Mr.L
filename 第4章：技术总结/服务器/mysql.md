@@ -6,18 +6,18 @@
 
   ```
   #查看多少个数据库
-  SHOW DATABASES;
+  mysql> SHOW DATABASES;
   ```
 
   ```
   #查看表
-  USE blog;   #访问数据库，使用use语句 注意USE，类似QUIT，不需要一个分号。（如果你喜欢，你可以用一个分号终止这样的语句；这无碍）
-  SHOW TABLES;
+  mysql> USE blog;   #访问数据库，使用use语句 注意USE，类似QUIT，不需要一个分号。（如果你喜欢，你可以用一个分号终止这样的语句；这无碍）
+  mysql> SHOW TABLES;
   ```
 
   ```
   #查看表中的列
-  SHOW COLUMNS FROM auth_user;
+  mysql> SHOW COLUMNS FROM auth_user;
   ```
 
   `describe 表名` 是 `show columns from 表名` 的一种快捷方式
@@ -26,7 +26,8 @@
   DESCRIBE auth_user;
   ```
 
-3.  创建数据库
+3. 创建数据库
+
   ```
   mysql> CREATE DATABASE 库名;
   ```
