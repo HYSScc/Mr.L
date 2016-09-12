@@ -26,4 +26,9 @@
   DESCRIBE auth_user;
   ```
 
+3.  创建数据库
+  ```
+  mysql> CREATE DATABASE 库名;
+  ```
+
 
