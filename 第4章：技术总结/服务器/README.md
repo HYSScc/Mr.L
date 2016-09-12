@@ -24,3 +24,5 @@ Firebase：[https:\/\/firebase.google.com\/](https://firebase.google.com/)
 
 数人云: [https:\/\/www.shurenyun.com\/index.html](https://www.shurenyun.com/index.html)
 
+云巴: [https:\/\/yunba.io\/](https://yunba.io/)
+
