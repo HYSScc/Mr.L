@@ -20,4 +20,10 @@
   SHOW COLUMNS FROM auth_user;
   ```
 
+  `describe 表名` 是 show columns from 表名 的一种快捷方式
+
+  ```
+  DESCRIBE auth_user;
+  ```
+
 
