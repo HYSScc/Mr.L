@@ -46,7 +46,9 @@ Wiki文档: [https:\/\/github.com\/jumpserver\/jumpserver\/wiki](https://github.
     5. 默认账号密码 admin 5Lov@wife
 ```
 
-问题：
+## 问题：
+
+1. 字符集不兼容的错误
 
 
 
