@@ -22,8 +22,6 @@ Wiki文档: [https:\/\/github.com\/jumpserver\/jumpserver\/wiki](https://github.
 > 
 > mysql&gt; grant all on jumpserver.\* to 'jumpserver'@'127.0.0.1' identified by 'mysql234';
 
-> 
-
 ##### **1. 更新软件源**
 
 > apt-get update
@@ -68,4 +66,7 @@ Wiki文档: [https:\/\/github.com\/jumpserver\/jumpserver\/wiki](https://github.
   `mysql> drop database jumpserver;`
   `mysql> create database jumpserver default charset='utf8';`
   `mysql>grant all on jumpserver.* to 'jumpserver'@'127.0.0.1' identified by '5Lov@wife';`
+
+参考:
+字符集不兼容的错误: http:\/\/bbs.jumpserver.org\/read\/277.html
 
