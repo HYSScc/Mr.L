@@ -12,6 +12,10 @@ Wiki文档: [https:\/\/github.com\/jumpserver\/jumpserver\/wiki](https://github.
 
 > 
 
+> 
+
+
+
 ##### **1. 更新软件源**
 
 > apt-get update
