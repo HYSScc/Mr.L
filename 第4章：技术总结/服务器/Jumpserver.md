@@ -8,7 +8,9 @@ Wiki文档: [https:\/\/github.com\/jumpserver\/jumpserver\/wiki](https://github.
 
 ##### **适用于版本：v0.3.1-2**
 
-1. 安装mysql数据库，创建库
+##### **1. 安装mysql数据库，创建库**
+
+> 
 
 ##### **1. 更新软件源**
 
