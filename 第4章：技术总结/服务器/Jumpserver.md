@@ -4,8 +4,6 @@ Github: [https:\/\/github.com\/jumpserver\/jumpserver](https://github.com/jumpse
 
 Wiki文档: [https:\/\/github.com\/jumpserver\/jumpserver\/wiki](https://github.com/jumpserver/jumpserver/wiki)
 
-
-
 ## 安装Jumpserver\(参考Github Wiki－**Debian\/Ubuntu**\):
 
 ##### **适用于版本：v0.3.1-2**
@@ -47,4 +45,8 @@ Wiki文档: [https:\/\/github.com\/jumpserver\/jumpserver\/wiki](https://github.
 
     5. 默认账号密码 admin 5Lov@wife
 ```
+
+问题：
+
+
 
