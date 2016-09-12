@@ -68,5 +68,6 @@ Wiki文档: [https:\/\/github.com\/jumpserver\/jumpserver\/wiki](https://github.
   `mysql>grant all on jumpserver.* to 'jumpserver'@'127.0.0.1' identified by '5Lov@wife';`
 
 ## 参考:
-字符集不兼容的错误: http:\/\/bbs.jumpserver.org\/read\/277.html
+
+字符集不兼容的错误: [http:\/\/bbs.jumpserver.org\/read\/277.html](http://bbs.jumpserver.org/read/277.html)
 

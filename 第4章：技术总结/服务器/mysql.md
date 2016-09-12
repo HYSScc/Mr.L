@@ -43,12 +43,12 @@
   #创建表
   use demo;
   create table pet(
-       name varchar(20),        #名字
-       owner varchar(20),       #主人
-       species varchar(20),     #种类
-       sex char(1),             #性别
-       birth date,              #出生日期
-       death date               #死亡日期
+      name varchar(20),        #名字
+      owner varchar(20),       #主人
+      species varchar(20),     #种类
+      sex char(1),             #性别
+      birth date,              #出生日期
+      death date               #死亡日期
   )
   ```
 
@@ -60,34 +60,38 @@
   mysql> DROP DATABASE 库名;
   ```
 
-5.  删除数据表
+5. 删除数据表
+
   ```
   mysql> DROP TABLE 表名；
   ```
 
-6.  将表中记录清空
+6. 将表中记录清空
+
   ```
   mysql> DELETE FROM 表名;
   ```
 
-7.  创建表\(复杂形式\)
+7. 创建表\(复杂形式\)
+
   ```
   #创建customer表：
   create table customers(
-      id int not null auto_increment,
-      name char(20) not null,
-      address char(50) null,
-      city char(50) null,
-      age int not null,
-      love char(50) not null default 'No habbit',
-      primary key(id)
+    id int not null auto_increment,
+    name char(20) not null,
+    address char(50) null,
+    city char(50) null,
+    age int not null,
+    love char(50) not null default 'No habbit',
+    primary key(id)
   )engine=InnoDB;
   #SELECT last_insert_id();这个函数可以获得返回最后一个auto_increment值.
   #默认值：default 'No habbit',
   #引擎类型，多为engine = InnoDB，如果省略了engine=语句，则使用默认的引擎(MyISAM)
   ```
 
-8.  更改表结构
+8. 更改表结构
+
   ```
   #增加一列
   alter table pet add des char(100) null;
@@ -95,13 +99,15 @@
   alter table pet drop column des;
   ```
 
-9.  重命名表
+9. 重命名表
+
   ```
   #重命名表
   rename table pet to animals;
   ```
 
-10.  **添加id字段**
+10. **添加id字段**
+
   ```
   #添加id字段
   alter table pet add id int not null
@@ -111,5 +117,7 @@
 
 ## 参考：
 
-Mysql 查看、创建、更改 数据库和表：[http:\/\/www.cnblogs.com\/BeginMan\/p\/3249472.html](http://www.cnblogs.com/BeginMan/p/3249472.html)
+**Mysql 查看、创建、更改 数据库和表：**[http:\/\/www.cnblogs.com\/BeginMan\/p\/3249472.html](http://www.cnblogs.com/BeginMan/p/3249472.html)
+
+**MySQL的Grant命令: **[http:\/\/www.cnblogs.com\/hcbin\/archive\/2010\/04\/23\/1718379.html](http://www.cnblogs.com/hcbin/archive/2010/04/23/1718379.html)
 
