@@ -38,17 +38,20 @@
   ```
 
   eg:
+
   ```
   #创建表
   use demo;
   create table pet(
-          name varchar(20),        #名字
-          owner varchar(20),       #主人
-          species varchar(20),     #种类
-          sex char(1),             #性别
-          birth date,              #出生日期
-          death date               #死亡日期
+         name varchar(20),        #名字
+         owner varchar(20),       #主人
+         species varchar(20),     #种类
+         sex char(1),             #性别
+         birth date,              #出生日期
+         death date               #死亡日期
   )
   ```
 
+  为了验证你的表是按你期望的方式创建，使用一个DESCRIBE语句：`describe pet;`
+4. 
 
