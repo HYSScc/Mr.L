@@ -1,6 +1,6 @@
 1. 连接远程数据库服务器
 
-  `mysql -h 192.168.0.77 -P 3306 -u intorobot -p26554422`
+  `$ mysql -h 192.168.0.77 -P 3306 -u intorobot -p26554422`
 
 2. 查看多少个数据库：注意 后面带s
 
@@ -30,6 +30,25 @@
 
   ```
   mysql> CREATE DATABASE 库名;
+  ```
+
+  ```
+  mysql> USE 库名;
+  mysql> CREATE TABLE 表名 (字段名 VARCHAR(20), 字段名 CHAR(1));    
+  ```
+
+  eg:
+  ```
+  #创建表
+  use demo;
+  create table pet(
+          name varchar(20),        #名字
+          owner varchar(20),       #主人
+          species varchar(20),     #种类
+          sex char(1),             #性别
+          birth date,              #出生日期
+          death date               #死亡日期
+  )
   ```
 
 
