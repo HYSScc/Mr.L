@@ -8,10 +8,14 @@ Wiki文档: [https:\/\/github.com\/jumpserver\/jumpserver\/wiki](https://github.
 
 ##### **适用于版本：v0.3.1-2**
 
-##### **1. 更新软件源**
+0.  安装mysql数据库，创建库
 
-> apt-get update
-> 
+
+
+
+
+##### **1**get update
+
 > 注：Debian 8.2 需要更换更新源,注释掉官方源，可以添加国内源，在update
 
 ##### **2. 安装git**
