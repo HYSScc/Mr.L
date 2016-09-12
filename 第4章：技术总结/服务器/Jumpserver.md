@@ -12,6 +12,7 @@ Wiki文档: [https:\/\/github.com\/jumpserver\/jumpserver\/wiki](https://github.
 
 ##### **1. 更新软件源**
 
+>  
 > 注：Debian 8.2 需要更换更新源,注释掉官方源，可以添加国内源，在update
 
 ##### **2. 安装git**
