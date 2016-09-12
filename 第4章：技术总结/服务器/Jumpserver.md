@@ -10,11 +10,19 @@ Wiki文档: [https:\/\/github.com\/jumpserver\/jumpserver\/wiki](https://github.
 
 ##### **1. 安装mysql数据库，创建库**
 
+> Default
 > 
+> \# yum -y install mysql mysql-server mysql-devel
+> 
+> \# service mysqld start
+> 
+> \# mysql
+> 
+> mysql&gt; create database jumpserver charset='utf8';
+> 
+> mysql&gt; grant all on jumpserver.\* to 'jumpserver'@'127.0.0.1' identified by 'mysql234';
 
 > 
-
-
 
 ##### **1. 更新软件源**
 
