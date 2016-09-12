@@ -49,6 +49,5 @@ Wiki文档: [https:\/\/github.com\/jumpserver\/jumpserver\/wiki](https://github.
 ## 问题：
 
 1. 字符集不兼容的错误
-
-
+  `  mysql> drop database jumpserver;```` mysql> create database jumpserver default charset='utf8';```` mysql>grant all on jumpserver.* to 'jumpserver'@'127.0.0.1' identified by '5Lov@wife';`
 
