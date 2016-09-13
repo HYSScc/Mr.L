@@ -71,3 +71,5 @@ Wiki文档: [https:\/\/github.com\/jumpserver\/jumpserver\/wiki](https://github.
 
 字符集不兼容的错误: [http:\/\/bbs.jumpserver.org\/read\/277.html](http://bbs.jumpserver.org/read/277.html)
 
+授权管理&sudo别名: 
+
