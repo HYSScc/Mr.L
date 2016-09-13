@@ -4,6 +4,10 @@ Github: [https:\/\/github.com\/jumpserver\/jumpserver](https://github.com/jumpse
 
 Wiki文档: [https:\/\/github.com\/jumpserver\/jumpserver\/wiki](https://github.com/jumpserver/jumpserver/wiki)
 
+视频教程: [http:\/\/v.youku.com\/v\_show\/id\_XOTM5Mzc3NDE2.html](http://v.youku.com/v_show/id_XOTM5Mzc3NDE2.html)
+
+视频教程: [http:\/\/v.youku.com\/v\_show\/id\_XOTM5Mzg1MTY0.html](http://v.youku.com/v_show/id_XOTM5Mzg1MTY0.html)
+
 ## 安装Jumpserver\(参考Github Wiki－**Debian\/Ubuntu**\):
 
 ##### **适用于版本：v0.3.1-2**
@@ -71,5 +75,5 @@ Wiki文档: [https:\/\/github.com\/jumpserver\/jumpserver\/wiki](https://github.
 
 字符集不兼容的错误: [http:\/\/bbs.jumpserver.org\/read\/277.html](http://bbs.jumpserver.org/read/277.html)
 
-授权管理&sudo别名: 
+授权管理&sudo别名: [http:\/\/laoguang.blog.51cto.com\/6013350\/1636708](http://laoguang.blog.51cto.com/6013350/1636708)
 
