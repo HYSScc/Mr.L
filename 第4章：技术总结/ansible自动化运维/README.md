@@ -227,28 +227,31 @@
 
   ```
   [all:vars]
-      ntp_server=ntp.centos.com
+     ntp_server=ntp.centos.com
 
   [production]
-      test1
-      test2
-      test3
+     test1
+     test2
+     test3
   [production:vars]
-      db_primary_port=22
+     db_primary_port=22
 
   [groupservers]
-      web1.test.com
-      web2.test.com
-      [groupservers:vars]
-      ntp_server=ntp.test.com
-      admin_user=tom
+     web1.test.com
+     web2.test.com
+     [groupservers:vars]
+     ntp_server=ntp.test.com
+     admin_user=tom
   ```
 
-3.  主机变量
+3. 主机变量
   针对单主机的特性化要求，通过内置变量实现，如下：
-  ```
 
-  ```
+```
+[webservers] 
+web1.test.com http_port=80 ansible_ssh_port=12345
+
+```
 
 
 ## 参考：
