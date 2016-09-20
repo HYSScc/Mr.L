@@ -134,8 +134,7 @@ ESC C-v : 在其它窗口进行卷屏操作搜索和替换
 
 * M-x recover-session RETURN 如果你编辑了几个文件, 用这个恢复
 
-* 
-* 在线帮助\(Online-Help\)
+  ### 在线帮助\(Online-Help\)
 
 * C-h c 显示快捷键绑定的命令
 
@@ -291,7 +290,8 @@ ESC C-v : 在其它窗口进行卷屏操作搜索和替换
 * 
 * M-x bookmark-write 将所有书签导出至指定文件
 
-* M-x bookmark-load 从指定文件导入书签 
+* M-x bookmark-load 从指定文件导入书签
+
   ### Shell
 
 
@@ -386,7 +386,8 @@ ESC C-v : 在其它窗口进行卷屏操作搜索和替换
 * 
 * 或许把这个命令归入这一类也很合适:
 
-* M-x speedbar 打开一个独立的目录显示窗口 
+* M-x speedbar 打开一个独立的目录显示窗口
+
   ### Telnet
 
 
