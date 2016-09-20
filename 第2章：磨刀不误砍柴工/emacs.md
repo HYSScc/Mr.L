@@ -18,6 +18,8 @@ C-x 3 : 水平分割窗口
 
 ESC C-v : 在其它窗口进行卷屏操作搜索和替换
 
+
+
 * C = Control
 
 * M = Meta = Alt \| Esc
