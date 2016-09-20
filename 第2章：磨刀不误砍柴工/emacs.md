@@ -47,8 +47,7 @@ ESC C-v : 在其它窗口进行卷屏操作搜索和替换
 
 * C-x C-c 关闭emacs
 
-* 
-* 光标移动基本快捷键\(Basic Movement\)
+  ### 光标移动基本快捷键\(Basic Movement\)
 
 * C-f 后一个字符
 
