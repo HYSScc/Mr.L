@@ -227,32 +227,32 @@
 
   ```
   [all:vars]
-     ntp_server=ntp.centos.com
+    ntp_server=ntp.centos.com
 
   [production]
-     test1
-     test2
-     test3
+    test1
+    test2
+    test3
   [production:vars]
-     db_primary_port=22
+    db_primary_port=22
 
   [groupservers]
-     web1.test.com
-     web2.test.com
-     [groupservers:vars]
-     ntp_server=ntp.test.com
-     admin_user=tom
+    web1.test.com
+    web2.test.com
+    [groupservers:vars]
+    ntp_server=ntp.test.com
+    admin_user=tom
   ```
 
 3. 主机变量
   针对单主机的特性化要求，通过内置变量实现，如下：
+
 
 ```
 [webservers] 
 web1.test.com http_port=80 ansible_ssh_port=12345
 
 ```
-
 
 ## 参考：
 
@@ -279,4 +279,6 @@ Jenkins+Ansible+Gitlab自动化部署三剑客: [http:\/\/www.showerlee.com\/arc
 **解决mac osx下pip安装ipython权限的问题: **[http:\/\/xiaorui.cc\/2016\/03\/27\/%E8%A7%A3%E5%86%B3mac-osx%E4%B8%8Bpip%E5%AE%89%E8%A3%85ipython%E6%9D%83%E9%99%90%E7%9A%84%E9%97%AE%E9%A2%98\/\#ds-thread](http://xiaorui.cc/2016/03/27/%E8%A7%A3%E5%86%B3mac-osx%E4%B8%8Bpip%E5%AE%89%E8%A3%85ipython%E6%9D%83%E9%99%90%E7%9A%84%E9%97%AE%E9%A2%98/#ds-thread)
 
 Ansible 自动化运维工具之inventory和常用模块介绍: [http:\/\/www.voidcn.com\/blog\/linuxg\/article\/p-5978444.html](http://www.voidcn.com/blog/linuxg/article/p-5978444.html)
+
+**ansible小结（三）Inventory与Patterns: **[http:\/\/www.361way.com\/ansible-inventory-patterns\/4398.html](http://www.361way.com/ansible-inventory-patterns/4398.html)
 
