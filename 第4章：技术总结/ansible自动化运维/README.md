@@ -222,6 +222,12 @@
 
   eg: 需要在远程主机中"git clone https:\/\/github.com\/Waterstrong\/ansible-workshop.git", 但是远程主机需要sudo权限才能执行git操作，此时操作"ansible-playbook -i hosts setup\_server.yml -vvv" 不能克隆成功
 
+2. 群组变量
+  语法：\[&lt;group name&gt;:vars\] 在inventory中指定群组变量，如下：
+  ```
+
+  ```
+
 
 ## 参考：
 
