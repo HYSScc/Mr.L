@@ -224,8 +224,24 @@
 
 2. 群组变量
   语法：\[&lt;group name&gt;:vars\] 在inventory中指定群组变量，如下：
-  ```
 
+  ```
+    [all:vars]
+ntp_server=ntp.centos.com
+
+[production]
+test1
+test2
+test3
+[production:vars]
+db_primary_port=22
+
+[groupservers]
+web1.test.com
+web2.test.com
+[groupservers:vars]
+ntp_server=ntp.test.com
+admin_user=tom
   ```
 
 
