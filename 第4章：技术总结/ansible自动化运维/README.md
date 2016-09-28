@@ -227,21 +227,21 @@
 
   ```
   [all:vars]
-    ntp_server=ntp.centos.com
+   ntp_server=ntp.centos.com
 
   [production]
-    test1
-    test2
-    test3
+   test1
+   test2
+   test3
   [production:vars]
-    db_primary_port=22
+   db_primary_port=22
 
   [groupservers]
-    web1.test.com
-    web2.test.com
-    [groupservers:vars]
-    ntp_server=ntp.test.com
-    admin_user=tom
+   web1.test.com
+   web2.test.com
+   [groupservers:vars]
+   ntp_server=ntp.test.com
+   admin_user=tom
   ```
 
 3. 主机变量
@@ -281,4 +281,6 @@ Jenkins+Ansible+Gitlab自动化部署三剑客: [http:\/\/www.showerlee.com\/arc
 Ansible 自动化运维工具之inventory和常用模块介绍: [http:\/\/www.voidcn.com\/blog\/linuxg\/article\/p-5978444.html](http://www.voidcn.com/blog/linuxg/article/p-5978444.html)
 
 **ansible小结（三）Inventory与Patterns: **[http:\/\/www.361way.com\/ansible-inventory-patterns\/4398.html](http://www.361way.com/ansible-inventory-patterns/4398.html)
+
+**Ansible中的tags使用: **[http:\/\/unixman.blog.51cto.com\/10163040\/1674198](http://unixman.blog.51cto.com/10163040/1674198)
 
