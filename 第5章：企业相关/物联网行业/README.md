@@ -2,6 +2,8 @@
 
 ```
 http://www.hekr.me/           氦氪
+http://www.gizwits.com/       机智云
+http://www.tuya.com/          涂鸦智能
 http://www.arduino.org.cn/       在这个行业，必须要知道Arduino
 http://www.arduino.cn/              Arduino中国
 http://open.iot.10086.cn/          中移动的物联网（newer）
@@ -14,9 +16,4 @@ http://www.kenrobot.com/                 平台功能很像
 http://makeblock.com/                  创客工场
 
 ```
-
-
-
-
-
 
