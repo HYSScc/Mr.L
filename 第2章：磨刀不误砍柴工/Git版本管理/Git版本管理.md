@@ -2,7 +2,9 @@
 
 * 生成develop开发分支：git checkout -b develop origin\/develop
 
+* 查看远程路径: git remote -v
 * git提交发布步骤\(形成稳定版本后，在master分支上打tag并递交tags\)
+
 
 > 1、git checkout master
 > 
@@ -13,8 +15,4 @@
 > 4、git tag -a v2.1.0
 > 
 > 5、git push --tags
-
-
-
-
 
