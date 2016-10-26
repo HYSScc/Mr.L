@@ -1,10 +1,11 @@
 # Git 版本管理
 
-* 生成develop开发分支：git checkout -b develop origin\/develop\(从远程checkout出一个分支\)或git checkout -b develop\(从本地checkout出一个分支\)
+* 生成develop开发分支：git checkout -b develop origin\/develop\(从远程origin\/develop checkout出一个分支\)或git checkout -b develop\(从本地checkout出一个分支\)
 
 * 查看远程路径: git remote -v
 
 * git提交发布步骤\(形成稳定版本后，在master分支上打tag并递交tags\)
+
 
 > 1、git checkout master
 > 
