@@ -176,6 +176,8 @@
 
 > \[ubuntu\]
 > 
+> \#注释:ansible\_ssh\_private\_key\_file的路径为当前光标所在目录的相对路径
+> 
 > 192.168.33.100 ansible\_ssh\_user=vagrant ansible\_ssh\_private\_key\_file=vagrant\/.vagrant\/machines\/default\/virtualbox\/private\_key
 > 
 > \[ubuntu2\]
@@ -227,21 +229,21 @@
 
   ```
   [all:vars]
-   ntp_server=ntp.centos.com
+  ntp_server=ntp.centos.com
 
   [production]
-   test1
-   test2
-   test3
+  test1
+  test2
+  test3
   [production:vars]
-   db_primary_port=22
+  db_primary_port=22
 
   [groupservers]
-   web1.test.com
-   web2.test.com
-   [groupservers:vars]
-   ntp_server=ntp.test.com
-   admin_user=tom
+  web1.test.com
+  web2.test.com
+  [groupservers:vars]
+  ntp_server=ntp.test.com
+  admin_user=tom
   ```
 
 3. 主机变量
