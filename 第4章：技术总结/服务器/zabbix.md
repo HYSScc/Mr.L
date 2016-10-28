@@ -139,8 +139,7 @@ DBPassword=zabbix
 ```
 
 
-
-` As frontend configuration is done, you need to restart Apache web server.
+- As frontend configuration is done, you need to restart Apache web server.
 
 ```
 
