@@ -26,15 +26,9 @@ zabbix监控系统客户端安装: [http:\/\/blog.chinaunix.net\/uid-25266990-id
 
  wget http://repo.zabbix.com/zabbix/3.2/ubuntu/pool/main/z/zabbix-release/zabbix-release_3.2-1+trusty_all.deb
 
-
-
  sudo dpkg --install zabbix-release_3.2-1+trusty_all.deb
-
-
-
+ 
  sudo apt-get update
-
-
 
 ```
 
@@ -57,7 +51,6 @@ zabbix监控系统客户端安装: [http:\/\/blog.chinaunix.net\/uid-25266990-id
 ```
 
 - zcat /usr/share/doc/zabbix-server-mysql/create.sql.gz | mysql -uroot -p 26554422
-
 
 
 ```
