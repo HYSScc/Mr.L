@@ -6,8 +6,6 @@ zabbix监控系统客户端安装: [http:\/\/blog.chinaunix.net\/uid-25266990-id
 
 # For Debian / Ubuntu
 
-
-
 ## Supported versions
 
 - Debian 7 (codename: wheezy)
