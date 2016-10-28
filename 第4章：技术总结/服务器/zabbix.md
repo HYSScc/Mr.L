@@ -52,7 +52,6 @@ zabbix监控系统客户端安装: [http:\/\/blog.chinaunix.net\/uid-25266990-id
 
 - zcat /usr/share/doc/zabbix-server-mysql/create.sql.gz | mysql -uroot -p 26554422
 
-
 ```
 
 OR
