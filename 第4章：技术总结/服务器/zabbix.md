@@ -110,7 +110,7 @@ shell> mysql -uzabbix -p<password> zabbix < data.sql
 
 ##### 2. PHP configuration for Zabbix frontend
 
->> NOTE: /etc/apache2/conf.d/zabbix.conf and /etc/zabbix/apache.conf are the same file.
+> NOTE: /etc/apache2/conf.d/zabbix.conf and /etc/zabbix/apache.conf are the same file.
 
 ```
 
