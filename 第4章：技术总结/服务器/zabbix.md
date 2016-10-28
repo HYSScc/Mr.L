@@ -18,8 +18,6 @@ zabbix监控系统客户端安装: [http:\/\/blog.chinaunix.net\/uid-25266990-id
 
 - Ubuntu 14.04 LTS (codename: trusty)
 
-
-
 ### 1. Installing repository configuration package
 
 ```
@@ -32,8 +30,6 @@ zabbix监控系统客户端安装: [http:\/\/blog.chinaunix.net\/uid-25266990-id
 
 ```
 
-
-
 ### 2. Installing packages
 
 ```
@@ -43,8 +39,6 @@ zabbix监控系统客户端安装: [http:\/\/blog.chinaunix.net\/uid-25266990-id
  // Administrator 'root' password: 26554422
 
 ```
-
-
 
 ### 3. Creating initial database
 
@@ -81,8 +75,6 @@ shell> mysql -uzabbix -p<password> zabbix < images.sql
 shell> mysql -uzabbix -p<password> zabbix < data.sql
 
 ```
-
-
 
 ### 4. Common configuration
 
