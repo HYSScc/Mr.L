@@ -151,13 +151,9 @@ DBPassword=zabbix
 
 ### 6. Install Agent
 
-
-
 ```
 
  sudo apt-get -y install zabbix-agent
-
-
 
 //Now agent is ready to be started by:
 
