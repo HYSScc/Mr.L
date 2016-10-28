@@ -10,8 +10,6 @@ zabbix监控系统客户端安装: [http:\/\/blog.chinaunix.net\/uid-25266990-id
 
 ## Supported versions
 
-
-
 - Debian 7 (codename: wheezy)
 
 - Debian 8 (codename: jessie)
