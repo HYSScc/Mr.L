@@ -124,8 +124,6 @@ DBPassword=zabbix
 
 ```
 
-
-
 ### 5. Starting Zabbix server process
 
 - After database is installed and zabbix_server.conf file is configured, you may start Zabbix server process.
