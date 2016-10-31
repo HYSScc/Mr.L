@@ -286,3 +286,5 @@ Ansible 自动化运维工具之inventory和常用模块介绍: [http:\/\/www.vo
 
 **Ansible中的tags使用: **[http:\/\/unixman.blog.51cto.com\/10163040\/1674198](http://unixman.blog.51cto.com/10163040/1674198)
 
+关闭苹果自带的SIP安全功能: [http:\/\/www.zeython.com\/ei\_capitan\_scrapy.html](http://www.zeython.com/ei_capitan_scrapy.html)
+
