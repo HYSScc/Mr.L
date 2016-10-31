@@ -256,6 +256,21 @@ web1.test.com http_port=80 ansible_ssh_port=12345
 
 ```
 
+Q&A：
+
+1. **“Operation not permitted”**
+
+  A: EI Capitan内置了一个叫做『系统健全保护』的机制，所以已经内置安装了six 1.4.1，任何用户（包括root）都没有权限卸载它
+  如何关闭苹果的SIP呢？
+
+  > 1. 重启 Mac，按住 Command+R 键直到 Apple logo 出现，进入 Recovery Mode
+  > 2. 顶部导航栏，点击 Utilities &gt; Terminal
+  > 3. 在 Terminal 中输入 csrutil disable，之后回车
+  > 4. 重启 Mac
+
+
+
+
 ## 参考：
 
 培训文档: [ansible文档](/assets/doc/ansible.html)
