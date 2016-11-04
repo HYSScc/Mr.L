@@ -4,3 +4,5 @@
 
 上海期货交易厅：http:\/\/www.shfe.com.cn\/
 
+国家外汇管理局：http:\/\/www.safe.gov.cn\/
+
