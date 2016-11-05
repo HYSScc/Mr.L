@@ -771,3 +771,10 @@ southeast SE Patricia Hemenway 4.0 .7 4 17
 
 central CT Ann Stephens 5.7 .94 5 13
 
+
+
+参考:
+
+1. **linux sed命令详解:** http:\/\/www.jb51.net\/LINUXjishu\/144593.html
+
+
