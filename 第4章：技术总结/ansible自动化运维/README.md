@@ -253,16 +253,13 @@
 ```
 [webservers] 
 web1.test.com http_port=80 ansible_ssh_port=12345
-
 ```
 
-Q&A：
+**   4.“Operation not permitted”**
 
-1. **“Operation not permitted”**
+A: EI Capitan内置了一个叫做『系统健全保护』的机制，所以已经内置安装了six 1.4.1，任何用户（包括root）都没有权限卸载它
 
-  A: EI Capitan内置了一个叫做『系统健全保护』的机制，所以已经内置安装了six 1.4.1，任何用户（包括root）都没有权限卸载它
-
-  SIP — System Integrity Protection 为EI Capitan新增的功能
+1. SIP — System Integrity Protection 为EI Capitan新增的功能
   如何关闭苹果的SIP呢？
 
   > 1. 重启 Mac，按住 Command+R 键直到 Apple logo 出现，进入 Recovery Mode
