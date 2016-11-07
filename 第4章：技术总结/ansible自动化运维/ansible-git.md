@@ -1148,5 +1148,7 @@ _\*\*_前言：
 
 ## 参考：
 
+20分钟教你学会熟练使用ansible： http://www.mamicode.com/info-detail-1428476.html
+
 文档: [http:\/\/docs.ansible.com\/ansible\/git\_module.html\#examples](http://docs.ansible.com/ansible/git_module.html#examples)
 
