@@ -4,9 +4,9 @@
 
 * 查看远程路径: git remote -v
 
-* 将本地分支推送到远程形成分支: git push origin lianghuiyuan
-* git提交发布步骤\(形成稳定版本后，在master分支上打tag并递交tags\)
+* 将本地分支推送到远程形成分支: git push origin lianghuiyuan\(分支名\)
 
+* git提交发布步骤\(形成稳定版本后，在master分支上打tag并递交tags\)
 
 > 1、git checkout master
 > 
