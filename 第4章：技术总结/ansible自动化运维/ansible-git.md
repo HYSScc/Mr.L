@@ -971,7 +971,7 @@ _\*\*_前言：
 
  
 
-**\*\*"when： result\|success"的意思为当变量result执行结果为成功状态是，将执行\/bin\/something\_else命令，其他同理。其中success为Ansible内部过滤器方法，返回True代表命令运行成功。\*\***
+**"when： result\|success"的意思为当变量result执行结果为成功状态是，将执行\/bin\/something\_else命令，其他同理。其中success为Ansible内部过滤器方法，返回True代表命令运行成功。\*\***
 
 \#\#\#\# 2）循环语句 \#\#\#\#
 
