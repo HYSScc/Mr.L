@@ -8,15 +8,13 @@
 
 \[root@wrk\]\# cat INSTALL
 
- For example to use the system version of both libraries on Linux:
+For example to use the system version of both libraries on Linux:
 
- make WITH\_LUAJIT=\/usr WITH\_OPENSSL=\/usr
+make WITH\_LUAJIT=\/usr WITH\_OPENSSL=\/usr
 
- Or to use the Homebrew version of OpenSSL on Mac OS X:
+Or to use the Homebrew version of OpenSSL on Mac OS X:
 
- make WITH\_OPENSSL=\/usr\/local\/opt\/openssl
-
-
+make WITH\_OPENSSL=\/usr\/local\/opt\/openssl
 
 \#make WITH\_LUAJIT=\/xxxxx WITH\_OPENSSL=\/xxxxxx
 
@@ -33,5 +31,12 @@
     22464657 requests in 30.00s, 17.76GB read
   Requests/sec: 748868.53
   Transfer/sec:    606.33MB
+```
+
+
+
+```
+使用：wrk -t2 -d1m -c400 http://127.0.0.1    (t ：线程数量   d:时间 单位可以是 s 秒， m 分钟   c 同时最大链接数量)
+结果：Requests/sec 每秒响应数量，latency：延时时间  ，并且提供平均和最大、标准差等
 ```
 
