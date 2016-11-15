@@ -1,12 +1,12 @@
+转自:org-mode入门教程: http:\/\/www.fuzihao.org\/blog\/2015\/02\/19\/org-mode%E6%95%99%E7%A8%8B\/
+
 # **org-mode 入门教程**
 
- org-mode是Emacs提供的一个强大的编辑模式，可以用于做会议笔记以及制作各种待办事项（GDT）。其语法类似于Markdown但是提供了比Markdown更多的操作，再加上Emacs强大的编辑功能，能给笔记增加很多动态的操作（能纯文本上实现折叠、展开、树状视图、表格求和、求代码运行结果等功能），可以说org-mode是最强大的标记语言。而org-mode的强大，也导致了他比markdown更加复杂，需要花些时间来练习，本文选出了org-mode最强大、实用的功能，进行最简单的介绍，下面介绍org-mode的使用方法。
+org-mode是Emacs提供的一个强大的编辑模式，可以用于做会议笔记以及制作各种待办事项（GDT）。其语法类似于Markdown但是提供了比Markdown更多的操作，再加上Emacs强大的编辑功能，能给笔记增加很多动态的操作（能纯文本上实现折叠、展开、树状视图、表格求和、求代码运行结果等功能），可以说org-mode是最强大的标记语言。而org-mode的强大，也导致了他比markdown更加复杂，需要花些时间来练习，本文选出了org-mode最强大、实用的功能，进行最简单的介绍，下面介绍org-mode的使用方法。
 
 ## **安装**
 
- [Emacs](http://www.gnu.org/software/emacs/)最新版本（24.4）自带org-mode，这就意味着只要打开一个后缀名为org的文件就会自动进入org-mode。因此我们只需要下载最新版的Emacs即可。
-
- 
+[Emacs](http://www.gnu.org/software/emacs/)最新版本（24.4）自带org-mode，这就意味着只要打开一个后缀名为org的文件就会自动进入org-mode。因此我们只需要下载最新版的Emacs即可。
 
 windows用户：到[http:\/\/ftp.gnu.org\/gnu\/emacs\/windows\/](http://ftp.gnu.org/gnu/emacs/windows/) 下载最新版
 
@@ -14,18 +14,16 @@ ubuntu系列：在终端中输入：`sudo apt-get install emacs`
 
 ## **配置**
 
- org-mode功能基本比较完善，不需要更多的配置，但是org模式下默认没有自动换行的功能，我们在.emacs文件里面添加如下代码，实现自动换行：
+org-mode功能基本比较完善，不需要更多的配置，但是org模式下默认没有自动换行的功能，我们在.emacs文件里面添加如下代码，实现自动换行：
 
 ```
 (add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
 
 ```
 
-
-
 ## **实例教程**
 
- 以下分别讲解org-mode下几个实用的功能，更完整的教程可以参考[官网教程](http://orgmode.org/orgguide.pdf)。下面一步一步完成我们的org文件。（本教程中我们定义 `C-x` 表示按Ctrl+x，`M+x`标识Alt+x，`S+x`代表Shift+x，这也是Emacs的标准定义）
+以下分别讲解org-mode下几个实用的功能，更完整的教程可以参考[官网教程](http://orgmode.org/orgguide.pdf)。下面一步一步完成我们的org文件。（本教程中我们定义 `C-x` 表示按Ctrl+x，`M+x`标识Alt+x，`S+x`代表Shift+x，这也是Emacs的标准定义）
 
 ### **新建文件**
 
@@ -39,9 +37,9 @@ ubuntu系列：在终端中输入：`sudo apt-get install emacs`
 
 ### **章节**
 
- org-mode用`*` 标识章节，一个`*` 代表一级标题，两个`*` 代表两级标题，以此类推。
+org-mode用`*` 标识章节，一个`*` 代表一级标题，两个`*` 代表两级标题，以此类推。
 
- 在Emacs中输入以下内容：
+在Emacs中输入以下内容：
 
 ```
 * 标题一
@@ -49,7 +47,7 @@ ubuntu系列：在终端中输入：`sudo apt-get install emacs`
 
 ```
 
- 注意型号后面有空格。可以发现，不同层级标题的颜色是不一样的。按Alt加左右键能够升降标题的层级。一些常用快捷键如下：
+注意型号后面有空格。可以发现，不同层级标题的颜色是不一样的。按Alt加左右键能够升降标题的层级。一些常用快捷键如下：
 
 * `S+Tab` 展开、折叠所有章节
 * `Tab` 对光标所在章节进行展开、折叠
@@ -57,11 +55,9 @@ ubuntu系列：在终端中输入：`sudo apt-get install emacs`
 
 ### **列表**
 
- 列表是文本中一个比较常用的元素，可以列出各种待完成的事项等。org-mode提供了一种很独特的功能，可以加入checkbok（实际就是加入一对中间有空格的方括号`[ ]`）标记任务的完成状况，而且如果一个总任务有多个子任务，还可以根据子任务的完成情况计算总进度（只需要在总任务后面添加一对方括号，里面加上`%`或`/` 如`[%],[/]`）。列表分为有序和无序两种，有序列表以`1.`或 `1)`开头，无序列表以`+`或`-`开头 后面，同样，后面要跟一个空格。
+列表是文本中一个比较常用的元素，可以列出各种待完成的事项等。org-mode提供了一种很独特的功能，可以加入checkbok（实际就是加入一对中间有空格的方括号`[ ]`）标记任务的完成状况，而且如果一个总任务有多个子任务，还可以根据子任务的完成情况计算总进度（只需要在总任务后面添加一对方括号，里面加上`%`或`/` 如`[%],[/]`）。列表分为有序和无序两种，有序列表以`1.`或 `1)`开头，无序列表以`+`或`-`开头 后面，同样，后面要跟一个空格。
 
- 
-
- 我们输入一个无序列表：
+我们输入一个无序列表：
 
 ```
 + treeroot  
@@ -70,7 +66,7 @@ ubuntu系列：在终端中输入：`sudo apt-get install emacs`
 
 ```
 
- 在输入的时候，我们按`M-RET`（Alt+回车）可以自动输入同级的条目，按`M+left/right`调整层级。同理，我们还可以输入一个有序列表：
+在输入的时候，我们按`M-RET`（Alt+回车）可以自动输入同级的条目，按`M+left/right`调整层级。同理，我们还可以输入一个有序列表：
 
 ```
 1) [-] 任务1 [33%]
@@ -81,9 +77,7 @@ ubuntu系列：在终端中输入：`sudo apt-get install emacs`
 
 ```
 
- 我们按`M-S-RET` 可以输入一个带checkbox的列表项，而在总任务后面可以输入一个`[%]`或者`[/]`则能自动计算总任务进度。最后结果如图所示。
-
- 
+我们按`M-S-RET` 可以输入一个带checkbox的列表项，而在总任务后面可以输入一个`[%]`或者`[/]`则能自动计算总任务进度。最后结果如图所示。
 
 常用快捷键：
 
@@ -95,7 +89,7 @@ ubuntu系列：在终端中输入：`sudo apt-get install emacs`
 
 ### **脚注**
 
- 用`[fn:1]`的方式插入脚注，而在最下面插入
+用`[fn:1]`的方式插入脚注，而在最下面插入
 
 ```
 [fn:1]本文参考自http://orgmode.org/orgguide.pdf
@@ -106,7 +100,7 @@ ubuntu系列：在终端中输入：`sudo apt-get install emacs`
 
 ### **表格**
 
- 表格常用于数据展示，org-mode提供了方便的列表操作。其中最独特的是支持类似于Excel的表格函数，可以完成简单的求和等操作
+表格常用于数据展示，org-mode提供了方便的列表操作。其中最独特的是支持类似于Excel的表格函数，可以完成简单的求和等操作
 
 创建表格时，在新建表格时，首先输入表头：
 
@@ -150,7 +144,7 @@ input | Name  |  Phone | sub1 | sub2 | total |
 
 ```
 
- 如果要插入行和列，可在表头添加一个标签或者新起一行，输入\|再调整格式即可。其中最后一行是ogr-mode自动添加的。一些快捷键如下：
+如果要插入行和列，可在表头添加一个标签或者新起一行，输入\|再调整格式即可。其中最后一行是ogr-mode自动添加的。一些快捷键如下：
 
 * `C-c |` 通过输入大小的方式插入表格
 * `C-c C-c` 对齐表格
@@ -161,7 +155,7 @@ input | Name  |  Phone | sub1 | sub2 | total |
 
 ### **链接**
 
- 链接用于链接一些资源地址，如图片、文件、URL等。
+链接用于链接一些资源地址，如图片、文件、URL等。
 
 链接的格式是：
 
@@ -185,9 +179,7 @@ input | Name  |  Phone | sub1 | sub2 | total |
 
 ```
 
- 直接显示的图片在Emacs里默认不显示，需按`C-c C-x C-v`才能显示，在输出成其他格式（html、pdf……）后也能看到。
-
- 
+直接显示的图片在Emacs里默认不显示，需按`C-c C-x C-v`才能显示，在输出成其他格式（html、pdf……）后也能看到。
 
 常用快捷键：
 
@@ -195,9 +187,9 @@ input | Name  |  Phone | sub1 | sub2 | total |
 
 ### **待办事项（TODO ）**
 
- TODO是org-mode最具特色的一个功能，也是org-mode设计的初衷，org-mode的作者本意是用其来完成一个个人时间管理程序（GDT）。因此，可以用org-mode来做一个个人时间管理工具！
+TODO是org-mode最具特色的一个功能，也是org-mode设计的初衷，org-mode的作者本意是用其来完成一个个人时间管理程序（GDT）。因此，可以用org-mode来做一个个人时间管理工具！
 
- 下面我们来看怎么写TODO。TODO 也是一类标题，因此也需要用`*`开头，在Emacs中输入：
+下面我们来看怎么写TODO。TODO 也是一类标题，因此也需要用`*`开头，在Emacs中输入：
 
 ```
 ** TODO 洗衣服
@@ -443,7 +435,7 @@ org-mode导出pdf需要LaTeX支持，而导出html很方便，但是导出的htm
 
 ## **结论**
 
- org-mode是Emacs非常重要的一个模式，自其诞生之后，受到了各种Emacs粉丝的追捧，甚至在VIM上也衍生出了org-mode的分支，足见它的人气。通过本教程介绍，我们已经见识到了org-mode 的强大功能，而这仅仅只是org-mode功能的一小部分，org-mode更多的功能等待这我们去探索、发现。更多文章请访问[切问录](http://www.fuzihao.org/) [http:\/\/www.fuzihao.org](http://www.fuzihao.org/)
+org-mode是Emacs非常重要的一个模式，自其诞生之后，受到了各种Emacs粉丝的追捧，甚至在VIM上也衍生出了org-mode的分支，足见它的人气。通过本教程介绍，我们已经见识到了org-mode 的强大功能，而这仅仅只是org-mode功能的一小部分，org-mode更多的功能等待这我们去探索、发现。更多文章请访问[切问录](http://www.fuzihao.org/) [http:\/\/www.fuzihao.org](http://www.fuzihao.org/)
 
 ## **附件**
 
@@ -454,6 +446,4 @@ org文件[tutorial.org](http://www.fuzihao.org/blog/attachment/tutorial.org)
 ## **参考文献**
 
 \[1\]org-mode 官方教程 [http:\/\/orgmode.org\/orgguide.pdf](http://orgmode.org/orgguide.pdf)
-
-
 
