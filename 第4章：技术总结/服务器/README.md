@@ -26,5 +26,5 @@ Firebase：[https:\/\/firebase.google.com\/](https://firebase.google.com/)
 
 云巴: [https:\/\/yunba.io\/](https://yunba.io/)
 
-
+DaoCloud: [http:\/\/www.daocloud.io\/](http://www.daocloud.io/)
 
