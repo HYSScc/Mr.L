@@ -28,3 +28,5 @@ Firebase：[https:\/\/firebase.google.com\/](https://firebase.google.com/)
 
 DaoCloud: [http:\/\/www.daocloud.io\/](http://www.daocloud.io/)
 
+云雀云: [http:\/\/www.alauda.cn\/](http://www.alauda.cn/)
+
