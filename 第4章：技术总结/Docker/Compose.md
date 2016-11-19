@@ -5,6 +5,7 @@ Docker Compose的工程配置文件默认为docker-compose.yml，可通过环境
 ---
 
 1. **Docker学习笔记\#4: **http:\/\/www.jianshu.com\/p\/784bdffcc469
+2.   docker-compose.yml 语法说明: http:\/\/www.cnblogs.com\/freefei\/p\/5311294.html
 
 #### **YAML 模板文件语法**
 
@@ -44,11 +45,12 @@ command: bundle exec thin -p 3000
 
 links:
 
-- db
+* db
 
-- db:database
+* db:database
 
-- redis
+* redis
+
 
 使用的别名将会自动在服务容器中的 \/etc\/hosts 里创建。例如：
 
@@ -62,11 +64,12 @@ links:
 
 external\_links:
 
-- redis\_1
+* redis\_1
 
-- project\_db\_1:mysql
+* project\_db\_1:mysql
 
-- project\_db\_1:postgresql
+* project\_db\_1:postgresql
+
 
 #### **ports**
 
@@ -76,11 +79,12 @@ external\_links:
 
 #### **ports:**
 
-- "3000"
+* "3000"
 
-- "8000:8000"
+* "8000:8000"
 
-- "127.0.0.1:8001:8001"
+* "127.0.0.1:8001:8001"
+
 
 注：当使用 HOST:CONTAINER 格式来映射端口时，如果你使用的容器端口小于 60 你可能会得到错误得结果，因为 YAML 将会解析 xx:yy 这种数字格式为 60 进制。所以建议采用字符串格式。
 
@@ -92,9 +96,10 @@ external\_links:
 
 expose:
 
-- "3000"
+* "3000"
 
-- "8000"
+* "8000"
+
 
 #### **volumes**
 
@@ -102,11 +107,12 @@ expose:
 
 volumes:
 
-- \/var\/lib\/mysql
+* \/var\/lib\/mysql
 
-- cache\/:\/tmp\/cache
+* cache\/:\/tmp\/cache
 
-- ~\/configs:\/etc\/configs\/:ro
+* ~\/configs:\/etc\/configs\/:ro
+
 
 #### **volumes\_from**
 
@@ -114,9 +120,10 @@ volumes:
 
 volumes\_from:
 
-- service\_name
+* service\_name
 
-- container\_name
+* container\_name
+
 
 #### **environment**
 
@@ -126,9 +133,10 @@ volumes\_from:
 
 environment:
 
-- RACK\_ENV=development
+* RACK\_ENV=development
 
-- SESSION\_SECRET
+* SESSION\_SECRET
+
 
 #### **env\_file**
 
@@ -142,11 +150,12 @@ env\_file: .env
 
 env\_file:
 
-- .\/common.env
+* .\/common.env
 
-- .\/apps\/web.env
+* .\/apps\/web.env
 
-- \/opt\/secrets.env
+* \/opt\/secrets.env
+
 
 环境变量文件中每一行必须符合格式，支持 \# 开头的注释行。
 
@@ -192,7 +201,7 @@ links:
 
 environment:
 
-- DEBUG=true
+* DEBUG=true
 
 db:
 
@@ -226,9 +235,10 @@ dns: 8.8.8.8
 
 dns:
 
-- 8.8.8.8
+* 8.8.8.8
 
-- 9.9.9.9
+* 9.9.9.9
+
 
 #### **cap\_add, cap\_drop**
 
@@ -236,13 +246,14 @@ dns:
 
 cap\_add:
 
-- ALL
+* ALL
 
 cap\_drop:
 
-- NET\_ADMIN
+* NET\_ADMIN
 
-- SYS\_ADMIN
+* SYS\_ADMIN
+
 
 #### **dns\_search**
 
@@ -252,7 +263,7 @@ dns\_search: example.com
 
 dns\_search:
 
-- domain1.example.com
+* domain1.example.com
 
 \ - domain2.example.com
 
