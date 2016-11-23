@@ -30,3 +30,5 @@ DaoCloud: [http:\/\/www.daocloud.io\/](http://www.daocloud.io/)
 
 云雀云: [http:\/\/www.alauda.cn\/](http://www.alauda.cn/)
 
+时速云: [https:\/\/www.tenxcloud.com\/](https://www.tenxcloud.com/)
+
