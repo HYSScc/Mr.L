@@ -32,3 +32,5 @@ DaoCloud: [http:\/\/www.daocloud.io\/](http://www.daocloud.io/)
 
 时速云: [https:\/\/www.tenxcloud.com\/](https://www.tenxcloud.com/)
 
+Pingcap:  http:\/\/www.pingcap.com\/
+
