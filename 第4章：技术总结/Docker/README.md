@@ -10,9 +10,11 @@
 
 > **\[plain\]** [view plain](http://blog.csdn.net/we_shell/article/details/38368137# "view plain")[copy](http://blog.csdn.net/we_shell/article/details/38368137# "copy")
 > 
-> 1. \# 查看docker版本
-> 2. $docker version
-> 3. 
-> 4. \# 显示docker系统的信息
-> 5. $docker info
+> \# 查看docker版本
+> $docker version
+> 
+> \# 显示docker系统的信息
+> $docker info
+
+## 2. 对image的操作（search、pull、images、rmi、history）
 
