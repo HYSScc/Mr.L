@@ -64,3 +64,5 @@ Note： 在执行apt-get 命令的时候，要带上-y参数。如果不指定-y
 > \# 保存对容器的修改; -a, --author="" Author; -m, --message="" Commit message
 > $docker commit ID new\_image\_name
 
+Note： image相当于类，container相当于实例，不过可以动态给实例安装新软件，然后把这个container用commit命令固化成一个image。
+
