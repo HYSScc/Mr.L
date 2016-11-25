@@ -119,3 +119,8 @@ Note： attach命令允许你查看或者影响一个运行的容器。你可以
 > \# 登陆registry server; -e, --email="" Email; -p, --password="" Password; -u, --username="" Username
 > $docker login
 
+## 9. 发布image（push）
+
+> \# 发布docker镜像
+> $docker push new\_image\_name
+
