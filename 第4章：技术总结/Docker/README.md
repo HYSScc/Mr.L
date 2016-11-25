@@ -71,38 +71,51 @@ Note： image相当于类，container相当于实例，不过可以动态给实�
 > \# 删除所有容器
 > $docker rm \`docker ps -a -q\`
 > 
-> 
 > \# 删除单个容器; -f, --force=false; -l, --link=false Remove the specified link and not the underlying container; -v, --volumes=false Remove the volumes associated to the container
 > $docker rm Name\/ID
-> 
 > 
 > \# 停止、启动、杀死一个容器
 > $docker stop Name\/ID
 > $docker start Name\/ID
 > $docker kill Name\/ID
 > 
-> 
 > \# 从一个容器中取日志; -f, --follow=false Follow log output; -t, --timestamps=false Show timestamps
 > $docker logs Name\/ID
-> 
 > 
 > \# 列出一个容器里面被改变的文件或者目录，list列表会显示出三种事件，A 增加的，D 删除的，C 被改变的
 > $docker diff Name\/ID
 > 
-> 
 > \# 显示一个运行的容器里面的进程信息
 > $docker top Name\/ID
-> 
 > 
 > \# 从容器里面拷贝文件\/目录到本地一个路径
 > $docker cp Name:\/container\_path to\_path
 > $docker cp ID:\/container\_path to\_path
 > 
-> 
 > \# 重启一个正在运行的容器; -t, --time=10 Number of seconds to try to stop for before killing the container, Default=10
 > $docker restart Name\/ID
 > 
-> 
 > \# 附加到一个运行的容器上面; --no-stdin=false Do not attach stdin; --sig-proxy=true Proxify all received signal to the process
 > $docker attach ID
+
+Note： attach命令允许你查看或者影响一个运行的容器。你可以在同一时间attach同一个容器。你也可以从一个容器中脱离出来，是从CTRL-C。
+
+## 7. 保存和加载镜像（save、load）
+
+当需要把一台机器上的镜像迁移到另一台机器的时候，需要保存镜像与加载镜像。
+
+> \# 保存镜像到一个tar包; -o, --output="" Write to an file
+> $docker save image\_name -o file\_path
+> \# 加载一个tar包格式的镜像; -i, --input="" Read from a tar archive file
+> $docker load -i file\_path
+> 
+> \# 机器a
+> $docker save image\_name &gt; \/home\/save.tar
+> \# 使用scp将save.tar拷到机器b上，然后：
+> $docker load &lt; \/home\/save.tar
+
+## 8、 登录registry server（login）
+
+> \# 登陆registry server; -e, --email="" Email; -p, --password="" Password; -u, --username="" Username
+> $docker login
 
