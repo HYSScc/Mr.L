@@ -18,3 +18,18 @@
 
 ## 2. 对image的操作（search、pull、images、rmi、history）
 
+> \# 检索image
+> $docker search image\_name
+> 
+> \# 下载image
+> $docker pull image\_name
+> 
+> \# 列出镜像列表; -a, --all=false Show all images; --no-trunc=false Don't truncate output; -q, --quiet=false Only show numeric IDs
+> $docker images
+> 
+> \# 删除一个或者多个镜像; -f, --force=false Force; --no-prune=false Do not delete untagged parents
+> $docker rmi image\_name
+> 
+> \# 显示一个镜像的历史; --no-trunc=false Don't truncate output; -q, --quiet=false Only show numeric IDs
+> $docker history image\_name
+
