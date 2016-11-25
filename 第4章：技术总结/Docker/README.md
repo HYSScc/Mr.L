@@ -139,7 +139,11 @@ Note： attach命令允许你查看或者影响一个运行的容器。你可以
 
 > dfajkldfasdkf adsklfja lsdf kdsfjalskdf kj sdfkaj kjk  kdkiii   ekksdkf  ksdjfo cxikjioasd   djkfioiiiiii kjajk
 > 
-> fs 
+> 查看容器的内部IP
+> 
+> \# docker inspect --format='{{.NetworkSettings.IPAddress}}' $CONTAINER\_ID
+> 
+> 172.17.42.35
 > 
 > dkfj
 
