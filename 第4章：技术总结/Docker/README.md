@@ -57,3 +57,7 @@ Note： 在执行apt-get 命令的时候，要带上-y参数。如果不指定-y
 > \# 列出最近一次启动的container
 > $docker ps -l
 
+## 5. 保存对容器的修改（commit）
+
+
+
