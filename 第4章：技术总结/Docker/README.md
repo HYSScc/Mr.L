@@ -37,3 +37,13 @@
 
 docker容器可以理解为在沙盒中运行的进程。这个沙盒包含了该进程运行所必须的资源，包括文件系统、系统类库、shell 环境等等。但这个沙盒默认是不会运行任何程序的。你需要在沙盒中运行一个进程来启动某一个容器。这个进程是该容器的唯一进程，所以当该进程结束的时候，容器也会完全的停止。
 
+> \# 在容器中运行"echo"命令，输出"hello word"
+> $docker run image\_name echo "hello word"
+> 
+> \# 交互式进入容器中
+> $docker run -i -t image\_name \/bin\/bash
+> 
+> 
+> \# 在容器中安装新的程序
+> $docker run image\_name apt-get install -y app\_name
+
