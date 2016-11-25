@@ -139,7 +139,7 @@ Note： attach命令允许你查看或者影响一个运行的容器。你可以
 
 > 查看容器的内部IP
 > 
-> \# docker inspect —format='{{.NetworkSettings.IPAddress}}' $CONTAINER\_ID
+> \# docker inspect —format=
 > 
 > 172.17.42.35
 
