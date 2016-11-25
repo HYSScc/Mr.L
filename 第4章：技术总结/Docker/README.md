@@ -33,3 +33,5 @@
 > \# 显示一个镜像的历史; --no-trunc=false Don't truncate output; -q, --quiet=false Only show numeric IDs
 > $docker history image\_name
 
+
+
