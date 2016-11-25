@@ -137,5 +137,9 @@ Note： attach命令允许你查看或者影响一个运行的容器。你可以
 
 `inspect`的对象可以是image、运行中的container和停止的container。
 
-> qqq
+> qqq查看容器的内部IP
+> 
+> \# docker inspect --format='{{.NetworkSettings.IPAddress}}' $CONTAINER\_ID
+> 
+> 172.17.42.35
 
