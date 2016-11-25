@@ -133,14 +133,3 @@ Note： attach命令允许你查看或者影响一个运行的容器。你可以
 >  -t, --tag="" Repository name \(and optionally a tag\) to be applied to the resulting image in case of success
 > $docker build -t image\_name Dockerfile\_path
 
-### **3. 查看image或container的底层信息（inspect）**
-
-`inspect`的对象可以是image、运行中的container和停止的container。
-
-
-> 查看容器的内部IP
-> 
-> \# docker inspect --format='{{.NetworkSettings.IPAddress}}' $CONTAINER\_ID
-> 
-> 172.17.42.35
-
