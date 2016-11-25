@@ -135,3 +135,5 @@ Note： attach命令允许你查看或者影响一个运行的容器。你可以
 
 ### **3. 查看image或container的底层信息（inspect）**
 
+`inspect`的对象可以是image、运行中的container和停止的container。
+
