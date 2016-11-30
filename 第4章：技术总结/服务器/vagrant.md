@@ -2,6 +2,8 @@
 
 **ubuntu 安装vagrant过程: **http:\/\/www.mamicode.com\/info-detail-193664.html
 
+使用Vagrant（一）：搭建Vagrant运行环境: [http:\/\/www.ituring.com.cn\/article\/131438](http://www.ituring.com.cn/article/131438?utm_source=tuicool&utm_medium=referral)
+
 ---
 
 Vagrant 官方提供了很好的 [Getting Started](https://docs.vagrantup.com/v2/getting-started/project_setup.html)，按照这个文档一步步操作就可以学会怎么用它了。我这里也简单写一下使用步骤。
