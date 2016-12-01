@@ -22,7 +22,7 @@ $ vagrant init ubuntu/trusty64
 $ vagrant up
 ```
 
-`ubuntu/trusty64 是一个公开 Boxes，更多公开 Boxes 可以在`[`这里`](https://atlas.hashicorp.com/boxes/search)` 找到。运行上面第一行命令后，Vagrant 会在工作目录下创建 Vagrantfile 配置文件，打开它可以看到下面这样一行，作用是配置当前 Vagrant 环境使用哪个 Boxes：`
+`ubuntu/trusty64 是一个公开 Boxes，更多公开 Boxes 可以在`[`这里`](https://atlas.hashicorp.com/boxes/search)`找到。运行上面第一行命令后，Vagrant 会在工作目录下创建 Vagrantfile 配置文件，打开它可以看到下面这样一行，作用是配置当前 Vagrant 环境使用哪个 Boxes：`
 
 ```
 config.vm.box = "ubuntu/trusty64"
@@ -65,17 +65,15 @@ config.vm.provision "shell", inline: $script, run: "always"
 
 每次修改 `VagrantFile 之后，需要执行 vagrant reload 命令使之生效。其他常用的管理虚拟机的 vagrant 命令还有：`
 
-| 命令作用 |  |
-| --- | --- |
-| vagrant up | 启动本地环境 |
-| vagrant halt | 关闭本地环境 |
-| vagrant suspend | 暂停本地环境 |
-| vagrant resume | 恢复本地环境 |
-| vagrant reload | 修改了 Vagrantfile 后，使之生效（相当于先 halt，再 up） |
-| vagrant ssh | 通过 ssh 登录本地环境所在虚拟机 |
-| vagrant destroy | 彻底移除本地环境 |实际使用过程中，通过 vagrant suspend\/resume 来快速暂停 \/ 恢复最为方便。
-
-### 封装
+|  | 命令作用 |  |
+| :--- | :--- | :--- |
+|  | vagrant up | 启动本地环境 |
+|  | vagrant halt | 关闭本地环境 |
+|  | vagrant suspend | 暂停本地环境 |
+|  | vagrant resume | 恢复本地环境 |
+|  | vagrant reload | 修改了 Vagrantfile 后，使之生效（相当于先 halt，再 up） |
+|  | vagrant ssh | 通过 ssh 登录本地环境所在虚拟机 |
+| vagrant destroy | 彻底移除本地环境 | 实际使用过程中，通过 vagrant suspend\/resume 来快速暂停 \/ 恢复最为方便。 |### 封装
 
 进入 Vagrant 工作目录后，通过 `vagrant package 命令即可将当前环境封装为一个 Boxes，这个 .box 文件就可以给其他人用了，例如将它传到内网。其他人这样就可以快速获得这个环境：`
 
@@ -97,4 +95,6 @@ $ vagrant up
 本文链接：[https:\/\/imququ.com\/post\/vagrantup.html](https://imququ.com/post/vagrantup.html "Permalink to 开始使用 Vagrant")，[参与评论 »](https://imququ.com/post/vagrantup.html#comments)
 
 --EOF--
+
+
 
