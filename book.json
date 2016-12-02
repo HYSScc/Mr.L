@@ -1,13 +1,18 @@
 {
+    "plugins": [ "theme-api" ],
     "pluginsConfig": {
-        "sharing": {
-            "facebook": true,
-            "twitter": true,
-            "google": false,
-            "weibo": false,
-            "instapaper": false,
-            "vk": false,
-            "all": "facebook,google,twitter,weibo,instapaper"
+        "theme-api": {
+            "languages": [
+                {
+                    "lang": "js",
+                    "name": "JavaScript",
+                    "default": true
+                },
+                {
+                    "lang": "go",
+                    "name": "Go"
+                }
+            ]
         }
     }
 }
