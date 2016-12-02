@@ -1,6 +1,5 @@
 {
     "plugins": [
-        "theme-api",
         "mermaid-2"
     ],
     "pluginsConfig": {
