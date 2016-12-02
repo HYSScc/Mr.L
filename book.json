@@ -1,7 +1,4 @@
 {
-    "plugins": [
-        "block-align"
-    ],
     "pluginsConfig": {
         "mermaid-2": {
             "theme": "forest"
