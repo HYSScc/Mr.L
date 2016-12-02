@@ -16,7 +16,7 @@
 
 `--Mr.L 2014.5.30`
 
-```
+```mermaid
 graph TD;
   A-->B;
   A-->C;
