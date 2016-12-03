@@ -4,15 +4,11 @@
 
 码工助手: [http://www.001daima.com/index.php?get=active](http://www.001daima.com/index.php?get=active)
 
-幽幽设计: http://www.you966.cn/
+模版代码：http://moban.001daima.com/
 
-装修模版1: https://zxn.taobao.com/detail.htm?spm=a215h.7721252.0.0.MvM69h&id=42476108
+幽幽设计: [http://www.you966.cn/](http://www.you966.cn/)
 
-
-
-
-
-
+装修模版1: [https://zxn.taobao.com/detail.htm?spm=a215h.7721252.0.0.MvM69h&id=42476108](https://zxn.taobao.com/detail.htm?spm=a215h.7721252.0.0.MvM69h&id=42476108)
 
 ![](/assets/pic/intorobot 淘宝店铺支付方式.png)
 
