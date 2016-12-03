@@ -4,7 +4,7 @@
 
 码工助手: [http://www.001daima.com/index.php?get=active](http://www.001daima.com/index.php?get=active)
 
-模版代码：http://moban.001daima.com/
+模版代码工具：[http://moban.001daima.com/](http://moban.001daima.com/)
 
 幽幽设计: [http://www.you966.cn/](http://www.you966.cn/)
 
