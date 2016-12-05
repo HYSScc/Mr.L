@@ -1,8 +1,6 @@
+ 
 
-
-
-
-
+免密码登陆: ssh -i ./ssh\_keys/aliyun.key intorobot@192.168.1.23
 
 ---
 
