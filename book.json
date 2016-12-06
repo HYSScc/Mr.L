@@ -1,6 +1,7 @@
 {
     "plugins": [
-        "mermaid-2"
+        "mermaid-2",
+        "audio_image"
     ],
     "pluginsConfig": {
         "theme-api": {
