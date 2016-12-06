@@ -32,8 +32,6 @@ hadoop ALL\(ALL\) ALL
 
 如果系统上的所有用户都用不了sudo的话也只好用这种办法了
 
-
-
 # 免密码使用sudo和su
 
 
