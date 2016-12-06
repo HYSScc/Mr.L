@@ -65,3 +65,11 @@ $ visudo  //或者vi /etc/sudoers
 
 `your_user_name ALL=(ALL) NOPASSWD: ALL`
 
+> **注意：** 有的时候你的将用户设了nopasswd，但是不起作用，原因是被后面的group的设置覆盖了，需要把group的设置也改为nopasswd。
+>
+> your\_user\_name ALL=\(ALL\) NOPASSWD: ALL
+>
+> %admin ALL=\(ALL\) NOPASSWD: ALL
+
+
+
