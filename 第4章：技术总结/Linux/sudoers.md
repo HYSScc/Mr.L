@@ -34,7 +34,7 @@ hadoop ALL\(ALL\) ALL
 
 # 免密码使用sudo和su
 
-
+> 转自：http://www.jianshu.com/p/5d02428f313d
 
 
 
