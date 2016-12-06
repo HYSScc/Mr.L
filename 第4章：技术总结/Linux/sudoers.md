@@ -34,10 +34,15 @@ hadoop ALL\(ALL\) ALL
 
 # 免密码使用sudo和su
 
-转自：http://www.jianshu.com/p/5d02428f313d
+转自：[http://www.jianshu.com/p/5d02428f313d](http://www.jianshu.com/p/5d02428f313d)
+
+> 因为最近频繁的使用su root命令，受够了每次都要输入密码，于是网上搜了搜解决方案，还真有解决&gt;  方案，不敢独享，整理分享给大家。  
+> 奉上原帖地址：  
+> [http://www.cnblogs.com/itech/archive/2009/08/07/1541017.html](http://www.cnblogs.com/itech/archive/2009/08/07/1541017.html)
+
+#### 设置sudo免密码
+
+> sudo是linux系统管理指令，是允许系统管理员让普通用户执行一些或者全部的root命令的一个工具，如halt、reboot、su等等。
 
 
-> 因为最近频繁的使用su root命令，受够了每次都要输入密码，于是网上搜了搜解决方案，还真有解决>  方案，不敢独享，整理分享给大家。
-> 奉上原帖地址：
-> http://www.cnblogs.com/itech/archive/2009/08/07/1541017.html
 
