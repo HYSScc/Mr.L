@@ -2,9 +2,9 @@
 
 `--Mr.L 2016.12.06`
 
-```js
+
 <embed src="http://url.cn/42CICsT" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed>
-```
+
 
 
 
