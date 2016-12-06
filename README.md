@@ -3,7 +3,9 @@
 `--Mr.L 2016.12.06`
 
 
-<embed src="http://url.cn/42CICsT" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed>
+<audio src="http://www.xiami.com/widget/0_3515679/singlePlayer.swf" controls="controls">
+Your browser does not support the audio tag.
+</audio>
 
 
 
