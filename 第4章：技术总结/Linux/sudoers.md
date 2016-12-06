@@ -44,5 +44,24 @@ hadoop ALL\(ALL\) ALL
 
 > sudo是linux系统管理指令，是允许系统管理员让普通用户执行一些或者全部的root命令的一个工具，如halt、reboot、su等等。
 
+* 登录到root用户
 
+* 将用户加入sudoers
+
+
+```
+$ visudo  //或者vi /etc/sudoers
+```
+
+移动光标，到一行root ALL=\(ALL\) ALL的下一行，按a，进入append模式，输入
+
+`your_user_name ALL=(ALL) ALL`
+
+然后按Esc，再输入:w保存文件，再:q退出
+
+这样就把自己加入了sudo组，可以使用sudo命令了。
+
+* 默认5分钟后刚才输入的sodo密码过期，下次sudo需要重新输入密码，如果觉得在sudo的时候输入密码麻烦，把刚才的输入换成如下内容即可：
+
+`your_user_name ALL=(ALL) NOPASSWD: ALL`
 
