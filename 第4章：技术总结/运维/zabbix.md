@@ -38,7 +38,7 @@ wget http://repo.zabbix.com/zabbix/3.2/ubuntu/pool/main/z/zabbix-release/zabbix-
 ### 3. Creating initial database
 
 ```
-- zcat /usr/share/doc/zabbix-server-mysql/create.sql.gz | mysql -uroot -p 26554422
+- zcat /usr/share/doc/zabbix-server-mysql/create.sql.gz | mysql -uroot -p26554422
 ```
 
 OR
