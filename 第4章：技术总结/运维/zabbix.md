@@ -45,7 +45,7 @@ OR
 
 参考 [https://www.zabbix.com/documentation/3.2/manual/appendix/install/db\_scripts](https://www.zabbix.com/documentation/3.2/manual/appendix/install/db_scripts)
 
-下载sql文件 [http:\/\/www.zabbix.com\/developers.php](http://www.zabbix.com/developers.php)
+下载sql文件 [http://www.zabbix.com/developers.php](http://www.zabbix.com/developers.php)
 
 ```
 shell> mysql -uroot -p<password>
