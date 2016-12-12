@@ -1,4 +1,4 @@
-公司项目: http://ram-lab.com/molmc\_deployment.git
+公司项目: [http://ram-lab.com/molmc/\_deployment.git](http://ram-lab.com/molmc\_deployment.git)
 
 # **Step 1. Set up the environment on Mac**
 
@@ -42,7 +42,7 @@
 * ### **Vagrant up base on existing **`Vagrantfile`
 
 
->
+&gt;
 
 验证登录虚拟机成功后退出:
 
