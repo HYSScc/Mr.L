@@ -19,7 +19,7 @@ mac上面还有个叫keychain Access 的东西，是管理密码的软件，也�
 
 ### 参考:
 
-**ssh-keygen 中文手册: **[http:\/\/www.jinbuguo.com\/openssh\/ssh-keygen.html](http://www.jinbuguo.com/openssh/ssh-keygen.html)
+**ssh-keygen 中文手册: **[http://www.jinbuguo.com/openssh/ssh-keygen.html](http://www.jinbuguo.com/openssh/ssh-keygen.html)
 
-**ssh-keygen 的 详解:** [http:\/\/blog.csdn.net\/wh\_19910525\/article\/details\/7433164](http://blog.csdn.net/wh_19910525/article/details/7433164)
+**ssh-keygen 的 详解:** [http://blog.csdn.net/wh\_19910525/article/details/7433164](http://blog.csdn.net/wh_19910525/article/details/7433164)
 
