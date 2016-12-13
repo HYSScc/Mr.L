@@ -28,7 +28,7 @@ ssh-agent用法
    ```
 
 
-mac上面还有个叫keychain Access 的东西，是管理密码的软件，也是通过ssh-add来实现ssh免密码登陆。
+
 
 > ### step1. 开启 ssh-agent {#articleHeader0}
 >
@@ -59,6 +59,10 @@ mac上面还有个叫keychain Access 的东西，是管理密码的软件，也�
 > ### step4. 修改每台服务器的 ssh 配置文件，让它们都对 ssh-agent 进行转发 {#articleHeader3}
 >
 > 到每台服务器上去按 step3 -&gt; 全局，做一下。
+
+---
+
+mac上面还有个叫keychain Access 的东西，是管理密码的软件，也是通过ssh-add来实现ssh免密码登陆。
 
 ### 参考:
 
