@@ -16,12 +16,12 @@ ssh-agent用法
 用法很简单
 
 1. 先查看ssh-agent ID
-2.      eval `ssh-agent`
 
-3. 将key添加到ssh-agent中
+        `eval ssh-agent`
 
-    eval `ssh-agent`
+1. 将key添加到ssh-agent中
 
+   eval `ssh-agent`
 
 
 mac上面还有个叫keychain Access 的东西，是管理密码的软件，也是通过ssh-add来实现ssh免密码登陆。
