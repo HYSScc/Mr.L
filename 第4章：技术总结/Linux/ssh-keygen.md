@@ -24,7 +24,7 @@ ssh-agent用法
 2. 将key添加到ssh-agent中
 
    ```
-   ssh-add
+   ssh-add aliyun.key
    ```
 
 
