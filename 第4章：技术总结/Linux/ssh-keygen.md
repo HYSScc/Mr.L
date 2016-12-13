@@ -41,10 +41,12 @@ mac上面还有个叫keychain Access 的东西，是管理密码的软件，也�
 >
 > ### step3. 告诉ssh 允许 ssh-agent 转发 {#articleHeader2}
 >
-> * 修改全局：$ echo "ForwardAgent yes" 
->   &gt;
->   &gt;
->    /etc/ssh/ssh\_config
+> * 修改全局：
+>
+> ```
+> $ echo "ForwardAgent yes" >> /etc/ssh/ssh_config
+> ```
+>
 > * 修改个人
 >
 > > $ touch ~/.ssh/config  
