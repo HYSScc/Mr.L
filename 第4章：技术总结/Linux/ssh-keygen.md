@@ -15,6 +15,15 @@ ssh-agent用法
 其实ssh-keygen的时候，可以输密码，也可以不输密码，刚才那种就是不输密码的情况，那么如果你输了密码，ssh 登陆的时候还是会提示你将私钥的密码输入的\(不需要输入服务器的密码\)。而ssh-agent能避免这种反复输入私钥的烦恼。  
 用法很简单
 
+1. 先查看ssh-agent ID
+2.      eval `ssh-agent`
+
+3. 将key添加到ssh-agent中
+
+    eval `ssh-agent`
+
+
+
 mac上面还有个叫keychain Access 的东西，是管理密码的软件，也是通过ssh-add来实现ssh免密码登陆。
 
 ### 参考:
