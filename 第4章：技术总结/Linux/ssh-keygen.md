@@ -17,9 +17,7 @@ ssh-agent用法
 
 1. 先查看ssh-agent ID
 
-     
-   `eval ssh-agent`
-
+        `eval ssh-agent`
 
 1. 将key添加到ssh-agent中  
    `ssh-add aliyun.key`
