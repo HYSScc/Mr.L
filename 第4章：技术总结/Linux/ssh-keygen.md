@@ -36,3 +36,5 @@ mac上面还有个叫keychain Access 的东西，是管理密码的软件，也�
 
 **ssh-keygen 的 详解:** [http://blog.csdn.net/wh\_19910525/article/details/7433164](http://blog.csdn.net/wh_19910525/article/details/7433164)
 
+**ssh-agent 使用指南: https://segmentfault.com/a/1190000002449006**
+
