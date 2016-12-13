@@ -21,13 +21,8 @@ ssh-agent用法
    eval ssh-agent
    ```
 
-2. 将key添加到ssh-agent中
-
-   ```
-   ssh-add aliyun.key
-
-
-   ```
+2. 将key添加到ssh-agent中  
+   `ssh-add aliyun.key`
 
 
 > ###  {#articleHeader0}
