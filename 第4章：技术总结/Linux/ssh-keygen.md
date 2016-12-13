@@ -30,11 +30,37 @@ ssh-agent用法
 
 mac上面还有个叫keychain Access 的东西，是管理密码的软件，也是通过ssh-add来实现ssh免密码登陆。
 
+> ### step1. 开启 ssh-agent {#articleHeader0}
+>
+> $ eval`ssh-agent`  
+> Agent pid XXX
+>
+> ### step2. 添加私钥 {#articleHeader1}
+>
+> $ ssh-add ~/.ssh/id\_rsa （如果生成密钥时是使用的默认的，那么就是这个了，如果不是的话就写你的私钥地址吧）
+>
+> ### step3. 告诉ssh 允许 ssh-agent 转发 {#articleHeader2}
+>
+> * 修改全局：$ echo "ForwardAgent yes" 
+>   &gt;
+>   &gt;
+>    /etc/ssh/ssh\_config
+> * 修改个人
+>
+> > $ touch ~/.ssh/config  
+> > $ vim ~/.ssh/config  
+> > Host \*  
+> > 　　ForwardAgent yes
+>
+> ### step4. 修改每台服务器的 ssh 配置文件，让它们都对 ssh-agent 进行转发 {#articleHeader3}
+>
+> 到每台服务器上去按 step3 -&gt; 全局，做一下。
+
 ### 参考:
 
 **ssh-keygen 中文手册: **[http://www.jinbuguo.com/openssh/ssh-keygen.html](http://www.jinbuguo.com/openssh/ssh-keygen.html)
 
 **ssh-keygen 的 详解:** [http://blog.csdn.net/wh\_19910525/article/details/7433164](http://blog.csdn.net/wh_19910525/article/details/7433164)
 
-**ssh-agent 使用指南: https://segmentfault.com/a/1190000002449006**
+**ssh-agent 使用指南: **[https://segmentfault.com/a/1190000002449006](https://segmentfault.com/a/1190000002449006)
 
