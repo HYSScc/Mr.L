@@ -57,8 +57,6 @@ ssh-agent用法
 >
 > ---
 
----
-
 mac上面还有个叫keychain Access 的东西，是管理密码的软件，也是通过ssh-add来实现ssh免密码登陆。
 
 ### 参考:
