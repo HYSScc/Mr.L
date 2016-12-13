@@ -49,10 +49,12 @@ mac上面还有个叫keychain Access 的东西，是管理密码的软件，也�
 >
 > * 修改个人
 >
-> > $ touch ~/.ssh/config  
-> > $ vim ~/.ssh/config  
-> > Host \*  
-> > 　　ForwardAgent yes
+> ```
+> $ touch ~/.ssh/config
+> $ vim ~/.ssh/config
+> Host *
+> 　　ForwardAgent yes
+> ```
 >
 > ### step4. 修改每台服务器的 ssh 配置文件，让它们都对 ssh-agent 进行转发 {#articleHeader3}
 >
