@@ -8,6 +8,8 @@ zabbix监控系统客户端安装: [http:\/\/blog.chinaunix.net\/uid-25266990-id
 
 zabbix web默认用户名:Admin    密码:zabbix
 
+配置文件目录: /usr/share/zabbix/include
+
 # For Debian \/ Ubuntu
 
 ## Supported versions
