@@ -1,10 +1,4 @@
-官网：[http:\/\/www.zabbix.com\/](http://www.zabbix.com/)
 
-**Zabbix企业级分布式监控系统：**[https:\/\/github.com\/itnihao\/zabbix-book](https://github.com/itnihao/zabbix-book)
-
-详解zabbix安装部署\(Server端篇\)：[http:\/\/blog.chinaunix.net\/uid-25266990-id-3380929.html](http://blog.chinaunix.net/uid-25266990-id-3380929.html)
-
-zabbix监控系统客户端安装: [http:\/\/blog.chinaunix.net\/uid-25266990-id-3387002.html](http://blog.chinaunix.net/uid-25266990-id-3387002.html)
 
 zabbix web默认用户名:Admin    密码:zabbix
 
@@ -126,6 +120,16 @@ sudo apt-get -y install zabbix-agent
 
  sudo service zabbix-agent start
 ```
+
+
+
+---
+
+**Zabbix企业级分布式监控系统：**[https:\/\/github.com\/itnihao\/zabbix-book](https://github.com/itnihao/zabbix-book)
+
+详解zabbix安装部署\(Server端篇\)：[http:\/\/blog.chinaunix.net\/uid-25266990-id-3380929.html](http://blog.chinaunix.net/uid-25266990-id-3380929.html)
+
+zabbix监控系统客户端安装: [http:\/\/blog.chinaunix.net\/uid-25266990-id-3387002.html](http://blog.chinaunix.net/uid-25266990-id-3387002.html)
 
 
 
