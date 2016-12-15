@@ -67,3 +67,7 @@ mac上面还有个叫keychain Access 的东西，是管理密码的软件，也�
 
 **ssh-agent 使用指南: **[https://segmentfault.com/a/1190000002449006](https://segmentfault.com/a/1190000002449006)
 
+**如何设置 Ubuntu 14.04 的 SSH 无密码登录: http://www.linuxidc.com/Linux/2015-04/115825.htm**
+
+
+
