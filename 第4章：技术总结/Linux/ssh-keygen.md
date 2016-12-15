@@ -61,6 +61,7 @@ ssh-agent用法
 >
 > ```
 > $ ssh-copy-id user@ip_address
+> eg: $ ssh-copy-id -i aliyun.key.pub root@120.27.189.28 -p 2727
 > ```
 >
 > 在公钥上传之后，我们现在可以禁用通过密码登陆SSH的方式了。为此，我们需要通过以下命令用文本编辑器打开/etc/ssh/ssh\_config。
