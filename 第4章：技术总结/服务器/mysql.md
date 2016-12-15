@@ -121,7 +121,7 @@
 
 **MySQL的Grant命令: **[http://www.cnblogs.com/hcbin/archive/2010/04/23/1718379.html](http://www.cnblogs.com/hcbin/archive/2010/04/23/1718379.html)
 
-**利用.my.cnf，安全实现Shell下MySQL免输入密码登录:** http://zhensheng.im/2014/02/05/2142/MIAO\_LE\_GE\_MI
+**利用.my.cnf，安全实现Shell下MySQL免输入密码登录:** [http://zhensheng.im/2014/02/05/2142/MIAO\\_LE\\_GE\\_MI](http://zhensheng.im/2014/02/05/2142/MIAO\_LE\_GE\_MI)
 
-
+**解决CentOS7 无法启动mysql 的解决办法: **http://www.centoscn.com/CentosBug/softbug/2016/0115/6660.html
 
