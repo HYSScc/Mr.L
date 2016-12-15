@@ -123,5 +123,7 @@
 
 **利用.my.cnf，安全实现Shell下MySQL免输入密码登录:** [http://zhensheng.im/2014/02/05/2142/MIAO\\_LE\\_GE\\_MI](http://zhensheng.im/2014/02/05/2142/MIAO\_LE\_GE\_MI)
 
-**解决CentOS7 无法启动mysql 的解决办法: **http://www.centoscn.com/CentosBug/softbug/2016/0115/6660.html
+**解决CentOS7 无法启动mysql 的解决办法: **[http://www.centoscn.com/CentosBug/softbug/2016/0115/6660.html](http://www.centoscn.com/CentosBug/softbug/2016/0115/6660.html)
+
+**Failed to issue method call: Unit mysql.service failed to load: No such file or directory的解决办法: **http://blog.csdn.net/chszs/article/details/38758713
 
