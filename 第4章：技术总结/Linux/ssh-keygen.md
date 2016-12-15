@@ -66,13 +66,7 @@ ssh-agent用法
 >
 > 在公钥上传之后，我们现在可以禁用通过密码登陆SSH的方式了。为此，我们需要通过以下命令用文本编辑器打开/etc/ssh/ssh\_config。
 >
-> 1. `$ sudo nano`
->    `/`
->    `etc`
->    `/`
->    `ssh`
->    `/`
->    `sshd_config`
+> 1.
 
 mac上面还有个叫keychain Access 的东西，是管理密码的软件，也是通过ssh-add来实现ssh免密码登陆。
 
