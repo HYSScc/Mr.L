@@ -1,6 +1,6 @@
-Github: [https:\/\/github.com\/thx\/RAP](https://github.com/thx/RAP)
+Github: [https://github.com/thx/RAP](https://github.com/thx/RAP)
 
-在Ubuntu上部署RAP\(非官方\): [https:\/\/github.com\/thx\/RAP\/wiki\/deploy\_on\_ubuntu\_cn](https://github.com/thx/RAP/wiki/deploy_on_ubuntu_cn)
+在Ubuntu上部署RAP\(非官方\): [https://github.com/thx/RAP/wiki/deploy\_on\_ubuntu\_cn](https://github.com/thx/RAP/wiki/deploy_on_ubuntu_cn)
 
 慕课网视频：http:\/\/www.imooc.com\/video\/11060
 
@@ -9,7 +9,7 @@ Github: [https:\/\/github.com\/thx\/RAP](https://github.com/thx/RAP)
 **一. WAR包部署**
 
 > 准备:
-> 
+>
 > * JDK 1.8+ `若报错，请尽量使用较新版本`
 > * MySQL 5.6.12+ `太老的MySQL运行initialize.sql会报多timestamp错误`
 > * Tomcat 8.\*+ `不要用9alpha，alpha和beta出任何诡异问题我肯定不知道，亲愿意折腾倒也无妨，个人不建议`
