@@ -2,7 +2,7 @@ Github: [https://github.com/thx/RAP](https://github.com/thx/RAP)
 
 在Ubuntu上部署RAP\(非官方\): [https://github.com/thx/RAP/wiki/deploy\_on\_ubuntu\_cn](https://github.com/thx/RAP/wiki/deploy_on_ubuntu_cn)
 
-慕课网视频：http://www.imooc.com/video/11060
+慕课网视频：[http://www.imooc.com/video/11060](http://www.imooc.com/video/11060)
 
 ### 部署:
 
@@ -23,7 +23,7 @@ Github: [https://github.com/thx/RAP](https://github.com/thx/RAP)
 
 接口自动化工具RAP的设计思路: http:\/\/div.io\/topic\/642?page=1
 
-**Tomcat 8 权威指南: **[http:\/\/wiki.jikexueyuan.com\/project\/tomcat\/](http://wiki.jikexueyuan.com/project/tomcat/)
+**Tomcat 8 权威指南: **[http://wiki.jikexueyuan.com/project/tomcat/](http://wiki.jikexueyuan.com/project/tomcat/)
 
 [Tomcat8.0 项目部署：](http://blog.csdn.net/u012835032/article/details/51314985)http:\/\/blog.csdn.net\/u012835032\/article\/details\/51314985
 
