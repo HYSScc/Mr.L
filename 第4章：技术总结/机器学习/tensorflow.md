@@ -1,2 +1,2 @@
-中文文档： http://www.tensorfly.cn/
+tensorflow中文社区： [http://www.tensorfly.cn/](http://www.tensorfly.cn/)
 
