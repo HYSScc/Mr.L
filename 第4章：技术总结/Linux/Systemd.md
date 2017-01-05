@@ -64,5 +64,5 @@ Environment：指定环境变量
 
 **Systemd 入门教程：命令篇: **[http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html](http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html)
 
-systemctl使用笔记： https://www.zybuluo.com/wtf0215/note/305668
+**systemctl使用笔记：** [https://www.zybuluo.com/wtf0215/note/305668](https://www.zybuluo.com/wtf0215/note/305668)
 
