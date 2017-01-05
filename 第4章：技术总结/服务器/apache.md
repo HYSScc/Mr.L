@@ -6,6 +6,8 @@ UBUNTU 下完全卸载 APACHE2: [https://blog.byneil.com/ubuntu-%E4%B8%8B%E5%AE%
 
 解决apache启动错误 AH00558: httpd: Could not reliably determine...: [http://blog.csdn.net/moqiang02/article/details/19644727](http://blog.csdn.net/moqiang02/article/details/19644727)
 
+Ubuntu下Apache服务器的配置：http://www.ezlippi.com/blog/2016/01/apache-configuration-in-ubuntu.html
+
 ---
 
 **卸载Apache2**
