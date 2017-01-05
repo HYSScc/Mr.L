@@ -27,6 +27,8 @@ dpkg -l |grep apache2|awk '{print $2}'|xargs dpkg -P
 
 ---
 
+**安装Apache2**
+
 ```
 cd /etc/apache2
 ```
