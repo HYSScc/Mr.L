@@ -21,6 +21,13 @@ sudo find /etc -name "*apache*" |xargs  rm -rf
 sudo rm -rf /var/www
 sudo rm -rf /etc/libapache2-mod-jk
 dpkg -l |grep apache2|awk '{print $2}'|xargs dpkg -P
+
+
+
+
+
+
+
 ```
 
 ```
