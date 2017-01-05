@@ -23,7 +23,9 @@ sudo rm -rf /etc/libapache2-mod-jk
 dpkg -l |grep apache2|awk '{print $2}'|xargs dpkg -P
 ```
 
-
+```
+cd /etc/apache2
+```
 
 这个目录下有许多纯文本文件和子目录，基本作用如下：
 
@@ -59,7 +61,4 @@ Include语句允许Apache读取其他配置文件的内容到当前位置，结�
 #### KeepAliveTimeout {#KeepAliveTimeout}
 
 这个参数设置下一个请求来之前来等待多久，超过这个时间自动关闭这个connection。
-
-  
-
 
