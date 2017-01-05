@@ -10,11 +10,7 @@ UBUNTU 下完全卸载 APACHE2: [https://blog.byneil.com/ubuntu-%E4%B8%8B%E5%AE%
 
 Ubuntu自带 apache2 有时候很讨厌。 有时候需要先卸载了再装别的。
 
-
-
 这里找了一个完全卸载的方法:
-
-
 
 ```
 sudo apt-get autoremove apache2 -y
