@@ -13,13 +13,7 @@ Tips
 2. authorized\_keys 的文件权限一定是 700/600/400  
 3. 要查看客户端和服务端 ssh 版本是否一致，如果一个是 ssh\(通常[Linux](http://lib.csdn.net/base/linux)上默认安装 OpenSSH, 使用的是 ssh 协议，而不是 ssh2\), 一个是 ssh2, 会存在一些不兼容的问题，处理会非常蛋疼。（[ssh 和 ssh2 公钥登陆](http://blog.chinaunix.net/uid-26517277-id-4055228.html)）
 
-
-
-
-
 ---
 
----
-
-[SSH 公钥免密码登陆: ](http://blog.csdn.net/duyiwuer2009/article/details/50959219)http://blog.csdn.net/duyiwuer2009/article/details/50959219
+[SSH 公钥免密码登陆: ](http://blog.csdn.net/duyiwuer2009/article/details/50959219)[http://blog.csdn.net/duyiwuer2009/article/details/50959219](http://blog.csdn.net/duyiwuer2009/article/details/50959219)
 
