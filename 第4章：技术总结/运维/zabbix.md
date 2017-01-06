@@ -12,7 +12,6 @@ zabbix web默认用户名:Admin    密码:zabbix
 
 * Ubuntu 14.04 LTS \(codename: trusty\)
 
-
 ### 1. Installing repository configuration package
 
 ```
@@ -83,7 +82,7 @@ shell> mysql -uzabbix -p<password> zabbix < data.sql
 
 ##### 2. PHP configuration for Zabbix frontend
 
-> NOTE: \/etc\/apache2\/conf.d\/zabbix.conf and \/etc\/zabbix\/apache.conf are the same file.
+> NOTE: /etc/apache2/conf.d/zabbix.conf and /etc/zabbix/apache.conf are the same file.
 
 ```
 DBHost=localhost
