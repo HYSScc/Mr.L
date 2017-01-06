@@ -122,6 +122,8 @@ sudo apt-get -y install zabbix-agent
 
 官网：[http://www.zabbix.com/](http://www.zabbix.com/)
 
+[Ubuntu 14.04 x64 安装 Zabbix 3.2.0 Server端+多系统Agent端部署: ](https://www.deamwork.com/archives/zabbix3.orz6)https://www.deamwork.com/archives/zabbix3.orz6
+
 **Zabbix企业级分布式监控系统：**[https://github.com/itnihao/zabbix-book](https://github.com/itnihao/zabbix-book)
 
 详解zabbix安装部署\(Server端篇\)：[http://blog.chinaunix.net/uid-25266990-id-3380929.html](http://blog.chinaunix.net/uid-25266990-id-3380929.html)
