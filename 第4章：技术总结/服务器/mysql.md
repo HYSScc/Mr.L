@@ -114,7 +114,6 @@
     primary key auto_increment first;
     ```
 
-
 ---
 
 ## Q&A:
@@ -139,7 +138,6 @@ WorkingDirectory=/usr
 
 [Install]
 WantedBy=multi-user.target
-
 ```
 
 Run`systemctl daemon-reload`after creating/modifying.
@@ -157,4 +155,6 @@ Run`systemctl daemon-reload`after creating/modifying.
 **Failed to issue method call: Unit mysql.service failed to load: No such file or directory的解决办法: **[http://blog.csdn.net/chszs/article/details/38758713](http://blog.csdn.net/chszs/article/details/38758713)
 
 **无法用systemctl将mysqld.service设置为启动项的解决方法:** [https://github.com/doraemonext/BlogPost/blob/master/538-%E6%97%A0%E6%B3%95%E7%94%A8systemctl%E5%B0%86mysqld.service%E8%AE%BE%E7%BD%AE%E4%B8%BA%E5%90%AF%E5%8A%A8%E9%A1%B9%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.md](https://github.com/doraemonext/BlogPost/blob/master/538-%E6%97%A0%E6%B3%95%E7%94%A8systemctl%E5%B0%86mysqld.service%E8%AE%BE%E7%BD%AE%E4%B8%BA%E5%90%AF%E5%8A%A8%E9%A1%B9%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.md)
+
+Ubuntu 16.04 mysql安装配置：http://www.jianshu.com/p/3111290b87f4
 
