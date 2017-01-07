@@ -2,7 +2,15 @@ zabbix web默认用户名:Admin    密码:zabbix
 
 配置文件目录: /usr/share/zabbix/include
 
-# For Debian \/ Ubuntu
+# 配置：
+
+Zabbix完整的监控配置流程可以简单描述为：
+
+**Host groups（主机组）→Hosts（主机）→Applications（监控项组）→Items（监控项）→Triggers（触发器）→Event（事件）→Actions（处理动作）→User groups（用户组）→Users（用户）→Medias（告警方式）→Audit（日志审计）**
+
+# 安装：
+
+## For Debian / Ubuntu
 
 ## Supported versions
 
