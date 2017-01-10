@@ -164,7 +164,7 @@ zabbix监控系统客户端安装: [http://blog.chinaunix.net/uid-25266990-id-33
 
 运维监控篇\(2\)\_Zabbix简单的性能调优：[https://www.xiaomastack.com/2014/10/10/zabbix02/](https://www.xiaomastack.com/2014/10/10/zabbix02/)
 
-zabbix3.2.0实现微信企业号报警: http://www.jianshu.com/p/09a5a21b6b47
+zabbix3.2.0实现微信企业号报警: [http://www.jianshu.com/p/09a5a21b6b47](http://www.jianshu.com/p/09a5a21b6b47)
 
-
+Zabbix 短信报警配置: http://soft.dog/2016/01/19/zabbix-sms-notification/
 
