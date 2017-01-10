@@ -162,7 +162,9 @@ $ sudo vim /usr/share/zabbix/include/locales.inc.php   \#找到源码文件
 
 zabbix监控系统客户端安装: [http://blog.chinaunix.net/uid-25266990-id-3387002.html](http://blog.chinaunix.net/uid-25266990-id-3387002.html)
 
-运维监控篇\(2\)\_Zabbix简单的性能调优：https://www.xiaomastack.com/2014/10/10/zabbix02/
+运维监控篇\(2\)\_Zabbix简单的性能调优：[https://www.xiaomastack.com/2014/10/10/zabbix02/](https://www.xiaomastack.com/2014/10/10/zabbix02/)
+
+zabbix3.2.0实现微信企业号报警: http://www.jianshu.com/p/09a5a21b6b47
 
 
 
