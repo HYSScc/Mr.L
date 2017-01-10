@@ -138,13 +138,13 @@ sudo apt-get -y install zabbix-agent
 
 原因是找不到语言包
 
-$ sudo dpkg-reconfigure locales  \#查看系统已经安装的语言包
+$ sudo dpkg-reconfigure locales  \#查看系统已经安装的语言包
 
-$ sudo vim /usr/share/zabbix/include/locales.inc.php   \#找到源码文件
+$ sudo vim /usr/share/zabbix/include/locales.inc.php   \#找到源码文件
 
 在文件中找到函数"getLocales\(\)"
 
-'en\_GB' =&gt; array\('name' =&gt; \_\('English \(en\_GB\)'\),        'display' =&gt; true\),
+'en\_GB' =&gt; array\('name' =&gt; \_\('English \(en\_GB\)'\),        'display' =&gt; true\),
 
 可以把你不需要的语言设置为false,有些版本默认不支持中文,可以找到'zh\_CN'这一行把flase改为true
 
@@ -161,4 +161,8 @@ $ sudo vim /usr/share/zabbix/include/locales.inc.php   \#找到源码文件
 详解zabbix安装部署\(Server端篇\)：[http://blog.chinaunix.net/uid-25266990-id-3380929.html](http://blog.chinaunix.net/uid-25266990-id-3380929.html)
 
 zabbix监控系统客户端安装: [http://blog.chinaunix.net/uid-25266990-id-3387002.html](http://blog.chinaunix.net/uid-25266990-id-3387002.html)
+
+运维监控篇\(2\)\_Zabbix简单的性能调优：https://www.xiaomastack.com/2014/10/10/zabbix02/
+
+
 
