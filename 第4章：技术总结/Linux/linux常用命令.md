@@ -19,7 +19,7 @@
   >
   > -d 指定与空格和tab键不同的域分隔符。-f1 表示第一个域。参考这里。
   >
-  > 转自: http://blog.chinaunix.net/uid-26522150-id-3039950.html
+  > 转自: [http://blog.chinaunix.net/uid-26522150-id-3039950.html](http://blog.chinaunix.net/uid-26522150-id-3039950.html)
 
 
 
