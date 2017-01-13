@@ -7,7 +7,7 @@
 * 查看数据库的字符集编码
   `show variables like '%char%';`
 * shell脚本内计算MD5值  
-  $`echo -n 'hello'|md5sum|cut -d ' ' -f1`
+  `$ echo -n 'hello'|md5sum|cut -d ' ' -f1`
 
   > 命令解释：
   >
