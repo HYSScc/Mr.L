@@ -21,5 +21,8 @@
   >
   > 转自: [http://blog.chinaunix.net/uid-26522150-id-3039950.html](http://blog.chinaunix.net/uid-26522150-id-3039950.html)
 
-  
+* shell脚本内计算MD5值  
+  `PWD=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)`
+
+
 
