@@ -1,14 +1,13 @@
 * 技术
 
 ```
-自动化：`**Ansible**`  `**Zabbix**`  `**Docker**`  `**API**`  `**自动化测试**`
+自动化：Ansible  Zabbix  Docker  API  自动化测试
 
-App：`React Native`  `小程序`
+App：React Native  小程序
 
 前端：
 
 后端：
-
 ```
 
 * 为人
@@ -18,13 +17,14 @@ App：`React Native`  `小程序`
 
 谦虚: 
 
-善良: 
-
+善良:
 ```
 
 * 处事
 
 ```
-水到渠成: 
-
+水到渠成:
 ```
+
+
+
