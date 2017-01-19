@@ -52,7 +52,7 @@ App：React Native  小程序
 4. React Native运用
 5. IntoRobot小程序
 6. 视频拍摄与制作
-7. 引入进销存
+7. 引入进销存系统
 ```
 
 
