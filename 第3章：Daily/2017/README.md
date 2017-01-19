@@ -29,7 +29,8 @@ App：React Native  小程序
 * 节点
 
 ```
-1. 水到渠成:
+1. Ansible完全使用:
+2. Docker使用
 ```
 
 
