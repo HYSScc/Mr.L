@@ -47,11 +47,12 @@ App：React Native  小程序
 
 ```
 1. Ansible完全使用:
-2. Docker运用
-3. React Native运用
-4. IntoRobot小程序
-5. 视频拍摄与制作
-6. 引入进销存
+2. RAML/RAP API
+3. Docker运用
+4. React Native运用
+5. IntoRobot小程序
+6. 视频拍摄与制作
+7. 引入进销存
 ```
 
 
