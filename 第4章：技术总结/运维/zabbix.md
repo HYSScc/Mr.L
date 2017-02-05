@@ -172,3 +172,7 @@ Zabbix-3.0.3 实现微信（WeChat）告警: [http://www.oschina.net/news/75588/
 
 Zabbix 短信报警配置: [http://soft.dog/2016/01/19/zabbix-sms-notification/](http://soft.dog/2016/01/19/zabbix-sms-notification/)
 
+Grafana2.6+Zabbix3.0监控系统搭建：https://docs.20150509.cn/2016/03/04/Grafana-2-6-Zabbix-3-0-%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA/
+
+
+
