@@ -1,4 +1,4 @@
-MediaWiki: https:\/\/www.mediawiki.org\/wiki\/MediaWiki\/zh-hans
+MediaWiki: https://www.mediawiki.org/wiki/MediaWiki/zh-hans
 
-**Simiki: **http:\/\/simiki.org\/
+**Simiki: **http://simiki.org/
 
