@@ -1,4 +1,13 @@
 ## Google推广
 
-Google广告：https://www.google.com.hk/intl/zh-CN/ads/?fg=1
+**网站**：[https://www.google.com.hk/intl/zh-CN/ads/?fg=1](https://www.google.com.hk/intl/zh-CN/ads/?fg=1)
+
+**办理条件：**
+
+**办理步骤：**
+
+**推广方式：**
+
+* 
+**费用：**
 
