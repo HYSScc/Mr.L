@@ -26,6 +26,9 @@ App：React Native  小程序
           * 用友电商通：
             官网：http://dst.yonyou.com/index#
             淘宝服务：https://fuwu.taobao.com/ser/detail.htm?spm=a1z13.8114210.1234-fwlb.4.3FZxb2&service_code=FW_GOODS-1000118167&tracelog=search&from_key=%E7%94%B5%E5%95%86%E9%80%9A
+          * 管家婆：
+            官网：http://dst.yonyou.com/index#
+
 
 * 为人
 
