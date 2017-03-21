@@ -23,7 +23,9 @@ App：React Native  小程序
           * Nut  
           * 教程视频-文档中心、论坛
         3.引入`进销存`软件，实现进销存自动化
-          * 用友电商通：http://dst.yonyou.com/index#
+          * 用友电商通：
+            官网：http://dst.yonyou.com/index#
+            淘宝服务：https://fuwu.taobao.com/ser/detail.htm?spm=a1z13.8114210.1234-fwlb.4.3FZxb2&service_code=FW_GOODS-1000118167&tracelog=search&from_key=%E7%94%B5%E5%95%86%E9%80%9A
 
 * 为人
 
