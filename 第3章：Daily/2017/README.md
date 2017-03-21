@@ -34,6 +34,7 @@ App：React Native  小程序
           * 金蝶：
             官网：http://www.szkingdee.com/index.php
             淘宝服务：https://fuwu.taobao.com/ser/list.html?key=%E9%87%91%E8%9D%B6&scm=&pvid=&fromKey=&isHotKey=0&tracelog=search&spm=a1z13.8114201.ssbtn-ff.0
+            价格：多种产品，按月收费
 
 * 为人
 
