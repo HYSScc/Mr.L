@@ -28,6 +28,13 @@ App：React Native  小程序
             淘宝服务：https://fuwu.taobao.com/ser/detail.htm?spm=a1z13.8114210.1234-fwlb.4.3FZxb2&service_code=FW_GOODS-1000118167&tracelog=search&from_key=%E7%94%B5%E5%95%86%E9%80%9A
           * 管家婆：
             官网：http://dst.yonyou.com/index#
+            淘宝服务：https://fuwu.taobao.com/ser/detail.htm?spm=a1z13.8114210.1234-fwlb.5.eJPBzC&service_code=FW_GOODS-1862998&tracelog=search&from_key=erp
+          * 金蝶：
+            官网：http://www.szkingdee.com/index.php
+            淘宝服务：https://fuwu.taobao.com/ser/list.html?key=%E9%87%91%E8%9D%B6&scm=&pvid=&fromKey=&isHotKey=0&tracelog=search&spm=a1z13.8114201.ssbtn-ff.0
+
+
+
 
 
 * 为人
