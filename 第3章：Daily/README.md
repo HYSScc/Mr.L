@@ -3,7 +3,7 @@
 | 时间 | 事件 | 备注 |
 | :---: | :---: | :---: |
 | 23:30~07:30 | 起床 | 晚上十二点前睡觉，早上七点半前起床 |
-| 07:30~08:30 | 早餐 | 10元内早餐\(**鸡蛋，包子馒头，稀饭，粉面，**肉肠，汉堡，烧饼，**面包，三明治，豆腐花，豆浆，苹果，西红柿**\) |
+| 07:30~08:30 | 早餐 | 10元内早餐\(鸡胸肉，**鸡蛋，包子馒头，稀饭，粉面，**肉肠，汉堡，烧饼，**面包，三明治，豆腐花，豆浆，苹果，西红柿**\) |
 | 08:30~12:00 | 上班\(加餐1\) | **肉肠，燕麦，牛奶，**香蕉，苹果 |
 | 12:00~13:30 | 午餐 | **米饭，肉类，青菜** |
 | 13:30~18:00 | 上班\(加餐2\) | **肉肠，蛋白粉，全麦面包** |
@@ -54,7 +54,7 @@
 
 ## 链接：
 
-澳洲燕麦片水果坚果麦片：[https://detail.tmall.com/item.htm?spm=a220m.1000858.1000725.103.DFPnx9&id=10882546516&skuId=3280851240503&areaId=440300&user\\_id=431232653&cat\\_id=2&is\\_b=1&rn=b663ac46037dd784440f9aa6587b8f7d](https://detail.tmall.com/item.htm?spm=a220m.1000858.1000725.103.DFPnx9&id=10882546516&skuId=3280851240503&areaId=440300&user\_id=431232653&cat\_id=2&is\_b=1&rn=b663ac46037dd784440f9aa6587b8f7d)
+澳洲燕麦片水果坚果麦片：[https://detail.tmall.com/item.htm?spm=a220m.1000858.1000725.103.DFPnx9&id=10882546516&skuId=3280851240503&areaId=440300&user\\_id=431232653&cat\\_id=2&is\\_b=1&rn=b663ac46037dd784440f9aa6587b8f7d](https://detail.tmall.com/item.htm?spm=a220m.1000858.1000725.103.DFPnx9&id=10882546516&skuId=3280851240503&areaId=440300&user_id=431232653&cat_id=2&is_b=1&rn=b663ac46037dd784440f9aa6587b8f7d)
 
-澳洲进口阿诺农场营养即食燕麦片：[https://detail.tmall.hk/hk/item.htm?spm=a1z10.1-b-s.w5003-15848241553.8.dnU2ym&id=524721519346&rn=1513c578dcfc4ff003d486220edd619c&abbucket=8&scene=taobao\\_shop&skuId=3200125827006](https://detail.tmall.hk/hk/item.htm?spm=a1z10.1-b-s.w5003-15848241553.8.dnU2ym&id=524721519346&rn=1513c578dcfc4ff003d486220edd619c&abbucket=8&scene=taobao\_shop&skuId=3200125827006)
+澳洲进口阿诺农场营养即食燕麦片：[https://detail.tmall.hk/hk/item.htm?spm=a1z10.1-b-s.w5003-15848241553.8.dnU2ym&id=524721519346&rn=1513c578dcfc4ff003d486220edd619c&abbucket=8&scene=taobao\\_shop&skuId=3200125827006](https://detail.tmall.hk/hk/item.htm?spm=a1z10.1-b-s.w5003-15848241553.8.dnU2ym&id=524721519346&rn=1513c578dcfc4ff003d486220edd619c&abbucket=8&scene=taobao_shop&skuId=3200125827006)
 
