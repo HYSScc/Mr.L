@@ -1,4 +1,6 @@
-深圳市考试院：http://www.testcenter.gov.cn
+广东人事考试网：http://www.gdrsks.gov.cn
+
+深圳市考试院：[http://www.testcenter.gov.cn](http://www.testcenter.gov.cn)
 
 广东公务员考试网：[http://www.gdgkw.org](http://www.gdgkw.org)
 
