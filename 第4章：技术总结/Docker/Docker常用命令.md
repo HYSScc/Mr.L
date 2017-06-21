@@ -26,8 +26,6 @@ ssh -p 22 root@172.17.0.1
 >
 > docker run -p port1 image
 >
->
->
 > \# 映射多个端口
 >
 > EXPOSE port1 port2 port3
