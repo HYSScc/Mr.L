@@ -16,5 +16,29 @@ docker inspect container_name | grep IPAddress
 ssh -p 22 root@172.17.0.1
 ```
 
+* Docker端口映射设置
+
+> \# 映射一个端口
+>
+> EXPOSE port1
+>
+> \# 相应的运行容器使用的命令
+>
+> docker run -p port1 image
+>
+>
+>
+> \# 映射多个端口
+>
+> EXPOSE port1 port2 port3
+>
+> \# 相应的运行容器使用的命令
+>
+> docker run -p port1 -p port2 -p port3 image
+>
+> \# 还可以指定需要映射到宿主机器上的某个端口号
+>
+> docker run -p host\_port1:port1 -p host\_port2:port2 -p host\_port3:port3 image
+
 
 
