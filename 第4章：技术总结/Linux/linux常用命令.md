@@ -4,6 +4,12 @@
 eg: ps -ef | grep nginx
 ```
 
+* netstat 查看端口占用
+
+```
+netstat -anp | grep :80
+```
+
 * 数据库登录
   ```
   mysql -uroot -p
