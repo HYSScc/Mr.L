@@ -1,3 +1,9 @@
+* 查看进程列表并过滤
+
+```
+eg: ps -ef | grep nginx
+```
+
 * 数据库登录
   `mysql -uroot -p`
 * 检查MySQL服务器占用端口
