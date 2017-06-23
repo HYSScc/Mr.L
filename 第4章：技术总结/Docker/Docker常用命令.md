@@ -2,6 +2,8 @@
 
 ```
 docker run -d -p 0.0.0.0:2222:22 -e ROOT_PASS="mypass" tutum/centos
+
+eg: sudo docker run -it --rm -e ROOT_PASS="lhy123456" weapp0.0.1 sh
 ```
 
 * 获取容器的ip
