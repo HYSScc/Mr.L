@@ -1,11 +1,31 @@
+* 查看进程列表并过滤
+
+```
+eg: ps -ef | grep nginx
+```
+
+* netstat 查看端口占用
+
+```
+　eg: netstat -anp | grep :80
+```
+
 * 数据库登录
-  `mysql -uroot -p`
+  ```
+  mysql -uroot -p
+  ```
 * 检查MySQL服务器占用端口
-  `netstat -nlt|grep 3306`
+  ```
+  netstat -nlt|grep 3306
+  ```
 * 检查MySQL服务器系统进程
-  `ps -aux|grep mysql`
+  ```
+  ps -aux|grep mysql
+  ```
 * 查看数据库的字符集编码
-  `show variables like '%char%';`
+  ```
+  show variables like '%char%';
+  ```
 * shell脚本内计算MD5值  
   `$ echo -n 'hello'|md5sum|cut -d ' ' -f1`
 
