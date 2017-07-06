@@ -22,7 +22,7 @@ eg: wget www.baidu.com
 * curl 访问站点
 
 ```
-eg: culr -v https://local.keyumall.com
+eg: curl -v https://local.keyumall.com
 ```
 
 * 数据库登录
