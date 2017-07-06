@@ -9,7 +9,7 @@ eg: ps -ef | grep nginx
 ```
 　eg: netstat -anp | grep :80
 
-安装netstat: yum install net-tools
+安装netstat: yum install -y net-tools
 ```
 
 * wget 拉取网页
