@@ -8,6 +8,8 @@ eg: ps -ef | grep nginx
 
 ```
 　eg: netstat -anp | grep :80
+
+安装netstat: yum install net-tools
 ```
 
 * 数据库登录
