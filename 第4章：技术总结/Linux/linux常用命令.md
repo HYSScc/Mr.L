@@ -12,6 +12,13 @@ eg: ps -ef | grep nginx
 安装netstat: yum install net-tools
 ```
 
+* wget 拉取网页
+
+```
+eg: wget www.baidu.com
+安装wget：yum install -y wget
+```
+
 * 数据库登录
   ```
   mysql -uroot -p
