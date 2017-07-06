@@ -19,6 +19,12 @@ eg: wget www.baidu.com
 安装wget：yum install -y wget
 ```
 
+* curl 访问站点
+
+```
+eg: culr -v https://local.keyumall.com
+```
+
 * 数据库登录
   ```
   mysql -uroot -p
