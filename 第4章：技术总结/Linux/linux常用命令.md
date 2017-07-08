@@ -25,6 +25,13 @@ eg: wget www.baidu.com
 eg: curl -v https://local.keyumall.com
 ```
 
+* echo向文件写入内容
+
+```
+1. 覆盖文件内容：echo "Raspberry" > test.txt
+2. 追加文件内容：echo "Intel Galileo" >> test.txt
+```
+
 * 数据库登录
   ```
   mysql -uroot -p
