@@ -42,13 +42,21 @@ npm config get registry
 
 // 或
 
+```
 npm info express
+```
 
 **3.通过cnpm使用**
 
-npminstall-g cnpm--registry=[https://registry.npm.taobao.org](https://registry.npm.taobao.org)
+```
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
 
 // 使用
 
-cnpminstallexpresstall express
+```
+cnpm install expresstall express
+```
+
+
 
