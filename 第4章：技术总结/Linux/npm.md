@@ -34,7 +34,9 @@ npm configsetregistry [https://registry.npm.taobao.org](https://registry.npm.tao
 
 // 配置后可通过下面方式来验证是否成功
 
-npm configgetregistry
+```
+npm config get registry
+```
 
 // 或
 
