@@ -1,3 +1,5 @@
+CNPM: http://npm.taobao.org
+
 国内优秀npm镜像推荐及使用:[http://blog.csdn.net/cengjingcanghai123/article/details/45045265](http://blog.csdn.net/cengjingcanghai123/article/details/45045265)
 
 npm全称Node Package Manager，是[**Node.js**](http://lib.csdn.net/base/nodejs)的模块依赖管理工具。由于npm的源在国外，所以国内用户使用起来各种不方便。下面整理出了一部分国内优秀的npm镜像资源，国内用户可以选择使用。
