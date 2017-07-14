@@ -3,8 +3,15 @@
 ```
 方法一: 
 # cat   /etc/issue
-
 Ubuntu 10.04 LTS \n \l
+
+方法二：
+# sudo lsb_release -a
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 11.04
+Release:        11.04
+Codename:       natty
 ```
 
 * 查看进程列表并过滤
