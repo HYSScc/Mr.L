@@ -21,10 +21,8 @@ Codename:       natty
 # id
 uid=1001(lhy) gid=1001(lhy) groups=1001(lhy),0(root)
 
-# id -gn  //查看当前用户组
+# id -gn  //查看当前用户的所属组
 lhy
-
-
 ```
 
 * 查看进程列表并过滤
