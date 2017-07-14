@@ -23,6 +23,31 @@ uid=1001(lhy) gid=1001(lhy) groups=1001(lhy),0(root)
 
 # id -gn  //查看当前用户的所属组
 lhy
+
+2. groups ：查看用户所属组
+
+
+3. newgrp 用户组 ：为当前用户临时增加一个用户的附加组（可以用exit退出该附加组）
+[frank@localhost~]$ id
+uid=507(frank) gid=200(tech) groups=200(tech)
+
+[frank@localhost~]$ newgrp user
+密码：  //这个密码为用gpasswd来设置的用户组密码，当有新用户加入是，需要输入，如果没有密码，直接确定即可加入
+
+[frank@localhost~]$ id -gn
+user   //用户组为user，未修改之前为tech
+
+[frank@localhost~]$ id
+uid=507(frank) gid=1204(user) groups=200(tech),1204(user)
+
+[frank@localhost~]$ exit       //只是临时增加的附加组，可以用exit退出该组
+exit
+
+[frank@localhost~]$ id
+uid=507(frank) gid=200(tech) groups=200(tech)
+
+[frank@localhost~]$ id -gn
+tech       //退出后的用户组还未之前的tech
 ```
 
 * 查看进程列表并过滤
