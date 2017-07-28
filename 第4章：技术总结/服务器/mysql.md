@@ -1,6 +1,6 @@
 1. 连接远程数据库服务器
 
-   `$ mysql -h 192.168.0.77 -P 3306 -u intorobot -p26554422`
+   `$ mysql -h 192.168.0.77 -P 3306 -u root -p123456`
 
 2. 查看多少个数据库：注意 后面带s
 
@@ -148,13 +148,13 @@ Run`systemctl daemon-reload`after creating/modifying.
 
 **MySQL的Grant命令: **[http://www.cnblogs.com/hcbin/archive/2010/04/23/1718379.html](http://www.cnblogs.com/hcbin/archive/2010/04/23/1718379.html)
 
-**利用.my.cnf，安全实现Shell下MySQL免输入密码登录:** [http://zhensheng.im/2014/02/05/2142/MIAO\\_LE\\_GE\\_MI](http://zhensheng.im/2014/02/05/2142/MIAO\_LE\_GE\_MI)
+**利用.my.cnf，安全实现Shell下MySQL免输入密码登录:** [http://zhensheng.im/2014/02/05/2142/MIAO\\_LE\\_GE\\_MI](http://zhensheng.im/2014/02/05/2142/MIAO_LE_GE_MI)
 
 **解决CentOS7 无法启动mysql 的解决办法: **[http://www.centoscn.com/CentosBug/softbug/2016/0115/6660.html](http://www.centoscn.com/CentosBug/softbug/2016/0115/6660.html)
 
 **Failed to issue method call: Unit mysql.service failed to load: No such file or directory的解决办法: **[http://blog.csdn.net/chszs/article/details/38758713](http://blog.csdn.net/chszs/article/details/38758713)
 
-**无法用systemctl将mysqld.service设置为启动项的解决方法:** [https://github.com/doraemonext/BlogPost/blob/master/538-%E6%97%A0%E6%B3%95%E7%94%A8systemctl%E5%B0%86mysqld.service%E8%AE%BE%E7%BD%AE%E4%B8%BA%E5%90%AF%E5%8A%A8%E9%A1%B9%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.md](https://github.com/doraemonext/BlogPost/blob/master/538-%E6%97%A0%E6%B3%95%E7%94%A8systemctl%E5%B0%86mysqld.service%E8%AE%BE%E7%BD%AE%E4%B8%BA%E5%90%AF%E5%8A%A8%E9%A1%B9%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.md)
+**无法用systemctl将mysqld.service设置为启动项的解决方法:** [https://github.com/doraemonext/BlogPost/blob/master/538-%E6%97%A0%E6%B3%95%E7%94%A8systemctl%E5%B0%86mysqld.service%E8%AE%BE%E7%BD%AE%E4%B8%BA%E5%90%AF%E5%8A%A8%E9%A1%B9%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.md](https://github.com/doraemonext/BlogPost/blob/master/538-无法用systemctl将mysqld.service设置为启动项的解决方法.md)
 
-Ubuntu 16.04 mysql安装配置：http://www.jianshu.com/p/3111290b87f4
+Ubuntu 16.04 mysql安装配置：[http://www.jianshu.com/p/3111290b87f4](http://www.jianshu.com/p/3111290b87f4)
 
