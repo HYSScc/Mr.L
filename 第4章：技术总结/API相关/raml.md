@@ -29,7 +29,7 @@ raml2wiki: https://github.com/jhitchcock/raml2wiki
 
 介绍下 RAML: [https:\/\/testerhome.com\/topics\/4601](https://testerhome.com/topics/4601)
 
-**[使用RAML描述API文档信息的一些用法整理：](http://www.cnblogs.com/darrenji/p/5198524.html)**http:\/\/www.cnblogs.com\/darrenji\/p\/5198524.html
+[**使用RAML描述API文档信息的一些用法整理：**](http://www.cnblogs.com/darrenji/p/5198524.html)http:\/\/www.cnblogs.com\/darrenji\/p\/5198524.html
 
 ## 步骤：
 
@@ -40,23 +40,23 @@ raml2wiki: https://github.com/jhitchcock/raml2wiki
 5. 启动 LocalAPI
 
 > **$ **ls api.raml examples resourceTypes scripts traits documentation notebooks schemas securitySchemes
-> 
+>
 > **$ **localapi run --no-examples api.raml
-> 
+>
 > info: LocalAPI 1.5.0 by IsaaCloud.com
-> 
+>
 > info: \[localapi\] Run app
-> 
+>
 > info: \[localapi\] App running at http:\/\/localhost:3333
 
 现在 GET [http:\/\/localhost:3333\/api\/v3\/nodes\/1](http://localhost:3333/api/v3/nodes/1) 就会返回 raml 文档定义的 responses 了
 
 ### 生成HTML文档
 
-`安装raml2html： npm i -g raml2html 
+`安装raml2html： npm i -g raml2html   
  raml2html api.raml > api.html`
 
-> IntoRobot raml 格式的开放API文档仓库： git clone [http:\/\/ram-lab.com\/molmc\_api.git](http://ram-lab.com/molmc_api.git)
+> raml 格式的开放API文档仓库： git clone [http://ram-lab.com/molmc\_api.git](http://ram-lab.com/molmc_api.git)
 
 ### 名词释义
 
@@ -88,7 +88,6 @@ documentation:
 
 1. 
 2. 
-
 ##### 重用属性定义：
 
 一. 资源类型\(resourceType\)
@@ -113,130 +112,130 @@ documentation:
 
 1. 公用属性有哪些？ 如何使用？
 
-  答： 公用属性有“Schemas”，“securitySchemas”, "ressourceTypes", "traits"等；通过重用属性的方法使用公用属性。
+   答： 公用属性有“Schemas”，“securitySchemas”, "ressourceTypes", "traits"等；通过重用属性的方法使用公用属性。
 
 2. 如何写以下Json的schemas：
 
-  ```
-  { "data": [ { "score": "397", "city": "深圳市", "coordinate": [ 114.066112, 22.548515 ], "_id": "5582614a2239c27051000002", "dev_img": "assets/img/intodunio.png", "name": "智能风扇", "description": "控制风扇的开关" }, { "score": "534", "city": "北京市", "coordinate": [ 116.331398, 39.897445 ], "_id": "56475c672239c23d5d0000c4", "dev_img": "/v1/avatars/56475c672239c23d5d0000c4", "name": "智能垃圾桶", "description": "通过红外检测到有人体靠近需要丢垃圾，则通过舵机控制垃圾桶盖自动打开，丢完垃圾后垃圾桶盖自动关闭。" }, { "score": "324", "city": "衡阳市", "coordinate": [ 112.652199, 27.235328 ], "_id": "55db39942239c2395800002a", "dev_img": "/v1/avatars/55db47b62239c23a58000049", "name": "衡山空气监测", "description": "衡山PM2.5监控" } ], "msg": "Request processed successfully.", "code": 200}
-  ```
+   ```
+   { "data": [ { "score": "397", "city": "深圳市", "coordinate": [ 114.066112, 22.548515 ], "_id": "5582614a2239c27051000002", "dev_img": "assets/img/intodunio.png", "name": "智能风扇", "description": "控制风扇的开关" }, { "score": "534", "city": "北京市", "coordinate": [ 116.331398, 39.897445 ], "_id": "56475c672239c23d5d0000c4", "dev_img": "/v1/avatars/56475c672239c23d5d0000c4", "name": "智能垃圾桶", "description": "通过红外检测到有人体靠近需要丢垃圾，则通过舵机控制垃圾桶盖自动打开，丢完垃圾后垃圾桶盖自动关闭。" }, { "score": "324", "city": "衡阳市", "coordinate": [ 112.652199, 27.235328 ], "_id": "55db39942239c2395800002a", "dev_img": "/v1/avatars/55db47b62239c23a58000049", "name": "衡山空气监测", "description": "衡山PM2.5监控" } ], "msg": "Request processed successfully.", "code": 200}
+   ```
 
-  答：
+   答：
 
-  > {
-  > 
-  > "required": true,
-  > 
-  > "$schema": "[http:\/\/json-schema.org\/draft-03\/schema](http://json-schema.org/draft-03/schema)",
-  > 
-  > "type": "object",
-  > 
-  > "properties": {
-  > 
-  > "code": {
-  > 
-  > "type": "number",
-  > 
-  > "required": true
-  > 
-  > },
-  > 
-  > "msg": {
-  > 
-  > "required": true,
-  > 
-  > "type": "string"
-  > 
-  > },
-  > 
-  > "data": {
-  > 
-  > "required": false,
-  > 
-  > "type": "array",
-  > 
-  > "items": \[
-  > 
-  > {
-  > 
-  > "type": "object",
-  > 
-  > "properties": {
-  > 
-  > "score": {
-  > 
-  > "required": false,
-  > 
-  > "type": "string"
-  > 
-  > },
-  > 
-  > "city": {
-  > 
-  > "required": false,
-  > 
-  > "type": "string"
-  > 
-  > },
-  > 
-  > "coordinate": {--------------------------------------&gt;数组内部不是object类型，不能使用 \[ \]\(中括号\)
-  > 
-  > "type": "array",
-  > 
-  > "required": false,
-  > 
-  > "items": {
-  > 
-  > "type": "number"
-  > 
-  > }
-  > 
-  > },
-  > 
-  > "\_id": {
-  > 
-  > "required": false,
-  > 
-  > "type": "string"
-  > 
-  > },
-  > 
-  > "dev\_img": {
-  > 
-  > "required": false,
-  > 
-  > "type": "string"
-  > 
-  > },
-  > 
-  > "name": {
-  > 
-  > "required": false,
-  > 
-  > "type": "string"
-  > 
-  > },
-  > 
-  > "description": {
-  > 
-  > "required": false,
-  > 
-  > "type": "string"
-  > 
-  > }
-  > 
-  > }
-  > 
-  > }
-  > 
-  > \]
-  > 
-  > }
-  > 
-  > }
-  > 
-  > }
-
+   > {
+   >
+   > "required": true,
+   >
+   > "$schema": "[http:\/\/json-schema.org\/draft-03\/schema](http://json-schema.org/draft-03/schema)",
+   >
+   > "type": "object",
+   >
+   > "properties": {
+   >
+   > "code": {
+   >
+   > "type": "number",
+   >
+   > "required": true
+   >
+   > },
+   >
+   > "msg": {
+   >
+   > "required": true,
+   >
+   > "type": "string"
+   >
+   > },
+   >
+   > "data": {
+   >
+   > "required": false,
+   >
+   > "type": "array",
+   >
+   > "items": \[
+   >
+   > {
+   >
+   > "type": "object",
+   >
+   > "properties": {
+   >
+   > "score": {
+   >
+   > "required": false,
+   >
+   > "type": "string"
+   >
+   > },
+   >
+   > "city": {
+   >
+   > "required": false,
+   >
+   > "type": "string"
+   >
+   > },
+   >
+   > "coordinate": {--------------------------------------&gt;数组内部不是object类型，不能使用 \[ \]\(中括号\)
+   >
+   > "type": "array",
+   >
+   > "required": false,
+   >
+   > "items": {
+   >
+   > "type": "number"
+   >
+   > }
+   >
+   > },
+   >
+   > "\_id": {
+   >
+   > "required": false,
+   >
+   > "type": "string"
+   >
+   > },
+   >
+   > "dev\_img": {
+   >
+   > "required": false,
+   >
+   > "type": "string"
+   >
+   > },
+   >
+   > "name": {
+   >
+   > "required": false,
+   >
+   > "type": "string"
+   >
+   > },
+   >
+   > "description": {
+   >
+   > "required": false,
+   >
+   > "type": "string"
+   >
+   > }
+   >
+   > }
+   >
+   > }
+   >
+   > \]
+   >
+   > }
+   >
+   > }
+   >
+   > }
 
 1. 
+
 
