@@ -53,10 +53,8 @@ raml2wiki: https://github.com/jhitchcock/raml2wiki
 
 ### 生成HTML文档
 
-`安装raml2html： npm i -g raml2html   
+`安装raml2html： npm i -g raml2html     
  raml2html api.raml > api.html`
-
-> raml 格式的开放API文档仓库： git clone [http://ram-lab.com/molmc\_api.git](http://ram-lab.com/molmc_api.git)
 
 ### 名词释义
 
@@ -87,8 +85,7 @@ documentation:
 ##### 元属性：
 
 1. 
-2. 
-##### 重用属性定义：
+2. ##### 重用属性定义：
 
 一. 资源类型\(resourceType\)
 
@@ -236,6 +233,6 @@ documentation:
    >
    > }
 
-1. 
+3. 
 
 
