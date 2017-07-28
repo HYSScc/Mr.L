@@ -8,15 +8,15 @@
 
 周三
 
-> IntoRobot Nut，IntoRobot Nut-S，IntoRobot ESP8266MOD，产品拍照，给设计师设计淘宝详情页
+> In\*\*\*\*\*\*t Nut，In\*\*\*\*\*\*t Nut-S，In\*\*\*\*\*\*t ESP8266MOD，产品拍照，给设计师设计淘宝详情页
 
 周四
 
-> IntoRobot Nut，IntoRobot Nut-S，IntoRobot ESP8266MOD，计师设计淘宝详情页，淘宝上架
+> In\*\*\*\*\*\*t Nut，In\*\*\*\*\*\*t Nut-S，In\*\*\*\*\*\*t ESP8266MOD，计师设计淘宝详情页，淘宝上架
 
 周五
 
-> 淘宝详情错误修改，IntoRobot官方商城商品上架
+> 淘宝详情错误修改，In\*\*\*\*\*\*t官方商城商品上架
 
 周六
 
