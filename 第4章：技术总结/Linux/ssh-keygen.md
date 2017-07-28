@@ -1,4 +1,4 @@
-免密码登陆: ssh -i ./ssh\_keys/aliyun.key intorobot@192.168.1.23
+免密码登陆: ssh -i ./ssh\_keys/aliyun.key In\*\*\*\*\*\*t@192.168.1.23
 
 ---
 
@@ -18,7 +18,6 @@ ssh-agent用法
 1. 先查看ssh-agent ID
 
    `eval ssh-agent`
-
 
 1. 将key添加到ssh-agent中  
    `ssh-add aliyun.key`
